@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 一个类描述了一个实体，用于创建实体的实例。在使用 new 语句创建类的实例时，
+        会调用这个类的构造函数。类的属性通常位于构造函数中。此外，类方法（例如 getName()）用于读取（或写入）实例的数据。
+        类的实例在类中使用 this 对象来表示，但在外部，仅指定给 JavaScript 变量。
+
+        在面向对象编程中，类通常用来实现继承。在 JavaScript 中也一样，extends 语句可用于让一个类继承另一个类。
+        一个子类通过 extends 语句继承了一个父类的所有功能，还可以添加自己的功能。 -->
+        <script>
+            class myClass{
+                constructor(name,age){
+                    this.name = name;
+                    this.age = age;
+                }
+
+                getName(){
+                    return this.name+"-----------"+this.age   
+                }
+            }
+
+            var obj = new myClass("xiao ming",44);
+            obj.getName();
+        </script>
+    
+</body>
+</html>
