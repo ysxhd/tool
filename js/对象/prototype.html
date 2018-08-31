@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 因为不是通过在prototype中以这样的方式添加的(sayHi.prototype.sayHello),实例是不能访问sayHello方法的，
+        //只能通过sayHi.sayHello(类似如静态方法)的方式访问。同样如果添加的时候是通过prototype方式，则不能用静态方式访问。
+        function sayHi() {
+            alert("hi");
+        }
+
+        sayHi.prototype.sayHello = function () {
+            alert("hello");
+        };
+
+        var osayHi = new sayHi(); // outputs hi
+        osayHi.sayHello(); // outputs hello
+
+        sayHi.sayHello();
+        
+    </script>
+</body>
+
+</html>

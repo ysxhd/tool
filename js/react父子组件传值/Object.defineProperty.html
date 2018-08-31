@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="test">这是一个测试</div>
+    <script>
+        var view = document.getElementById("test");
+        var data = {};
+        var i = 0;
+        Object.defineProperty(data, "b", {
+            set: function (newValue) {
+                //当data.b的值改变的时候更新＃test的视图 
+                console.log(newValue);
+                view.textContent = newValue;
+            },
+            get: function () {}
+        });
+        setInterval(function () {
+            i++;
+            data["b"] = "data.b的值更新了，我要更新视图" + i;
+        }, 1000);
+    </script>
+</body>
+
+</html>

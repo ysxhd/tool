@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Array.prototype.slice.call(arguments)能将具有length属性的对象转成数组，
+        除了IE下的节点集合（因为ie下的dom对象是以com对象的形式实现的，js对象与com对象不能进行转换）  -->
+    <script>
+        function func(){
+            //  console.log(Array.prototype.slice.call(arguments).join("-")+"\n");
+            console.log(Array.from(arguments).join("--"));
+        }
+
+        func(1,2,3,4,5);
+        // var a={length:2,0:'first',1:'second'};//去掉length属性，返回一个空数组
+        // console.log(Array.prototype.slice.call(a));//[]
+
+    </script>
+</body>
+</html>

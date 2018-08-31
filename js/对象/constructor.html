@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Drivers() {
+         
+            var names = "";
+            this.abc = names;
+            this.addDriver = function (name) {
+                names = names + " " + name;
+            }
+            this.toString = function () {
+                return names+"--";
+            }
+        }
+
+
+        function Car() {
+
+        }
+
+        Car.prototype.color = "red";
+        Car.prototype.model = "BMW";
+
+        //Car.prototype.drivers = ['Mike','Kevin'];
+
+        Car.prototype.drivers = new Drivers();
+
+        Car.prototype.blar = function () {
+             console.log("I am a car: " + this.model + " in " + this.color + ". " + this.drivers + " can drive me");
+        };
+
+        var car1 = new Car();
+        car1.color = 'Blue';
+        //car1.drivers.push('Luios');
+        car1.drivers.addDriver('Mike');
+        car1.drivers.addDriver('Kevin');
+        car1.drivers.addDriver('Luios');
+
+        car1.blar(); //outputs I am a car: BMW in Blue. Mike,Kevin,Luios can drive me
+        console.log(Car.prototype)
+        // var car2 = new Car();
+        // car2.blar();
+    </script>
+</body>
+
+</html>
