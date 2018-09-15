@@ -1,0 +1,179 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:08:03 
+ * @Last Modified by: JCheng.L
+ * @Last Modified time: 2018-03-08 14:37:36
+ */
+.ljc-newcontainer {
+  /* padding: 1.375em; */
+  padding:20px 2.1%;
+}
+/* 新闻头部操作栏 */
+
+.ljc-news-top {
+  display: block;
+  width: 100%;
+  height: 34px;
+  margin-left: 14px;
+  padding-right: 14px;
+}
+
+.ljc-news-topL {
+  float: left;
+}
+
+.ljc-news-topL .ant-checkbox-input,
+.ljc-news-topL .ant-checkbox,
+.ljc-news-topL .ant-checkbox-inner {
+  border-radius: 50%;
+  border-color: #9b9b9b;
+}
+
+.ljc-news-topL .ant-btn:nth-child(2) {
+  color: #ffffff;
+  background: #ff9934;
+  border: 1px solid #ff9934;
+  border-radius: 25px;
+  margin-left: 3.125em;
+  padding: 6px 22px;
+  border: 0;
+  outline: 0;
+}
+
+.ljc-news-topL .ant-btn:nth-child(3) {
+  border-radius: 25px;
+  margin-left: 1.375em;
+  padding: 6px 20px;
+}
+
+.ljc-news-topR {
+  float: right;
+}
+
+.ljc-news-recommendBox {
+  float: left;
+  line-height: 34px;
+  cursor: pointer;
+}
+
+.ljc-news-recommendBox .icon {
+  vertical-align: -0.3em;
+}
+
+.ljc-news-recommend {
+  margin-left: 0.625em;
+  margin-right: 2.5em;
+}
+
+
+/*右边 搜素栏 */
+
+.ljc-news-topR .ant-input {
+  width: 280px;
+  height: 34px;
+  float: right;
+  border-radius: 25px;
+  outline: 0;
+}
+
+.ljc-news-sBox {
+  float: left;
+}
+
+ 
+.ljc-news-sBox .ant-input-search-button {
+  width: 60px;
+  color: #fff;
+  background: #626a73;
+  border: 1px solid #626a73;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+}
+
+.ljc-news-nListb{
+  position: relative;
+  width: 100%;
+}
+
+.ljc-news-topL .ant-checkbox-checked .ant-checkbox-inner,
+.ljc-news-topL .ant-checkbox-indeterminate .ant-checkbox-inner {
+  background: #ff9934;
+  border-color: #ff9934;
+}
+
+.ljc-news-topL .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ljc-news-topL .ant-checkbox:hover .ant-checkbox-inner,
+.ljc-news-topL .ant-checkbox-input:focus+.ant-checkbox-inner {
+  border-color: #ff9934;
+}
+
+.ljc-news-topL .ant-checkbox-inner{
+  width: 20px;
+  height: 20px;
+  border:1px solid #d9d9d9;
+}
+
+.ljc-news-bt{
+  display: block;
+  margin-top: 20px;
+}
+
+.ljc-news-btL{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ljc-news-btL .ant-select-enabled>div:first-child {
+  width: 70px;
+  border-radius: 25px;
+}
+
+.ljc-news-btR{
+  float: right;
+}
+
+/* 分页 */
+.ljc-news-btR>.ant-pagination>li{
+  border-radius: 25px;
+  border:none;
+}
+
+.ljc-news-btR>.ant-pagination>.ant-pagination-item-active{
+  background: #626a73;
+}
+
+.ljc-news-btR>.ant-pagination>.ant-pagination-item-active>a{
+  color: #ffffff;
+}
+
+.ljc-news-btR>.ant-pagination .ant-pagination-disabled {
+  border-color:rgba(0, 0, 0, 0.25);
+}
+
+.ljc-news-btR>.ant-pagination>li:nth-child(1),
+.ljc-news-btR>.ant-pagination>li:last-child{
+  border:1px solid #999999;
+  padding:0 10px;
+  border-radius: 25px;
+  background: #ffffff;
+}
+
+.cjy-news-modal{
+  width: 800px !important;
+}
+
+/* 无数据时 */
+.ljc-news-noData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 658px;
+}
+
+.ljc-news-txt {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}

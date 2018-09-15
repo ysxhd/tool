@@ -1,0 +1,169 @@
+.lean-sysconf-contentContainer {
+    width: 1300px;
+    margin: 0 auto 100px;
+    /* border:1px solid red; */
+    min-height: 500px;
+    user-select: none;
+}
+
+.lean-sysconf-innerTitle {
+    color: #353535;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+    margin-bottom: 0px !important;
+}
+
+.lean-sysconf-modules>ul {
+    list-style: none;
+}
+
+.lean-sysconf-modules>ul>li {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.lean-sysconf-modules>ul>li>span {
+    display: inline-block;
+    line-height: 50px;
+    border: 1px solid #e5e5e5;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.lean-sysconf-modules>ul>li>span:first-child {
+    width: 14%;
+    color: #4fa3f0;
+    text-align: center;
+}
+
+.lean-sysconf-modules>ul>li>span:last-child {
+    width: 83%;
+    padding-left: 15px;
+    color: #444444;
+}
+
+.lean-sysconf-changeTitle-inputBox {
+    /* border:1px solid #20aaee; */
+}
+
+.lean-sysconf-changeTitle-inputBox>input {
+    border: 1px solid #00aaea;
+    padding: 0 10px;
+    width: 300px;
+    height: 80%;
+    border-radius: 4px;
+}
+
+.lean-sysconf-changeTitleCommit {
+    margin: 0 15px 0 30px;
+}
+
+.lean-sysconf-changeTitleCommit:hover,
+.lean-sysconf-changeTitleCancel:hover {
+    color: #5eff00;
+    cursor: pointer;
+}
+
+.lean-sysconf-warningBox {
+    margin: 30px auto;
+    width:85%;
+    /* padding-left: 30px; */
+}
+.lean-sysconf-warningBox>p {
+    margin-top: 10px;
+    user-select: none;
+}
+
+.lean-sysconf-changeTitleBtn {
+    float: right;
+    margin: 9px 12px;
+}
+
+.lean-sysconf-pubclassSwitch {
+    float: right;
+    margin: 15px 12px;
+    width: 64px;
+}
+
+.lean-sysconf-pubclassSwitch>.ant-switch-inner {
+    text-align: right;
+    margin: 0 15px;
+}
+
+.lean-sysconf-modules .ant-switch-checked {
+    background: #2ccb8f;
+}
+
+.lean-sysconf-modules .ant-switch-checked>.ant-switch-inner {
+    text-align: left;
+    margin: 0 15px;
+}
+
+.lean-sysconf-netdeskAll {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.lean-sysconf-netdeskAll>span {
+    display: inline-block;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 35px;
+    min-width: 60px !important;
+    text-align: center;
+    font-size: 12px;
+}
+
+.lean-sysconf-netdeskAll>span:first-child {
+    background-color: #20aaee;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #fff;
+}
+
+.lean-sysconf-netdeskAll>span:last-child {
+    background-color: #e6e6e6;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #5e5e5e;
+}
+
+.lean-sysconf-netDeskCof {
+    float: right;
+    margin: 9px 12px;
+}
+
+.lean-sysconf-netdeskSet {
+    display: inline-block;
+    border: 1px solid #62b6f0;
+    height: 30px;
+    margin-top: 10px;
+    width: 140px;
+    line-height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    color: #00a5ee;
+}
+
+.lean-sysconf-netdeskSet>button {
+    height: 100%;
+    border-right: 1px solid #62b6f0;
+    width: 40px;
+    float: left;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.lean-sysconf-netdeskSet>button:last-child {
+    float: right;
+    border-right: 0;
+    border-left: 1px solid #62b6f0;
+    border-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}

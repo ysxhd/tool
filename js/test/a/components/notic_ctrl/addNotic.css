@@ -1,0 +1,272 @@
+/*
+ * @Author: hf 
+ * @Date: 2018-06-25 10:47:58 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-09-11 18:17:52
+ */
+
+.hf-an-main {
+  position: relative;
+}
+
+.hf-an-bar {
+  width: 100%;
+  height: 80px;
+  background: #233257;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #097ed9;
+  position: relative;
+}
+
+.hf-an-title {
+  font-size: 24px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.hf-an-iClose {
+  color: #2b5d7d;
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.hf-an-iClose:hover {
+  color: #fd4a08;
+}
+
+.hf-an-cont {
+  background-color: #21253e;
+  padding: 40px 20px 80px 20px;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  color: #fff;
+}
+
+.hf-an-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.hf-an-item {
+  display: flex;
+}
+
+.hf-an-lable {
+  display: block;
+  width: 66px;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.hf-an-ipt {
+  height: 40px;
+  border: 1px solid #56596c;
+  background-color: #1e2239;
+  color: #fff;
+  border-radius: 0;
+}
+
+.hf-an-cont .hf-an-area {
+  height: 280px;
+  margin-top: 20px;
+  resize: none;
+}
+
+.hf-an-right {
+  width: 28%;
+  border: 1px solid #56596c;
+  background-color: #1e2239;
+}
+
+.hf-an-checkAll {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #56596c;
+  padding-left: 20px;
+}
+
+.hf-an-right .ant-checkbox-wrapper {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hf-an-right .ant-checkbox-group {
+  color: #fff;
+  padding: 20px;
+}
+
+.hf-an-right .ant-checkbox-group-item {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.xq-radius {
+  border-radius: 0;
+}
+
+.xq-edit-btns {
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -45px;
+  text-align: center;
+}
+
+.xq-edit-btn {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.xq-edit-btn:first-child {
+  margin-right: 176px;
+}
+
+.xq-edit-btn>span {
+  display: block;
+  width: 90px;
+  height: 90px;
+  font-size: 20px;
+  border-radius: 100%;
+  line-height: 90px;
+  text-align: center;
+}
+
+.xq-edit-btn.xq-edit-submiut>span {
+  background: -webkit-linear-gradient(left top, #fecc00, #e38305);
+  background: -moz-linear-gradient(left top, #fecc00, #e38305);
+  background: linear-gradient(left top, #fecc00, #e38305);
+  color: #34372e;
+}
+
+.xq-edit-btn.xq-edit-cancle>span {
+  background: #204b66;
+  color: #fff;
+}
+
+.xq-edit-btn:before {
+  display: inline-block;
+  width: 110px;
+  height: 55px;
+  border: 1px solid #097ed9;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  border-top: 0;
+  background: #21253e;
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  z-index: -1;
+}
+
+.xq-right-scroll .ant-checkbox-group {
+  max-height: 290px;
+  overflow-y: scroll;
+  width: 97%;
+  margin-top: 10px;
+}
+
+/* 设置滚动条的样式 */
+
+::-webkit-scrollbar, 
+::-moz-scrollbar {
+  width: 10px;
+}
+
+/* 滚动条滑块 */
+
+::-webkit-scrollbar-thumb,
+::-moz-scrollbar-thumb {
+  border-radius: 8px;
+  background: #32384f;
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-moz-scrollbar-thumb:window-inactive {
+  background: #32384f;
+}
+
+.hf-an-main .ant-select-selection ,
+.hf-an-main.ant-select-selection--single{
+  width: 100px;
+  height: 40px;
+}
+
+.hf-an-cont .xq-area-style{
+  margin-top: 0;
+}
+
+.hf-an-lable.xq-an-lable {
+  line-height: 80px;
+  color: #fff;
+}
+
+.hf-an-item.xq-an-item{
+  line-height: 80px;
+  color:#7d7f88;
+  height: 80px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.xq-an-item .ant-select-selection{
+  background-color: #21253e;
+  border:1px #7d7f88 solid;
+}
+
+.xq-an-item .ant-select{
+  color:#7d7f88;
+  margin-left: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+.xq-an-item .ant-select:before{
+  content: "";
+  width:0;
+  height:0;
+  border-width:7px 7px 0;
+  border-style:solid;
+  border-color:#fff  transparent transparent;/*灰 透明 透明 */
+  z-index: 1;
+  position:absolute;
+  right: 12px;
+  top:16px;
+}
+
+.xq-an-item .ant-select:nth-child(2){
+  margin-left: 0;
+}
+
+.xq-an-item .ant-select-arrow  {
+  color: #fff;
+}
+
+.xq-an-item .ant-select-selection__rendered{
+  line-height: 40px;
+}
+
+.zn-position-btm{
+  position: relative;
+} 
+
+ .zn-position-btm-bottom{
+  position: absolute;
+  bottom: -22px;
+  right: 10px;
+}  
+

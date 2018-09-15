@@ -1,0 +1,150 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-06-20 09:39:56 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-09-14 11:13:09
+ */
+
+.zn-bg-cont {
+    padding-top: 30px;
+}
+
+.zn-bg-cont .zn-title-top {
+    background-color: #21253e;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #a9aab0;
+    font-size: 18px;
+    padding-left: 16px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+#example1 {
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.zn-mt-top {
+    margin-top: 22px;
+}
+
+.zn-select-div {
+    margin-top: 4px;
+    height: 100px;
+    background-color: #21253e;
+    text-align: right;
+    padding: 20px;
+}
+
+.zn-select-div .ant-select {
+    width: 314px !important;
+}
+
+.zn-select-div .ant-select-selection {
+    background-color: #21253e;
+    border-color: #56596c;
+    color: #fff;
+    height: 50px;
+}
+
+.zn-select-div .ant-select-selection__rendered {
+    line-height: 50px;
+}
+
+.zn-select-div .ant-select-arrow {
+    color: #fff;
+}
+
+.zn-table {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.zn-modal-cont {
+    background-color: #21253e;
+    padding: 40px 20px 30px 20px;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+
+.zn-modal-font {
+    font-size: 22px;
+    color: #7e808a;
+}
+
+.zn-flex-spacebet {
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    justify-content: space-between;
+}
+
+.zn-mt30 {
+    margin-top: 30px;
+}
+
+.zn-flex-justcont {
+    display: flex;
+    width: 100%;
+}
+
+.zn-img-item {
+    border: 2px solid #3a3d54;
+    margin-right: 20px;
+    width: 260px;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zn-img-item>img {
+    width: 100%;
+    height: 100%;
+}
+
+.zn-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #373737;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    z-index: 1100;
+    filter: alpha(opacity=50);
+    display: none;
+    overflow: auto;
+}
+
+.zn-bg-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.zn-icon-hover:hover {
+    color: #fff;
+    background: #087dd9;
+}
+
+.zn-overflow-ellipts {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.zn-select-div .ant-select-dropdown-menu-item {
+    text-align: left;
+}

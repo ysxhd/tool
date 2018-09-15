@@ -1,0 +1,57 @@
+/*
+ * @Author: MinJ
+ * @Date: 2018-01-09 14:05:22 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-01-22 09:26:31
+ */
+
+.mj-srp-modal{
+  width: 700px !important;
+}
+
+/* title */
+.mj-srp-modal .ant-modal-header{
+  background-color: #ebebeb;
+}
+
+/* content */
+.mj-srp-modal .ant-modal-body{
+  padding-bottom: 0;
+}
+.mj-srp-timeSpan,
+.mj-srp-div1 span{
+  display: inline-block;
+  width: 14%;
+  text-align: right;
+}
+.mj-srp-div1 input{
+  width: 80%;
+  height: 40px;
+}
+.mj-srp-div1 p{
+  width: 94%;
+  text-align: right;
+}
+.mj-srp-div2 .ant-calendar-picker{
+  width: 50%;
+}
+.mj-srp-div2 .ant-input{
+  height: 40px;
+}
+.mj-srp-div1 textarea{
+  width: 80%;
+  margin-top: 20px;
+  resize: none;
+}
+.mj-srp-conSpan{
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+/* footer */
+.mj-srp-modal .ant-modal-footer{
+  text-align: left;
+  border-top: 0;
+  width: 80%;
+  margin-left: 14%;
+}

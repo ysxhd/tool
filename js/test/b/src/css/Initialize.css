@@ -1,0 +1,264 @@
+/*
+ * @Author: zhengqi 
+ * @Date: 2018-08-31 14:30:17 
+ * @Last Modified by: zhengqi
+ * @Last Modified time: 2018-09-06 13:45:22
+ */
+/*初始化样式*/
+.zq-init-box{
+  text-align: center;
+  padding-top: 50px;
+  color: #475766;
+}
+
+.zq-init-box h2{
+  font-size: 42px;
+  color: #475766;
+  margin-bottom: 20px;
+}
+
+.zq-init-box>p{
+  font-size: 14px;
+}
+
+.zq-init-container{
+  width: 800px;
+  margin:0 auto;
+  padding-top: 80px;
+}
+
+.zq-init-row{
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 20px;
+}
+
+.zq-init-row>p{
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.zq-init-row>span{
+  color: #abb4bf;
+}
+
+.zq-init-row .ant-radio-inner{
+  height: 18px;
+  width: 18px;
+}
+
+.zq-init-row .ant-radio-inner:after{
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  top:2px;
+}
+
+.zq-init-row .ant-radio-wrapper{
+  margin-right: 38px;
+}
+
+.zq-init-row>input{
+  width: 380px;
+  height: 40px;
+}
+
+.zq-init-menu{
+  /* margin: 0 auto 20px; */
+  margin-bottom: 20px;
+  width: 780px;
+  display: flex;
+  
+}
+
+.zq-init-menuLeft{
+  width: 564px;
+  border: 1px solid #d9d9d9;
+  padding: 26px 26px 0;
+  background-color: #fff;
+  margin-right: 15px;
+}
+
+.zq-init-fucRow{
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.zq-init-fucRow>.ant-switch{
+  width: 56px;
+  height: 24px;
+}
+
+.zq-init-fucRow>p{
+  flex: 1;
+  text-align: right;
+  font-size: 16px;
+  position: relative;
+  
+}
+
+.zq-init-fucRow>p>span{
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.zq-init-fucRow .ant-switch:before, 
+.zq-init-fucRow .ant-switch:after{
+  width: 22px;
+  height: 22px;
+  left: 0;
+  top:0;
+}
+
+.zq-init-fucRow .ant-switch-checked:after{
+  margin-left: 0;
+  left: 100%;
+}
+
+.zq-init-fucRow .ant-switch-checked{
+  background-color: #2fbd9b;
+}
+
+.zq-init-fucRow>p.zq-init-select>i{
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-40%);
+  width: 0;
+  height: 0;
+  border:12px solid transparent;
+  border-left-color: #d9d9d9;
+}
+
+.zq-init-fucRow>p.zq-init-select>i::after{
+  position: absolute;
+  content: "";
+  left: -12px;
+  top:-10px;
+  width: 0;
+  height: 0;
+  border:10px solid transparent;
+  border-left-color: #fff;
+}
+
+.zq-init-fucRow>p.zq-init-select>span{
+  color: #3295f9;
+}
+
+.zq-init-menuRight{
+  flex: 1;
+  border: 1px dashed #d9d9d9;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.zq-init-menuRight>p{
+  height: 50px;
+  line-height: 50px;
+  background-color: #f8f8f8;
+  font-size: 18px;
+  color: #475766;
+  margin-bottom: 30px;
+}
+
+.zq-init-container .ant-btn{
+  height: 40px;
+  width: 120px;
+  margin-top: 50px;
+}
+
+.zq-init-menuRight .ant-checkbox-group{
+  padding-left: 30px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.zq-init-menuRight .zq-init-nodata p{
+  padding-top: 20px;
+  color: #abb4bf;
+}
+
+.zq-init-menuRight .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+  margin-left: 0;
+}
+
+.zq-init-menuRight .ant-checkbox-wrapper{
+  margin-bottom: 18px;
+  display: block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  max-width: 250px;
+}
+
+.zq-init-menuRight .ant-checkbox-inner,
+.zq-init-menuRight .ant-checkbox-checked:after{
+  border-radius: 50%;
+}
+
+.ant-modal.zq-init-modal{
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.zq-init-modal .ant-modal-body{
+  padding: 50px 90px 60px;
+  position: relative;
+}
+
+.zq-init-modal .ant-modal-body>span{
+  position: absolute;
+  width: 72px;
+  height: 36px;
+  background-color:#eff3f5;
+  border-radius:36px 36px 0 0;
+  top:-35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  text-align: center;
+}
+
+.zq-init-modal .ant-modal-body>p{
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.zq-init-modal .ant-modal-body>p:nth-child(2){
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.zq-init-modal .ant-modal-body>.ant-input{
+  margin-bottom: 20px;
+}
+  
+
+.zq-init-modal .ant-modal-content{
+  background-color:#eff3f5;
+}
+  
+
+.zq-init-modalBtn{
+  text-align: center;
+}
+
+.zq-init-modalBtn .ant-btn{
+    width: 100PX;
+    height: 40PX;
+    line-height: 40px;
+    border-radius: 0;
+}
+
+.zq-init-modalBtn .ant-btn:first-child{
+  margin-right: 20px;
+  background-color: #e74c3c;
+  border-color:#e74c3c;
+}
+
+.zq-init-modalBtn .ant-btn:last-child{
+  background-color: #b8c4ce;
+  border-color:#b8c4ce;
+}

@@ -1,0 +1,29 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-08-29 19:51:33 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-09-04 18:59:51
+ */
+
+
+/* 背景 */
+
+.lxx-g-report {
+    background: #fff;
+    min-height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.lxx-g-re-header {
+    padding: 20px;
+    min-height: 72px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #D9E5EA;
+}
+
+.lxx-hd-g-rg {
+    width: 100%;
+    padding: 0 20px;
+}

@@ -1,0 +1,45 @@
+/*
+ * @Author: hf 
+ * @Date: 2018-07-24 15:13:38 
+ * @Last Modified by: hf
+ * @Last Modified time: 2018-07-24 16:24:29
+ */
+.hf-msc-sub {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.hf-msc-label {
+  display: block;
+  width: 50px;
+  line-height: 32px;
+  margin-right: 10px;
+}
+
+.hf-msc-selBox {
+  position: relative;
+  overflow: hidden;
+  line-height: 32px;
+  width: 1270px;
+  transition: all 0.3s ease 0s;
+}
+
+.hf-msc-span {
+  display: inline-block;
+  padding: 0 15px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.hf-msc-span:hover {
+  background: #E6E6E6;
+}
+
+.hf-msc-selBox .hf-msc-span-active {
+  background: #30a2f2;
+  color: #fff;
+}

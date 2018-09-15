@@ -1,0 +1,237 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:07:16 
+ * @Last Modified by: JCheng.L
+ * @Last Modified time: 2018-03-08 14:35:07
+ */
+
+.ljc-news-container {
+  border: 1px solid #d9d9d9;
+  width: 100%;
+  height: 132px;
+  margin-top: 22px;
+}
+
+.ljc-news-choice .ant-checkbox-input,
+.ljc-news-choice .ant-checkbox-inner,
+.ljc-news-choice .ant-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+  border-color: #9b9b9b;
+}
+
+.ljc-news-choice .ant-checkbox-checked .ant-checkbox-inner,
+.ljc-news-choice .ant-checkbox-indeterminate .ant-checkbox-inner {
+  background: #ff9934;
+  border-color: #ff9934;
+}
+
+.ljc-news-choice .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ljc-news-choice .ant-checkbox:hover .ant-checkbox-inner,
+.ljc-news-choice .ant-checkbox-input:focus+.ant-checkbox-inner {
+  border-color: #ff9934;
+}
+
+.ljc-news-choice {
+  float: left;
+  position: relative;
+  width: 3.8%;
+  height: 132px;
+}
+
+.ljc-news-choice .ant-checkbox-inner{
+  width: 20px;
+  height:20px;
+  border:1px solid #d9d9d9;
+}
+
+.ljc-news-newsPic {
+  float: left;
+  width: 8%;
+  height: 100%;
+  padding: 16px 0;
+}
+
+.ljc-news-coverpic {
+  width: 100%;
+  height: 100%;
+}
+
+.ljc-news-noPicBor {
+  float: left;
+  width: 1px;
+  height: 100%;
+  border-left: 1px solid #d9d9d9;
+}
+
+.ljc-news-ctCtn {
+  position: relative;
+  /* width: 89.425%; */
+  height: 100%;
+  padding: 17px 2.5% 0 1.25%;
+  overflow: hidden;
+}
+
+.ljc-news-ctCtnT {
+  width: 100%;
+}
+
+.ljc-news-recommendTag {
+  float: left;
+  padding: 0 10px;
+  margin-right: .5em;
+  line-height: 24px;
+  font-size: 12px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.ljc-news-title {
+  line-height: 24px;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+}
+
+.ljc-news-ctCtnB {
+  display: -webkit-box;
+  width: 100%;
+  line-height: 24px;
+  margin-top: 11px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: 2;
+  /* autoprefixer:off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer:on */
+}
+
+.ljc-news-date {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  line-height: 14px;
+  margin-left: 1.25%;
+}
+
+.ljc-news-ctCtn:hover .ljc-news-tTip {
+  display: block;
+}
+
+.ljc-news-tTip {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.5%;
+  height: 132px;
+  background: #717981;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.ljc-news-tTip>ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ljc-news-tTip>ul>li {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  list-style: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ljc-news-tTip>ul>li>svg{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
+
+/* modal */
+
+.ljc-news-modal .ant-modal-header {
+  background: #40464c;
+}
+
+.ljc-news-modal .ant-modal-title {
+  color: #ffffff;
+}
+
+.ljc-news-modal .ant-modal-close-x {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.ljc-news-modal .ant-modal-content {
+  height: 260px;
+}
+
+.ljc-news-modal .ant-modal-body {
+  padding-top: 45px;
+}
+
+.ljc-news-ttdt {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.ljc-news-delTip {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.ljc-news-delTip .ant-btn:nth-child(1) {
+  width: 100px;
+  height: 34px;
+  color: #ffffff;
+  background: #ff9934;
+  border: 1px solid #ff9934;
+  border-radius: 25px;
+  border: 0;
+  outline: 0;
+}
+
+.ljc-news-delTip .ant-btn:nth-child(2) {
+  width: 100px;
+  height: 34px;
+  border-radius: 25px;
+  margin-left: 1.375em;
+  border-color: #b3b3b3;
+}
+
+.ljc-ac-bt {
+  display: block;
+  padding-top: 1.375em;
+}
+
+.ljc-ac-btL {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ljc-ac-btR {
+  display: inline-block;
+}
+
+/* 操作项 */
+.ljc-news-halfH{
+  height: 66px !important;
+}

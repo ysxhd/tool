@@ -1,0 +1,259 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:08:10 
+ * @Last Modified by: JCheng.L
+ * @Last Modified time: 2018-03-09 17:13:51
+ */
+.cjy-ph-red svg{
+  color: #ff5656;
+}
+
+.cjy-ph-yearBox{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #f0f0f0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cjy-ph-ctBox{
+  padding: 20px 50px;
+}
+
+.cjy-ph-nameLine .ant-input{
+  width: 530px;
+  height: 40px;
+}
+
+.cjy-ph-titleLen{
+  width: 530px;
+  margin-left: 80px;
+  text-align: right;
+  height: 20px;
+  line-height: 20px;
+}
+
+.cjy-ph-typeLine .ant-checkbox-wrapper{
+  margin-left: 40px;
+}
+
+.cjy-ph-typeLine .ant-select-selection--single{
+  height: 40px;
+}
+
+.cjy-ph-range{
+  display: inline-block;
+  width: 110px;
+  height: 50px;
+  border: 5px solid #fff;
+  padding: 10px;
+  text-align: center;
+  background: #ebebeb;
+  outline: 1px solid #ccc;
+}
+
+.cjy-ph-range svg{
+  margin-right: 10px;
+}
+
+.cjy-ph-left10{
+  margin-left: 10px;
+}
+
+.cjy-ph-rangeLine{
+  margin-top: 20px;
+  position: relative;
+}
+
+.cjy-ph-honorBox{
+  margin: 20px 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* ljc */
+
+
+.cjy-ph-rankBox{
+  width: calc(50% - 5px);
+  height: 48px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 3px 5px -3px #ccc;
+  /* display: inline-flex; */
+  float:left;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* ljc end */
+
+.cjy-ph-del{
+  display: none;
+}
+
+.cjy-ph-del{
+  text-align: center;
+  position: absolute;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  background: #717a81;
+}
+
+.cjy-ph-del svg{
+  font-size: 20px;
+}
+
+.cjy-ph-rankBox:hover .cjy-ph-del{
+  display: inline-block;
+}
+
+.cjy-ph-rankBox:nth-child(odd){
+  margin-right: 10px;
+}
+
+.cjy-ph-rankName{
+  /* display: inline-block; */
+  width: 140px;
+  padding: 0 10px;
+  line-height: 48px;
+  float: left;
+}
+
+.cjy-ph-rankBox .ant-input{
+  margin-top: 11px;
+}
+
+.cjy-ph-rankBox .ant-input,
+.cjy-ph-blank{
+  width: 90px;
+  height: 26px;
+  float: left
+}
+
+.cjy-ph-rankType{
+  float: right;
+  margin-right: 18px;
+  /* margin-left: 22px; */
+  font-size: 32px;
+}
+
+.cjy-ph-ipt{
+  width: 340px;
+}
+
+.cjy-ph-rangeLine .ant-input{
+  border-color: #b3b3b3;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.cjy-ph-rangeLine .ant-btn-primary{
+  background-color: #626a73;
+  border-color: #626a73;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.cjy-ph-rangeLine .ant-input:focus{
+  box-shadow: none;
+}
+
+.cjy-ph-rangeLine .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled){
+  border-color: #626a73;
+}
+
+.cjy-ph-rangeLine .ant-input-search > .ant-input-suffix > .ant-input-search-button{
+  height: 40px;
+}
+
+.cjy-ph-resultBox{
+  position: absolute;
+  left: 80px;
+  top: 39px;
+  width: 278px;
+  border: 1px solid #b3b3b3;
+  background: #fff;
+  z-index: 1;
+}
+
+.cjy-ph-nameSdata{
+  height: 120px;
+  overflow-y: auto;
+}
+
+.cjy-ph-noSearch{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cjy-ph-noData{
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+.cjy-ph-nameBox{
+  padding: 7px 10px;
+}
+
+.cjy-ph-nameNum{
+  display: inline-block;
+  width: 85%;
+  vertical-align: middle;
+}
+
+.cjy-ph-nameBox .ant-checkbox-inner{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.cjy-ph-nameBox .ant-checkbox-checked .ant-checkbox-inner{
+  background: #3ac17d;
+  border-color: #3ac17d;
+}
+
+.cjy-ph-nameBox .ant-checkbox-wrapper:hover .ant-checkbox-inner, 
+.cjy-ph-nameBox .ant-checkbox:hover .ant-checkbox-inner,
+.cjy-ph-nameBox  .ant-checkbox-input:focus + .ant-checkbox-inner{
+  border-color: #3ac17d;
+}
+
+.cjy-ph-btnBox{
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+}
+
+.cjy-ph-btnBox .ant-btn{
+  width: 50%;
+  height: 40px;
+  border: none;
+  background: #fafafa;
+  color: #ff9934;
+  border-radius: 0;
+}
+
+.cjy-ph-btnBox .ant-btn:nth-child(1){
+  border-right: 1px solid #e0e0e0;
+}
+
+.cjy-ph-btnBox .ant-btn[disabled]{
+  color: rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+}
+
+.cjy-ph-block{
+  display: block;
+}
+
+.cjy-ph-none{
+  display: none;
+}

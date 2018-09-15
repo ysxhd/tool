@@ -1,0 +1,225 @@
+/*
+ * @Author: kangyl 
+ * @Date: 2018-01-16 15:48:04 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-03-15 13:52:37
+ */
+
+.kyl-wctpif-modal .ant-modal-content{
+  min-height:432px;
+  position: relative;
+  width:542px;
+}
+.kyl-wctpif-modal .ant-modal{
+  width:542px;
+  height:52px;
+  border-radius: 0;
+}
+.kyl-wctpif-modal .ant-modal-header{
+  background-color: #41474d;
+ 
+}
+.kyl-wctpif-modal .ant-modal-title{
+  color:#ffffff;
+  font-size: 16px;
+}
+.kyl-wctpif-modal .ant-modal-close-x{
+  color:#d9dadb;
+}
+.kyl-wctpif-tabs{
+  line-height: 1.6;
+  text-indent: 3px;
+}
+.kyl-wctpif-tabs .ant-tabs{
+  margin:-24px; 
+  
+}
+.kyl-wctpif-tabs .ant-tabs-nav.ant-tabs-nav-animated{
+  margin-left:31px;
+}
+.kyl-wctpif-tabs .ant-tabs-nav .ant-tabs-tab{
+  margin-right: 10px;
+}
+.kyl-wctpif-tabs .ant-tabs-ink-bar .ant-tabs-ink-bar-animated{
+  width:82px;
+}
+.kyl-wctpif-tabs .ant-tabs-ink-bar{
+  background-color:#ff9934;
+  height:3px;
+}
+.kyl-wctpif-tabs .ant-tabs-nav .ant-tabs-tab-active{
+  color:#ff9934;
+}
+.kyl-wctpif-tabs .ant-tabs-nav .ant-tabs-tab:hover{
+  color:#ff9934;
+}
+.kyl-wctpif-tabs .ant-tabs-nav-container{
+  line-height:2;
+}
+.kyl-wctpif-modal .ant-modal-footer{
+  display: none;
+}
+.kyl-wctpif-msgHeader{
+  width:481px;
+  height:40px;
+  background-color: #ebebeb;
+  font-size: 16px;
+  
+}
+.kyl-wctpif-msgHeader>p{
+  display: inline-block;
+  line-height: 40px;
+  color:#4d4d4d;
+
+}
+.kyl-wctpif-container{
+  min-width: 481px;
+}
+.kyl-wctpif-class{
+  width:43%;
+  margin-left: 32px;
+}
+.kyl-wctpif-space{
+  width: 50%;
+}
+.kyl-wctpif-msgHeader{
+  margin:0 auto;
+  line-height: 2
+  
+}
+.kyl-wctpif-msgLeft,.kyl-wctpif-msgRight{
+  display: inline-block;  
+  color: #4d4d4d;
+  font-size: 16px;
+  clear: both;
+  
+}
+.kyl-wctpif-msgLeft span,.kyl-wctpif-msgRight span{
+  width:100px;
+}
+.kyl-wctpif-msgHeader div{
+  margin-top: 8px;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;/* 超出内容显示为省略号*/
+  white-space: nowrap;/*文本不进行换行*/
+}
+.kyl-wctpif-msgHeader>div span{
+  display: inline-block;
+  width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;/* 超出内容显示为省略号*/
+}
+.kyl-wctpif-msgHeader div p{
+  display: inline;
+  position: relative;
+  top: -6px;
+  margin-left:32px;
+}
+.kyl-wctpif-class span,.kyl-wctpif-space span{
+  width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;/* 超出内容显示为省略号*/
+  white-space: nowrap;/*文本不进行换行*/
+}
+
+.kyl-wctpif-msgLeft{
+  width: 48%;
+  overflow: hidden;
+  text-overflow: ellipsis;/* 超出内容显示为省略号*/
+  white-space: nowrap;/*文本不进行换行*/
+}
+.kyl-wctpif-class{
+  width: 48%;
+  overflow:hidden;
+  text-overflow: ellipsis;/* 超出内容显示为省略号*/
+  white-space: nowrap;/*文本不进行换行*/
+}
+.kyl-wctpif-class{
+  width: 48%
+}
+.kyl-wctpif-msgRight{
+  margin-left:5%; 
+  width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;/* 超出内容显示为省略号*/
+  white-space: nowrap;/*文本不进行换行*/
+}
+.kyl-wctpif-msgLeft p{
+  margin-left:60px;  
+}
+.kyl-wctpif-msgLeft p span{
+  display: inline-block;
+}
+
+.kyl-wctpif-msgLeft p,.kyl-wctpif-msgRight p{
+  margin-top: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  top: 2px;
+
+}
+.kyl-wctpif-runStatus p{
+  margin-left: 42px;
+}
+.kyl-wctpif-progress1 .ant-progress-outer,.kyl-wctpif-progress2 .ant-progress-outer,.kyl-wctpif-progress3 .ant-progress-outer{
+  margin-left: 42px;
+}
+.kyl-wctpif-progress1 .ant-progress-text,.kyl-wctpif-progress2 .ant-progress-text,.kyl-wctpif-progress3 .ant-progress-text{
+  font-size: 15px;
+  color: #4d4d4d;
+  margin-left: 125px;
+  margin-top: -88px;
+}
+.kyl-wctpif-progress1 .ant-progress-bg,.kyl-wctpif-progress2 .ant-progress-bg,.kyl-wctpif-progress3 .ant-progress-bg{
+  background-color:#ffa64c;
+}
+.kyl-wctpif-progress1 .ant-progress-inner,.kyl-wctpif-progress2 .ant-progress-inner,.kyl-wctpif-progress3 .ant-progress-inner{
+  background-color: #ebebeb;
+  width: 91%;
+}
+.kyl-wctpif-p2{
+  margin-top: 25px;
+}
+.kyl-wctpif-p1{
+  margin-top: 16px;
+}
+kyl-wctpif-runStatus p{
+  font-size: 15px;
+  color: #4d4d4d;
+}
+.kyl-wctpif-tag {
+  width: 52px;
+  height: 26px;
+  border-radius:20px;
+  font-size: 14px;
+  margin-left: 14px;
+}
+.kyl-wctpif-tag .ant-tag-text{
+  line-height: 26px;
+  margin-left: 4px;
+  line-height: 1.7;
+}
+.kyl-wctpif-tag{
+  position: relative;
+  top: -23px;
+  left: 235px;
+}
+.kyl-wctpif-offtag{
+  position: relative;
+  top: -23px;
+  left: 120px;
+  width: 52px;
+  height: 26px;
+  border-radius:20px;
+  font-size: 14px;
+  /* margin-left: 14px; */
+  line-height: 20px;
+}
+.kyl-wctpif-p2{
+  margin-top: 7px;
+}

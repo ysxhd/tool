@@ -1,0 +1,87 @@
+.xt-nodestep{
+  text-align: center;
+}
+
+.xt-nodestep p{
+  margin-bottom: 4px;
+}
+
+.xt-nodestep .xt-nodering{
+  width: 66px;
+  height: 66px;
+  margin: auto;
+  user-select: none;
+  position: relative;
+}
+
+.xt-nodestep .xt-nodering p{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  margin: -0.5em 0 0 0;
+  font-size: 24px;
+  line-height: 1;
+  left: 0;
+  right: 0;
+
+}
+
+.xt-nodestep.xt-running {
+  color: #0094ff;
+}
+
+.xt-nodestep.xt-completed {
+  color: #1fcc75;
+}
+
+.xt-nodestep.xt-running svg{
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.xt-nodestep.xt-completed .xt-nodering{
+  position: relative;
+}
+
+.xt-nodestep.xt-completed .xt-nodering:before{
+  content: "已完成";
+  position: absolute;
+  left: calc(50% + 10px);
+  top: 5px;
+  color: #FFF;
+  border: 1px whitesmoke solid;
+  border-right: 0px;
+  FILTER: progid: DXImageTransform.Microsoft.Gradient(gradientType=1, startColorStr=#88FFFFFF, endColorStr=#00FFFFFF);
+  /*IE 6 7 8*/
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5), transparent);
+  /* IE 10 */
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5), transparent);
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  /* Internet Explorer */
+  -webkit-transform: rotate(-20deg);
+  /* Safari 和 Chrome */
+  font-size: 12px;
+  padding: 0 0 1px 6px;
+  width: 54px;
+  text-align: left;
+}
+
+.xt-nodestep-below p{
+  margin: 6px 0 0 0; 
+}
+
+.ljc-showCheckBox{
+  display: block;
+  position: absolute;
+  top:43px;
+  left:0;
+}
+
+.ljc-hideCheckBox{
+  display: none;
+}

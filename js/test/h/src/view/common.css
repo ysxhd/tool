@@ -1,0 +1,146 @@
+/*
+ * @Author: junjie.lean 
+ * @Date: 2018-07-19 16:47:01 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-08-14 13:46:40
+ */
+
+
+/*公共组件库样式  包含全局样式*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); */
+
+.lean-loading-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #545c6d;
+}
+
+.lean-loading-innerCon {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.lean-loading-innerCon>h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    -webkit-animation: flash 6s infinite ease-in-out;
+    -moz-animation: flash 6s infinite ease-in-out;
+    -ms-animation: flash 6s infinite ease-in-out;
+    animation: flash 6s infinite ease-in-out;
+}
+
+@-webkit-keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+
+/* 下载弹窗 */
+
+.lxx-g-download {
+    padding: 30px 45px;
+}
+
+.lxx-g-download svg {
+    margin-right: 15px;
+    font-size: 42px;
+    color: #85898C;
+}
+
+.lxx-dl-g-cnt {
+    font-size: 16px;
+    color: #333;
+}
+
+.lxx-dl-g-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.lxx-dl-g-btn button {
+    height: 40px;
+    width: 90px;
+}
+
+.lxx-dl-g-btn button.lxx-s-blue {
+    margin-right: 20px;
+}
+
+
+/* 错误页面 */
+
+.lxx-g-error {
+    position: relative;
+    min-height: 600px;
+    height: 100%;
+}
+
+.lxx-g-error>div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lxx-g-error>div>p {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+}

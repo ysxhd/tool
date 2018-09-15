@@ -1,0 +1,48 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:08:19 
+ * @Last Modified by: JCheng.Liu
+ * @Last Modified time: 2018-01-23 10:42:09
+ */
+.ljc-rc-container {
+  position: relative;
+}
+
+.ljc-rc-num,
+.ljc-rc-input {
+  position: absolute;
+  left: 50%;
+}
+
+.ljc-rc-num {
+  top: 40px;
+  width: 150px;
+  height: 25px;
+  line-height: 25px;
+  margin-left: -75px;
+  background: #ebebeb;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.ljc-rc-input {
+  display: block;
+  bottom: 6px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -65px;
+  text-align: center;
+  border: 1px solid #b8b8b8;
+  border-radius: 25px;
+}
+
+.ljc-rc-input a:hover,
+.ljc-rc-input a:visited,
+.ljc-rc-input a:active,
+.ljc-rc-input a:focus,
+.ljc-rc-input a {
+  display: block;
+  color: #666666;
+  text-decoration: none;
+}

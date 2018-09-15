@@ -1,0 +1,169 @@
+/*
+ * @Author: zhengqi 
+ * @Date: 2018-09-04 16:27:42 
+ * @Last Modified by: xiangting
+ * @Last Modified time: 2018-09-13 14:57:19
+ */
+/*滚动表格*/
+
+/* .zq-comn-table::-webkit-scrollbar {display:none} */
+
+.zq-comn-table{
+  width: 100%;
+  overflow: hidden;
+}
+
+.zq-comn-table table{
+  display: block;
+}
+
+.zq-comn-table table>tbody{
+  width: 100%;
+  display: block;
+}
+
+.zq-stabl-table{
+  border-top:1px solid #0b444e;
+  width: calc(100% + 17px);
+  height: 200px;
+  overflow-y: auto;
+}
+
+.zq-comn-table tr{
+  display: flex;
+  border-bottom:1px dashed #0b444e;
+}
+
+.zq-comn-table tr>td{
+  width: 30%;
+  text-align: center;  
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+}
+
+.xt-tea-table.zq-comn-table tr>td{
+  padding: 14px 16px;
+}
+
+.zq-comn-table tr>td>span{
+  /* position: absolute; */
+  /* top:50%;
+  left: 50%; */
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  max-width: 100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+  /* transform: translateX(-50%) translateY(-50%); */
+}
+
+.zq-comn-table tr>td:last-child{
+  width: 40%;  
+}
+
+.zq-comn-table>ul{
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+}
+
+.zq-comn-table>ul li{  
+  text-align: center;
+}
+
+.zq-comn-table>ul li:first-child,
+.zq-comn-table>ul li:nth-child(3){
+  width: 14%;
+}
+
+.zq-comn-table>ul li:nth-child(2),
+.zq-comn-table>ul li:nth-child(4),
+.zq-comn-table>ul li:nth-child(5){
+  flex: 1;
+}
+
+.zq-comn-table .zq-slds-table tr>td{
+  width: 24%;
+}
+
+.zq-comn-table .zq-slds-table tr>td:first-child,
+.zq-comn-table .zq-slds-table tr>td:nth-child(3){
+  width: 14%;
+}
+
+.zq-slds-table{
+  border-top:1px solid #0b444e;
+  width: calc(100% + 17px);
+  height: 170px;
+  overflow-y: auto;
+}
+
+.zq-comn-table .zq-slds-table tr>td:nth-child(4)>span{
+  white-space:normal
+}
+
+.zq-crq-table{
+  border-top:1px solid #0b444e;
+  width: calc(100% + 17px);
+  height: 293px;
+  overflow-y: auto;
+}
+
+.zq-comn-table .zq-crq-table tr>td:first-child,
+.zq-comn-table .zq-crq-table tr>td:nth-child(3){
+  width: 14%;
+}
+
+.zq-comn-table .zq-crq-table tr>td:nth-child(2){
+  flex: 1;
+}
+
+.zq-comn-table .zq-crq-table tr>td:last-child{
+  /* flex: 0.8; */
+  width: 32%;
+}
+
+.zq-comn-table .zq-crq-table tr>td:last-child span{
+  color: #475363;
+  background: #273241;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.zq-comn-table .zq-crq-table tr>td:last-child span.nostart{
+  color: #fff;
+  background-color: #273241;
+}
+
+.zq-comn-table .zq-crq-table tr>td:last-child span.ing{
+  color: #1ed4e3;
+  background-color: #134347;
+}
+.zq-comn-table .zq-crq-table tr>td:last-child span.end{
+  color: #475363;
+  background-color: #273241;
+}
+
+.zq-crs-table{
+  border-top:1px solid #0b444e;
+  width: calc(100% + 17px);
+  height: 170px;
+  overflow-y: auto;
+}
+
+.zq-comn-table .zq-crs-table tr>td{
+  width: 30%;
+}
+
+.zq-comn-table .zq-crs-table tr>td:first-child,
+.zq-comn-table .zq-crs-table tr>td:nth-child(3){
+  width: 14%;
+}
+
+.zq-comn-table .zq-crs-table tr>td:last-child{
+  width: 12%;
+}

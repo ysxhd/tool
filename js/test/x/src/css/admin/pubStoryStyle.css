@@ -1,0 +1,177 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:08:13 
+ * @Last Modified by: JudyC
+ * @Last Modified time: 2018-01-31 10:48:31
+ */
+.cjy-pss{
+  width: 950px;
+  position: fixed;
+  top: calc(50% - 280px);
+  left: calc(50% - 375px);
+  z-index: 100;
+}
+
+.cjy-pss-top20{
+  margin-top: 20px;
+}
+
+.cjy-pss-leftModal,
+.cjy-pss-rightModal{
+  display: inline-block;
+  min-width: 0 !important;
+}
+
+.cjy-pss-rightModal{
+  vertical-align: top;
+}
+
+.cjy-pss-leftModal{
+  width: 65% !important;
+}
+
+.cjy-pss-rightModal{
+  width: 34.5% !important;
+  margin-left: 0.5%;
+}
+
+.cjy-pss-titleLine .ant-input{
+  width: 440px;
+  height: 40px;
+}
+
+.cjy-pss-titleLen,
+.cjy-pss-introLen{
+  width: 440px;
+  height: 20px;
+  line-height: 20px;
+  text-align: right;
+  margin-left: 80px;
+  color: #a2a2a2;
+}
+
+.cjy-pss-dateLine .ant-input{
+  width: 240px;
+  height: 40px;
+}
+
+.cjy-pss-introLine .ant-input{
+  width: 440px;
+  height: 160px;
+  resize: none;
+  vertical-align: top;
+}
+
+.cjy-pss-upPicLine{
+  padding-left: 80px;
+}
+
+.cjy-pss-upPicBox,
+.cjy-pss-referBox{
+  display: inline-block;
+  width: 100px;
+  height: 80px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.cjy-pss-upPic,
+.cjy-pss-refer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #ebebeb;
+}
+
+.cjy-pss-upPicBox{
+  margin-right: 20px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.cjy-pss-file{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.cjy-pss-upPic svg,
+.cjy-pss-refer svg{
+  font-size: 30px;
+}
+
+.cjy-pss-picBody{
+  padding: 20px 10px 10px 20px;
+  overflow-y: auto;
+}
+
+.cjy-pss-lHeight{
+  height: 516px;
+}
+
+.cjy-pss-sHeight{
+  height: 475.5px;
+}
+
+/* .cjy-pss-picBody .xt-imgbox{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 130px;
+  height: 86px;
+} */
+
+.cjy-pss-imgBox{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 130px;
+  height: 86px;
+  display: inline-block;
+  position: relative;
+}
+
+.cjy-pss-cover::before{
+  content: '';
+  font-size: 10px;
+  color: #fff;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 45px solid #ff9934;
+  border-right: 45px solid transparent;
+  z-index: 5;
+}
+
+.cjy-pss-cover::after{
+  content: '封面';
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: #fff;
+  transform: rotate(-45deg);
+  font-size: 12px;
+}
+
+.cjy-pss-imgBox img{
+  width: 130px;
+  height: 86px;
+}
+
+/* .cjy-pss-picBody .xt-imgbox{
+  width: 130px;
+  height: 86px;
+} */
+
+.cjy-pss-imgBox:hover .cjy-ssip-drop{
+  display: block;
+}
+
+.cjy-pss-imgBox:hover .cjy-ssip-dropBox{
+  display: block;
+}

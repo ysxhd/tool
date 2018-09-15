@@ -1,0 +1,562 @@
+/*
+ * @Author: huangjing 
+ * @Date: 2018-01-18 13:18:36 
+<<<<<<< .mine
+ * @Last Modified by: huangjing
+ * @Last Modified time: 2018-02-02 14:16:25
+||||||| .r2258
+ * @Last Modified by: huangjing
+ * @Last Modified time: 2018-01-30 09:31:19
+=======
+ * @Last Modified by: huangjing
+ * @Last Modified time: 2018-03-14 16:04:18
+>>>>>>> .r2292
+ 校园介绍
+ */
+.hj-mcm-all{
+    padding: 20px;
+}
+.hj-mcm-head{
+    width: 100%;
+    height: 225px;
+    position: relative;
+
+    
+}
+.hj-mcm-head .hj-mcm-logo{
+    width: 300px;
+    height:225px;
+    float: left;
+    display: inline-block;
+    z-index: 8;
+}
+.hj-mcm-head .hj-mcm-logo IMG{
+    width: 300px;
+    height:225px;
+}
+.hj-mcm-head .hj-mcm-logo p{
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    left:0px;
+    top:195px;
+    z-index: 10;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+}
+.hj-mcm-logoFileIn{
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    cursor: pointer;
+}
+.hj-mcm-colPic{
+    width: 100%;
+}
+.hj-mcm-SchoolCon{
+    display: inline-block;
+    margin-left: 20px;
+    height: 225px;
+    float: left;
+}
+.hj-mcm-SchoolCon .hj-mcm-schoolName{
+    display: inline-block;
+    font-size: 22px;
+    position:absolute;
+    top:0;
+    left:320px;
+}
+.hj-mcm-SchoolCon .hj-mcm-triangle{
+    width: 20px;
+    height: 20px;
+    background:#fff;
+    transform: rotate(50deg);
+    position: absolute;
+    right: -10px;
+    top:3px;
+    z-index: 10; 
+}
+
+.hj-mcm-SchoolCon .hj-mcm-edit{
+    display: inline-block;
+    border-radius: 50px;
+    background: #626173;
+    color: #fff;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.hj-mcm-SchoolCon .ant-btn:hover, .hj-mcm-SchoolCon  .ant-btn:focus {
+    border-color: #fff;
+}
+
+.hj-mcm-SchoolCon .hj-mcm-schoolMotto{
+    background: #ff9934;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    left:320px;
+    top:40px;
+    padding: 2px;
+    padding-left:10px;
+    padding-right:40px; 
+}
+.hj-mcm-SchoolCon .hj-mcm-schoolDescription{
+    position: absolute;
+    top: 75px;
+    left:320px;
+    width: calc(100% - 320px);
+    height: 144px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+
+}
+
+.hj-mcm-SchoolCon .hj-mcm-isEdit{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.hj-mcm-SchoolCon .hj-mcm-isEdit button{
+    border-radius: 50px;
+    margin-left:20px;
+}
+
+.hj-mcm-SchoolCon .hj-mcm-isEdit button:hover{
+    background: #ff9934;
+    color: #fff;
+    border-color: none;
+}
+
+
+
+.hj-mcm-SchoolCon .hj-mcm-keyword{
+    position: absolute;
+    width: calc(100% - 320px);
+    left:320px;
+    top:40px;
+}
+
+.hj-mcm-SchoolCon .hj-mcm-keyword input{
+    width: 40%;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+    margin-left: 2px;
+    border:1px solid #bfbebb;
+}
+.hj-mcm-SchoolCon .hj-mcm-sintro{
+    position: absolute;
+    left: 325px;
+    top:75px;
+    width: calc(100% - 320px);
+}
+.hj-mcm-SchoolCon .hj-mcm-sintro span{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.hj-mcm-SchoolCon .hj-mcm-sintro textarea{
+    width: calc(100% - 70px);
+    padding-left: 10px;
+    padding-top:5px;
+    border-radius: 5px;
+    margin-left: 2px;
+    border:1px solid #bfbebb;
+    line-height: 25px;
+    resize: none;
+}
+.hj-mcm-SchoolCon .hj-mcm-sintro .hj-mcm-scpPercent{
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    right:5px;;
+    top:140px;
+}
+.hj-mcm-colPic{
+    width:100%;
+    margin-top: 20px;
+    border-top: 1px solid #d9d9d9
+}
+ .hj-mcm-picTitle{
+    height: 50px;
+    line-height: 50px;
+    color: #000;
+    font-size: 16px;
+}
+
+.hj-mcm-colPic ul{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hj-mcm-colPic ul li{
+    width:calc(90%/6);
+    height: 165px;
+    background: #fff;
+    margin-right: calc(10%/5);
+    margin-bottom: 20px;
+    position: relative;
+}
+.hj-mcm-colPic ul li .hj-mcm-picName{
+    width:100%;
+    height:125px;
+}
+.hj-mcm-colPic ul li p.hj-mcm-picTtle{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border:1px solid #d9d9d9;
+    border-top: none;
+    box-shadow: 0 3px 5px #d9d9d9;
+    width:100%;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    -o-text-overflow: ellipsis;
+    white-space:nowrap;
+    padding-left:10px;
+    padding-right: 10px;
+
+}
+.hj-mcm-colPic ul li:nth-child(6n){
+    margin-right: 0;
+}
+
+.hj-mcm-colPic ul li:first-child{
+ 
+    background: #fff;
+    border:none;
+    
+}
+.hj-mcm-colPic ul li:first-child div{
+    width: 100%;
+    height: 75px;
+    border:1px solid #ebebeb;
+    cursor: pointer;
+}
+.hj-mcm-colPic ul li:first-child div:last-child{
+    margin-top:18px;
+}
+.hj-mcm-colPic ul li:first-child .hj-mcm-picUpload{
+    display: inline-block;
+    margin:5px;
+    width:calc(100% - 10px);
+    height: 62px;
+    background: #ebebeb;;
+}
+.hj-mcm-picUpload .hj-mcm-picFileIn{
+    position: absolute;
+    width: calc(100% - 10px);
+    height: 62px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.hj-mcm-colPic ul li:first-child .hj-mcm-picUpload SVG,.hj-mcm-colPic ul li:first-child .hj-mcm-picQuote SVG{
+    width: 26px;
+    height: 26px;
+    margin-left: calc((100% - 36px)/2);
+    margin-top: 10px;
+    color: #6d7580;
+    
+}
+.hj-mcm-colPic ul li:first-child .hj-mcm-picUpload p,.hj-mcm-colPic ul li:first-child .hj-mcm-picQuote p{
+    text-align: center;
+}
+.hj-mcm-colPic ul li:first-child .hj-mcm-picQuote{
+    display: inline-block;
+    width: calc(100% - 10px);
+    margin: 5px;
+    height: 62px;
+    background: #ebebeb;
+    
+}
+.hj-mcm-colPic ul li:hover .hj-mcm-picHandle{
+    display:block;
+}
+.hj-mcm-colPic .hj-mcm-picHandle{
+    width:22px;
+    height: 22px;
+    background: #fff;
+    z-index: 20;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+    
+}
+.hj-mcm-colPic .hj-mcm-picHanBox{
+    width: 80px;
+    height: 60px;
+    background: #fff;
+    position: absolute;
+    top:32px;right: 10px;
+    border-radius: 5px;
+    display: none;
+}
+.hj-mcm-colPic .hj-mcm-picHanBox p{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hj-mcm-colPic .hj-mcm-picHanBox p:hover{
+    background: #e5e5e5;
+    color: #ff9934;
+}
+.hj-mcm-colPic .hj-mcm-picHandle SVG{
+    color: #ff9934;
+    width: 18px;
+    height: 18px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.hj-mcm-colvideo{
+    width:100%;
+    border-top: 1px solid #d9d9d9;
+}
+.hj-mcm-colvideo ul{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hj-mcm-colvideo ul li{
+    margin-right: calc(10%/5);
+}
+.hj-mcm-colvideo .hj-mcm-videoUpload{
+    width: calc(90%/6);
+    height: 165px;
+    border: 1px solid #d9d9d9;
+    position: relative;
+}
+.hj-mcm-colvideo .hj-mcm-videoUpload span{
+    display: inline-block;
+    width: calc(100% - 12px);
+    height: 153px;
+    background: #ebebeb;
+    margin: 5px;
+    cursor: pointer;
+}
+.hj-mcm-colvideo .hj-mcm-videoUpload span SVG{
+    width: 28px;
+    height: 28px;
+    margin-left: calc((100% - 28px)/2);
+    margin-top: 42px;
+    color: #667580;
+}
+.hj-mcm-colvideo .hj-mcm-videoUpload span p{
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.hj-mcm-videoFileIn{
+    width: calc(100% - 12px);
+    height: 165px;
+    position: absolute;
+    left:0;
+    top:0;
+    opacity:0;
+}
+.hj-mcm-colvideo .hj-mcm-video{
+    width: calc(90%/6);
+    height: 165px;
+    position: relative;
+    background: #000;
+    border:none;
+}
+.hj-mcm-colvideo .hj-mcm-video .hj-mcm-loading{
+    width: 100%;
+    height: 165px;
+    position: absolute;
+    left:0;
+    top:0;
+    background: #f7e5d3; 
+}
+
+  
+.hj-mcm-colvideo .hj-mcm-video .hj-mcm-loading>div {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+  
+  .hj-mcm-colvideo .hj-mcm-video .hj-mcm-loading::after {
+    content: "上传中...";
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#aab0b3;
+  }
+  
+  .hj-mcm-colvideo .hj-mcm-video .hj-mcm-loading>div>span>i {
+    background: #f79934;
+  }
+.hj-mcm-colvideo .hj-mcm-video .hj-mcm-video1 SVG{
+    width: 80px;
+    height:80px;
+    margin-left:calc((100% - 80px)/2);
+    margin-top:42px;
+    color: #cdcdcd;
+    
+}
+.hj-mcm-colvideo .hj-mcm-video .hj-mcm-delv{
+    background: #fff;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    top:-7px;
+    right: -7px;
+}
+.hj-mcm-colvideo .hj-mcm-video .hj-mcm-delv SVG{
+    
+    color: #42464c;
+    z-index: 25;
+    width: 20px;
+    height: 20px;
+   
+}
+.hj-mcm-colvideo .hj-mcm-video .hj-mcm-delv SVG:hover{
+    color:#626173;
+}
+.hj-mcm-colvideo .hj-mcm-myVideo{
+    position: fixed;
+    left:calc((100% - 800px)/2);
+    top:150px;
+    width: 800px;
+    height:500px;
+    z-index: 100;
+    
+}
+.hj-mcm-colvideo .hj-mcm-popClose{
+    
+    position: fixed;
+    right: calc(((100% - 800px)/2) - 7px);
+    top:167px;
+    z-index: 101;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+}
+.hj-mcm-colvideo .hj-mcm-popClose SVG{
+    width: 40px;
+    height: 40px;
+    color: #d9d9d9;
+}
+.hj-mcm-colvideo .hj-mcm-popClose SVG:hover{
+    color: #bbb;
+}
+.hj-mcm-quotePop{
+    display: none;
+}
+.hj-mcm-editTitlePop{
+    display: none;
+    width: 400px;
+    height: 220px;
+    position: fixed;
+    left:calc((100% - 300px)/2);
+    top:300px;
+    background: #fff;
+    z-index: 101;
+}
+.hj-mcm-editTitlePop .hj-mcm-titleMess{
+    margin-left:25px;
+    margin-top:50px;
+}
+
+.hj-mcm-editTitlePop .hj-mcm-titleMess .hj-mcm-titleNameIn{
+    border: 1px solid #bfbebb;
+    width: 280px;
+    height: 35px;
+    box-shadow: none;
+    padding-left: 3px;
+}
+.hj-mcm-editTitlePop .hj-mcm-editYes{
+    position: absolute;
+    right:25px;
+    top:160px;
+}
+.hj-mcm-editTitlePop .hj-mcm-editYes .hj-mcm-titleSave{
+    margin-left: 20px;
+}
+.hj-mcm-editTitlePop .hj-mcm-editYes .hj-mcm-titleSave{
+    display: inline-block;
+    border-radius: 50px;
+    background: #626173;
+    color: #fff;
+    
+}
+
+.hj-mcm-editTitlePop .hj-mcm-editYes  .ant-btn:hover, .hj-mcm-editTitlePop .hj-mcm-editYes .ant-btn:focus {
+    border-color: #fff;
+}
+.hj-mcm-editHead{
+    height:50px;
+    line-height: 50px;
+    background: #41474d;
+}
+.hj-mcm-editHead p{
+    float: left;
+    font-size: 15px;
+    color: #fff;
+    margin-left:16px;
+}
+.hj-mcm-editHead SVG{
+    float: right;
+    width:18px;
+    height:18px;
+    color: #d9d9d9;
+    margin-right: 16px;
+    margin-top:16px;
+}
+.hj-mcm-editHead SVG:hover{
+    color: #bbb;
+}
+.hj-mcm-loadingAll {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 7px;
+    margin-top: 20px;
+  }
+  
+  .hj-mcm-loadingAll>div {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .hj-mcm-loadingAll::after {
+    content: "加载中...";
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#aab0b3;
+  }
+  
+  .hj-mcm-loadingAll>div>span>i {
+    background: #f79934;
+  }

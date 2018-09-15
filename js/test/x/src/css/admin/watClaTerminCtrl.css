@@ -1,0 +1,36 @@
+/*
+ * @Author: MinJ 
+ * @Date: 2018-01-11 17:58:36
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-01-12 09:16:35
+ * 状态监督——列表列表单个组件
+ */
+
+.mj-wctc-contentLarge{
+  width: 720px !important;
+}
+/* title */
+.mj-wctc-content{
+  min-width: 520px;
+}
+.mj-wctc-content .ant-modal-header{
+  height: 50px;
+  background-color: #41474d;
+}
+.mj-wctc-content .ant-modal-title,
+.mj-wctc-content .ant-modal-close{
+  color: #fff;
+}
+.mj-wctc-content .ant-modal-close:focus,
+.mj-wctc-content .ant-modal-close:hover{
+  color: #d9d9d9 !important;
+}
+
+/* content */
+.mj-wctc-content .ant-modal-body,
+.mj-wctc-content .ant-modal-footer {
+  background-color: #fff;
+}
+.mj-wctc-content .ant-modal-body{
+  padding: 44px 60px;
+}

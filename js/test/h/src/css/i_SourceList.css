@@ -1,0 +1,41 @@
+/*
+ * @Author: hf 
+ * @Date: 2018-07-23 17:14:15 
+ * @Last Modified by: hf
+ * @Last Modified time: 2018-08-07 10:26:58
+ */
+
+.hf-isl-container {
+  height: 120px;
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hf-isl-icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.hf-isl-public {
+  color: #bebbf0;
+}
+
+.hf-isl-private {
+  color: #98d9b8;
+}
+
+.hf-isl-flexDiv {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+
+.hf-isl-h3 {
+  font-size: 14px;
+  color: #4d4d4d;
+  padding-top: 10px;
+}

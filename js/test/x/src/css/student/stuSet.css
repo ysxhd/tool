@@ -1,0 +1,132 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-01-11 10:20:47 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-01-22 15:34:42
+ */
+
+.lxx-g-dialog.lxx-cho-g-dia .ant-modal-body {
+    position: relative;
+    padding: 24px 0px 10px;
+}
+
+
+/* 搜索 */
+
+.lxx-set-g-search {
+    position: relative;
+    padding: 0 20px 18px;
+    border-bottom: 1px solid #CCC;
+    box-sizing: border-box;
+}
+
+.lxx-se-g-sear {
+    width: 280px;
+}
+
+.lxx-se-g-sear>.ant-input-search.ant-input-search-enter-button>.ant-input {
+    padding-left: 75px;
+}
+
+.lxx-se-g-sear>.ant-input {
+    padding: 0 15px;
+    height: 34px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.lxx-u-inputDel {
+    position: absolute;
+    left: 215px;
+    top: 10px;
+    font-size: 16px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.lxx-se-g-que {
+    padding: 6px 30px;
+    background: #ff9934;
+    color: #fff;
+    border: 0;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+
+/* 学生列表展示 */
+
+.lxx-set-g-cnt {
+    height: 516px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.lxx-set-g-cnt {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.lxx-set-g-cnt>div {
+    position: relative;
+    margin-top: 20px;
+    width: calc(100%/7);
+    text-align: center;
+}
+
+.lxx-set-g-cnt>div>svg {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.lxx-set-g-cnt>div>span {
+    display: block;
+}
+
+.lxx-set-g-cnt>div>img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: #eaeaea;
+}
+
+
+/* 选择框样式 */
+
+.lxx-set-g-cnt .ant-checkbox-wrapper {
+    position: absolute;
+    right: 15px;
+}
+
+.lxx-set-g-cnt .ant-checkbox-inner {
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+}
+
+.lxx-set-g-cnt .ant-checkbox:hover .ant-checkbox-inner,
+.lxx-set-g-cnt .ant-checkbox-input:focus+.ant-checkbox-inner {
+    border-color: #ff9934;
+}
+
+.lxx-set-g-cnt .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #ff9934;
+    border-color: #ff9934;
+}
+
+.lxx-set-g-cnt .ant-checkbox-inner:after {
+    left: 8px;
+    top: 3px;
+    width: 8px;
+    height: 12px;
+}
+
+.lxx-set-g-cnt .ant-checkbox-checked:after {
+    border: 1px solid #ff9934;
+    border-radius: 50%;
+}

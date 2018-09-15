@@ -1,0 +1,71 @@
+/*
+ * @Author: hf 
+ * @Date: 2018-08-06 15:32:44 
+ * @Last Modified by: hf
+ * @Last Modified time: 2018-08-06 16:23:30
+ */
+
+.hf-mmapi-container {
+    position: relative;
+    width: 200%;
+    transition: .3s all;
+}
+
+.hf-mmapi-box {
+    width: 50%;
+    float: left;
+}
+
+.hf-mmapi-flexDiv {
+    display: flex;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #efefef;
+}
+
+.hf-mmapi-titleBar {
+    box-shadow: 0 3px 3px #efefef;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+}
+
+.hf-mmapi-adcName {
+    flex: 1;
+    font-weight: bold;
+}
+
+.hf-mmapi-contentBox {
+    padding: 0 30px 30px;
+    margin-bottom: 30px;
+    height: 325px;
+    overflow: auto;
+}
+
+.hf-mmapi-icon {
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hf-mmapi-flexList {
+    position: relative;
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+}
+
+.lxx-list-u-line::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #efefef;
+}
+
+.lxx-list-u-line label.ant-checkbox-wrapper {
+    position: absolute;
+    background-color: #fff;
+}

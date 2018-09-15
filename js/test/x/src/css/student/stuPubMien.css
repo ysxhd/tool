@@ -1,0 +1,237 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-01-18 10:32:38 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-01-19 14:46:59
+ */
+
+.upload-list-inline .ant-upload-list-item {
+    float: left;
+    width: 200px;
+    margin-right: 8px;
+}
+
+.upload-list-inline .ant-upload-animate-enter {
+    animation-name: uploadAnimateInlineIn;
+}
+
+.upload-list-inline .ant-upload-animate-leave {
+    animation-name: uploadAnimateInlineOut;
+}
+
+.lxx-me-g-pub.lxx-g-dialog {
+    left: -10%;
+}
+
+.lxx-me-g-pub .ant-modal-body>div>p {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.lxx-me-g-pub .ant-modal-body>div>p>span {
+    color: #333;
+}
+
+
+/* .lxx-me-g-pub>p:nth-child(2) {
+    margin-bottom: 0;
+} */
+
+.lxx-me-g-pub .ant-modal-body>div>p>span:nth-child(2) {
+    flex: 1
+}
+
+.lxx-me-u-textNum {
+    position: absolute;
+    right: 39px;
+    bottom: -25px;
+}
+
+.lxx-me-g-pub .ant-modal-body>div>p .ant-input {
+    width: calc(100% - 80px);
+}
+
+.lxx-me-g-pub .ant-modal-body>div>div {
+    padding-left: 30px;
+}
+
+#lxx-upload {
+    position: relative;
+    height: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lxx-upload>input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    width: 128px;
+    height: 38px;
+    opacity: 0;
+    z-index: 1;
+}
+
+#lxx-upload>button {
+    border: 0;
+    background: transparent;
+    padding: 7px 20px;
+}
+
+#lxx-upload>button>svg {
+    font-size: 20px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+#lxx-upload>span {
+    vertical-align: middle;
+}
+
+
+/* .lxx-me-g-pub .ant-modal-body>div>div .ant-btn {
+    height: auto;
+    padding: 8px 21px;
+}
+
+.lxx-me-g-pub .ant-modal-body>div>div .ant-btn>.anticon-upload {
+    font-size: 16px;
+    font-weight: 500;
+} */
+
+.lxx-me-g-pub .ant-modal-body>div>div>span {
+    margin-left: 10px;
+    display: inline-block;
+    color: #999;
+    font-size: 13px;
+    line-height: 0;
+}
+
+.lxx-g-dialog.left.lxx-me-g-pub .ant-modal-footer {
+    padding-left: 50px;
+}
+
+.lxx-g-dialog.left.lxx-me-g-pub .ant-btn:hover,
+.lxx-g-dialog.left.lxx-me-g-pub .ant-btn:focus {
+    color: #ff9934;
+    border-color: #ff9934;
+}
+
+.lxx-g-dialog.left.lxx-me-g-pub .ant-upload-list {
+    display: none;
+}
+
+
+/* 弹窗照片墙 */
+
+.lxx-me-g-imgShow {
+    position: absolute;
+    right: -310px;
+    top: 0;
+    padding-left: 0 !important;
+    height: 100%;
+    width: 300px;
+    background: #fff;
+}
+
+.lxx-me-g-imgShow>p {
+    padding-left: 20px;
+    height: 50px;
+    line-height: 50px;
+    background: #EBEBEB;
+}
+
+.lxx-me-g-imgShow>div {
+    padding: 15px;
+    height: calc(100% - 50px);
+    overflow: auto;
+}
+
+.lxx-me-g-imgShow>div>.lxx-me-m-img {
+    position: relative;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 102px;
+    float: left;
+    margin-right: 13px;
+}
+
+.lxx-me-m-img:hover>.lxx-ea-g-edit {
+    display: block;
+}
+
+
+/* .lxx-me-m-img:first-child>.lxx-me-u-coverName,
+.lxx-me-m-img:first-child>.lxx-me-u-imgCover::before {
+    display: block;
+} */
+
+.lxx-me-u-coverName {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-size: 12px;
+    z-index: 2;
+    padding-top: 5px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -moz-transform: rotate(-45deg);
+    /* Firefox */
+    -webkit-transform: rotate(-45deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(-45deg);
+    /* display: none; */
+}
+
+.lxx-me-u-imgCover::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    border-top: 44px solid #ff9934;
+    border-right: 44px solid transparent;
+    box-sizing: border-box;
+    /* display: none; */
+}
+
+.lxx-me-g-imgShow>div>.lxx-me-m-img:nth-child(2n) {
+    margin-right: 0;
+}
+
+.lxx-me-g-imgShow>div>.lxx-me-m-img>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 图片上传中 */
+
+.lxx-me-m-uploading {
+    position: absolute;
+    z-index: 3;
+    background: #F7E5D2;
+    width: 120px;
+    height: 102px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.lxx-me-m-uploading .ant-spin-dot i {
+    background-color: #ff9934;
+}

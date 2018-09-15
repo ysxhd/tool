@@ -1,0 +1,94 @@
+/*
+ * @Author: xq 
+ * @Date: 2018-08-06 15:28:20 
+ * @Last Modified by: xq
+ * @Last Modified time: 2018-08-21 15:49:25
+ */
+ .xq-feedback-edit-con{
+     margin-top: 20px;
+ }
+.xq-feedback-edit-head{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background:url('../icon/feedback.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+}
+.xq-feedback-edit-detail{
+    width:1300px;
+    margin:0 auto;
+}
+.xq-feedback-edit{
+    height: 46px;
+    line-height: 46px;
+    width: 100%;
+}
+.xq-feedback-edit>p:first-child{
+    float: left;
+}
+.xq-feedback-edit>p:last-child{
+    float: right;
+}
+.xq-feedback-area{
+    resize: none;
+}
+.xq-feedback-areas{
+    border:1px #cccccc solid;
+    height: 320px;
+    padding-top: 20px;
+}
+textarea.xq-feedback-area,
+textarea.xq-feedback-area:hover,
+textarea.xq-feedback-area:active,
+textarea.xq-feedback-area:focus{
+    border:none;
+    box-shadow:none;
+}
+.xq-feedback-lx{
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+.xq-feedback-tel{
+    float: left;
+}
+.xq-feedback-tel>input{
+    display: inline-block;
+    width: 240px;
+    margin:0 5px;
+}
+.xq-feedback-button{
+    float: right;
+    width: 110px;
+    height: 40px;
+    border-radius:5px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.xq-feedback-tel>input:focus,
+.xq-feedback-tel>input:hover,
+.xq-feedback-tel>input:active,
+.xq-feedback-tel>input:visited{
+    box-shadow: none;
+    border:1px #cccccc solid;
+}
+.xq-feedback-tel>input{
+    box-shadow: none;
+}
+textarea.ant-input.xq-feedback-area{
+    width: 99%;
+    display: block;
+    margin:0 auto;
+    line-height: 2;
+    letter-spacing: 2px;
+    text-align: justify;
+    height: 80%;
+}

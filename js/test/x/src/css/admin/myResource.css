@@ -1,0 +1,253 @@
+/*
+ * @Author: huangjing 
+ * @Date: 2018-01-22 12:38:05 
+ * @Last Modified by: huangjing
+ * @Last Modified time: 2018-03-20 17:36:34
+ 我的资源弹出框
+ */
+.hj-mr-quote{
+    width: 800px;
+    height: 600px;
+    position: fixed;
+    left:calc((100% - 800px)/2);
+    top:150px;
+    background: #fff;
+    z-index: 120;
+    
+}
+ .hj-mr-popHead, .hj-mr-editHead{
+    height:50px;
+    line-height: 50px;
+    background: #41474d;
+}
+ .hj-mr-popHead p, .hj-mr-editHead p{
+    float: left;
+    font-size: 15px;
+    color: #fff;
+    margin-left:16px;
+}
+ .hj-mr-popHead SVG,.hj-mr-editHead SVG{
+    float: right;
+    width:18px;
+    height:18px;
+    color: #d9d9d9;
+    margin-right: 16px;
+    margin-top:16px;
+}
+.hj-mr-quote .hj-mr-popHead SVG:hover,.hj-mr-editHead SVG:hover{
+    color: #bbb;
+}
+.hj-mr-quote .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab{
+    background: none;
+    border:none;
+    margin-right: 10px;
+}
+.hj-mr-quote .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab:hover{
+    color: #ff9934;
+    border-bottom: 5px solid #ff9934;
+}
+.hj-mr-quote .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+    color: #ff9934;
+    border-bottom: 5px solid #ff9934;
+}
+.hj-mr-quote .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+}
+.hj-mr-quote .ant-tabs-nav-container{
+    height: 50px;
+    width:100%;
+    overflow: visible;
+}
+
+.hj-mr-breadcrumb {
+    font-size: 10px;
+    margin-left:20px;
+    display: inline-block;
+    width:83%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+.hj-mr-breadcrumb-item:hover {
+    cursor: pointer;
+    color: #ff9934;
+}
+.hj-mr-breadcrumb span:last-child i{
+    color: #fff;
+}
+ .hj-mr-right{
+
+    width: 10%;
+    display: inline-block; 
+ }
+ .hj-mr-right .hj-mr-slt{
+  float: right;
+ }
+  .hj-mr-right .ant-select-selection--single{
+    border-radius: 20px;
+  }
+
+  .hj-mr-right .ant-input{
+    border-color: #b3b3b3;
+    border-radius: 20px;
+  }
+  .hj-mr-right .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled){
+    border-color: #626a73;
+  }
+  .hj-mr-right .ant-btn-primary{
+    background-color: #626a73;
+    border-color: #626a73;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .hj-mr-right .ant-input:focus{
+    box-shadow: none;
+  }
+  .hj-mr-contentBox{
+    overflow: auto;
+    height:420px;
+    overflow-x: hidden;
+    margin-left:20px;
+  }
+  .hj-mr-contentBox>ul {
+    list-style: none;
+    padding-left: 0;
+    width: 98%;
+  }
+  .hj-mr-filelist{  
+    height: 60px;
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    left: 0;
+    box-shadow: 0 3px 5px #d9d9d9;
+    transition: all .3s;
+    overflow: hidden;
+  }
+  .hj-mr-filelist .hj-mr-icon {
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    width: 40px;
+    padding: 0 5px;
+    position: absolute;
+    left: 10px;
+    line-height: 100%;
+ }
+    
+    .hj-mr-filelist .hj-mr-title{
+      display: inline-block;
+      height: 50%;
+      position: absolute;
+      padding-right: 50px;
+      top: 7px;
+      left: 70px;
+      width:calc(100% - 200px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    
+    .hj-mr-filelist .hj-mr-formart {
+      display: inline-block;
+      position: absolute;
+      margin-right: 100px;
+      width: 200px;
+      top: 50%;
+      left:70px;
+    }
+    
+    .hj-mr-filelist .hj-mr-uploader {
+      display: inline-block;
+      position: absolute;
+      width: 200px;
+      top: 50%;
+      left: 180px;
+    }
+    
+    .hj-mr-filelist .hj-mr-size {
+      display: inline-block;
+      position: absolute;
+      width: 200px;
+      top: 50%;
+      left: 330px;
+    }
+    
+    .hj-mr-filelist .hj-mr-date {
+      display: inline-block;
+      position: absolute;
+      margin-right: 80px;
+      top: 50%;
+      right: 10px;
+    }
+
+    .hj-mr-contentBox .hj-mr-quoteIcon{
+        width: 60px;
+        height: 60px;
+        background: #717981;
+        position: absolute;
+        right: 0;
+        top:0;
+        display: none;
+    }
+    .hj-mr-filelist:hover .hj-mr-quoteIcon{
+        display: inline-block;
+    }
+    .hj-mr-contentBox .hj-mr-quoteIcon SVG{
+        width: 28px;
+        height: 28px;
+        margin-top: 16px;
+        margin-left: 16px;
+        color: #c0c0c0;
+    }
+    .hj-mr-contentBox .hj-mr-quoteIcon SVG:hover{
+        color:#fff;
+    }
+    .hj-mr-loading {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      background: #f2f2f2;
+      border-radius: 7px;
+      margin-top: 20px;
+    }
+    
+    .hj-mr-loading>div {
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    
+    .hj-mr-loading::after {
+      content: "加载中...";
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:#aab0b3;
+    }
+    
+    .hj-mr-loading>div>span>i {
+      background: #f79934;
+    }
+
+    .hj-mr-noData{
+      width:180px;
+      height: 180px;
+      margin: auto;
+      margin-top:100px;
+    }
+    .hj-mr-noData p{
+      text-align: center;
+      color: #9e9e9e;
+      font-size: 16px;
+      margin-top:15px;
+    }

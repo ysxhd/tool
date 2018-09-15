@@ -1,0 +1,225 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-08-28 14:01:32 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-09-13 15:08:01
+ */
+.zn-bg{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.zn-height-head{
+    min-height: 72px;
+    padding: 0 20px;
+    border-bottom: 1px solid #d9e5ea;
+}
+
+.zn-all-musk{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0,.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zn-flex{
+    display: flex;
+    align-items: center;
+}
+
+.zn-spaceBetween{
+    justify-content: space-between;
+}
+
+
+.zn-fontsize{
+    font-size: 14px;
+    color: #7c7c7c
+}
+
+/* 搜索框 */
+.zn-height-head .ant-input-search-icon{
+    font-size: 20px;
+}
+
+.zn-pdlr10{
+    padding: 0 10px;
+}
+
+.zn-height-head .ant-input-search{
+    padding-left: 32px;
+}
+
+/* 日期插件icon */
+.zn-bg .ant-calendar-picker-icon:after{
+    color: rgb(0, 0, 0,.6) !important;
+}
+
+/* 按钮 */
+.zn-head-btn button{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    border: 0;
+}
+
+.zn-head-btn .ant-btn:hover, .ant-btn:focus {
+    color: #fff !important;
+}
+
+.zn-head-btn button:nth-child(1){
+    background-color: #3498db;
+    margin-right: 20px;
+}
+
+.zn-head-btn button:nth-child(2){
+    background-color: #54bb66;
+}
+
+/* table */
+.zn-report-table{
+    margin-top: 20px;
+}
+
+.zn-report-table .ant-table-thead > tr > th{
+    background:#e3e6e9;
+}
+
+.zn-report-table .ant-table-tbody > tr.ant-table-row-hover > td .ant-table-tbody > tr:hover > td{
+   background-color: red;
+}
+
+.zn-report-table .ant-table-tbody > tr:nth-child(2n){
+   background-color: #f5f8fa;
+} 
+
+/* 放大镜 */
+.zn-report-sear{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.zn-report-sear>div:nth-child(1){
+    margin-right: 10px;
+}
+
+
+
+.zn-report-sear>div>span{
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+
+.zn-svg-hover svg{
+    color: #596a7a;
+    cursor: pointer;
+}
+
+
+.zn-report-sear>.zn-svg-hover:hover,
+.zn-report-sear>.zn-svg-hover:hover svg{
+    color: #3498db !important;
+
+}
+
+
+
+/* 新增模态框 */
+.zn-modal-add .ant-modal-close{
+    color: #e86254;
+}
+
+.zn-modal-add .ant-modal-body{
+    background-color: #eff3f5;
+}
+
+.zn-modal-add .ant-modal-header{
+    background-color: #eff3f5;
+    border-bottom: 1px solid #d7dcde;
+}
+
+.zn-input-wid196{
+    width: 196px !important;
+}
+
+.zn-from-pdl10{
+    padding-left: 10px;
+}
+
+.zn-addmod-btn{
+    padding-left: 10px;
+}
+
+.zn-addmod-btn button{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    border: 0;
+}
+
+.zn-addmod-btn .ant-btn:hover, .ant-btn:focus {
+    color: #fff !important;
+}
+
+.zn-addmod-btn button:nth-child(1){
+    background-color: #3498db;
+    margin-right: 20px;
+}
+
+.zn-addmod-btn button:nth-child(2){
+    background-color: #b8c4ce;
+}
+
+.zn-modal-add .ant-form-item-label label{
+    color: #b3c0c9;
+}
+
+/* 系统报告 */
+.zn-flex-space-reverse{
+    display: flex;
+    align-items: center;
+}
+
+.zn-flex-space-reverse .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+    background: #3498db;
+    border-color: #3498db;
+}
+
+
+
+
+.zn-flex-space-reverse>button{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    border: 0;
+}
+
+.zn-flex-space-reverse>.ant-btn:hover,.zn-flex-space-reverse>.ant-btn:focus {
+    color: #fff !important;
+    background-color: #54bb66;
+}
+
+.zn-flex-space-reverse>button{
+    background-color: #54bb66;
+    margin-right: 20px;
+}
+
+/* 教师考勤报表 */
+.ant-table td { white-space: nowrap; }
+
+.zn-pdt20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

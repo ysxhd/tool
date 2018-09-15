@@ -1,0 +1,232 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-06-21 16:12:29 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-07-19 15:42:17
+ */
+
+.lxx-g-useSum {
+    margin-top: 10px;
+    display: flex;
+}
+
+.lxx-g-useSum>div:nth-child(1){
+    margin-right: 20px;
+}
+
+.lxx-g-useSum .zn-lxx-cont{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lxx-g-useSum .zn-lxx-cont span{
+    font-size: 20px;
+    color: #d6b613;
+    padding-left: 18px;
+}
+
+.lxx-g-modal {
+    margin-top: 20px;
+    background: #21253E;
+    border-radius: 9px;
+}
+
+.lxx-md-m-title {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .7);
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+.zn-flex-spbt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lxx-md-small {
+    width: 500px;
+}
+
+.lxx-md-big {
+    width: 100%;
+}
+
+
+/* tab */
+
+.lxx-til-m-tab {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.lxx-til-m-tab.ant-radio-group .ant-radio-button-wrapper {
+    width: 100px;
+}
+
+.lxx-til-m-tab.ant-radio-group .ant-radio-button-wrapper-checked:first-child {
+    border-top-left-radius: 5px;
+}
+
+.lxx-til-m-tab.ant-radio-group .ant-radio-button-wrapper:last-child {
+    border-top-right-radius: 5px;
+}
+
+.lxx-til-m-tab.ant-radio-group .ant-radio-button-wrapper,
+.lxx-m-tab.ant-radio-group .ant-radio-button-wrapper {
+    border-radius: 0;
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, .6);
+    background: #203C56;
+}
+
+.lxx-mdb-m-til {
+    position: relative;
+    padding: 10px 20px 0 20px;
+}
+
+.lxx-mdb-m-til>span {
+    padding-right: 20px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.lxx-m-tab.ant-radio-group .ant-radio-button-wrapper {
+    width: 70px;
+}
+
+.lxx-m-tab.ant-radio-group .ant-radio-button-wrapper-checked,
+.lxx-til-m-tab.ant-radio-group .ant-radio-button-wrapper-checked {
+    background: #2475D0;
+    box-shadow: none;
+}
+
+.lxx-m-tab.ant-radio-group .ant-radio-button-wrapper-checked:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.lxx-m-tab.ant-radio-group .ant-radio-button-wrapper:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.lxx-serch-box{
+    height: 100px;
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    padding-right: 22px;
+}
+
+.lxx-serch-box .lxx-nb-icon{
+    color: #fff;
+    font-size: 34px;
+    padding: 5px;
+    background: #097ed9;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 3px;
+    position: relative;
+    top: 6px;
+}
+
+.lxx-nb-ipt {
+    width: 375px;
+    height: 50px;
+    background-color: #303554;
+    color: #fff;
+    border: none;
+}
+
+.lxx-md-m-table{
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 156px;
+}
+
+.lxx-nc-total{
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+    color: #fff;
+}
+
+.zn-page-box{
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+    color: #fff;
+}
+
+.zn-page-first {
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 0;
+}
+
+.zn-page-last {
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 0;
+}
+
+.zn-page-first, .zn-page-last {
+    border: 1px solid #526088;
+    cursor: pointer;
+    display: block;
+    width: 60px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #2b314b;
+    text-align: center;
+}
+
+.zn-nc-total{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #fff;
+}
+
+.xq-notic-key-up{
+    margin: 0 10px;
+}
+
+.ant-input-number.zn-notic-key-up {
+    margin: 0 10px;
+}
+
+.ant-input-number.zn-notic-key-up, .zn-notic-key-up .ant-input-number-input-wrap {
+    display: inline-block;
+    width: 55px;
+    border-radius: 4px;
+    height: 30px;
+    background-color: #303554;
+    border: none;
+    color: #fff;
+}
+
+.zn-notic-key-up .ant-input-number-input {
+    text-align: center;
+}
+
+.zn-page-box .ant-pagination {
+    border-radius: 0;
+}
+.zn-page-box .ant-pagination {
+    display: inline-block;
+}
+
+.zn-nc-total .ant-input-number-handler-wrap{
+   display: none;
+}

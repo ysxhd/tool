@@ -1,0 +1,108 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-01-12 10:43:04 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-02-05 15:52:02
+ */
+/*
+ * @Author: zhangning 
+ * @Date: 2018-01-12 09:44:31 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-01-12 10:34:33
+ */
+ .zn-b-findStuff-cont{
+    padding-left: 0;
+}
+
+.zn-b-findStuff-detail{
+     margin: 10px 0 10px 20px;
+     width: 1094px;
+     height: 130px;
+     background-color: #f7f6f6;
+     list-style: none;
+     padding: 10px 100px 0 20px;
+     position: relative;
+     transition: all .3s;
+     -webkit-transition: all .3s;
+     border: 1px solid transparent;
+ }
+
+ .zn-b-findStuff-cont>li:nth-child(1){
+     margin-top:20px;
+ }
+
+.zn-b-findStuff-cont>li:hover{
+    border: 1px solid #d9c8b8;
+}
+
+.zn-b-findStuff-cont>li:hover .passOrNo{
+    display: block;
+}
+
+
+ .zn-b-findStuff-cont>.zn-b-findStuff-detail>h6{
+      color: #4d4945;
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 0;
+ }
+
+ .zn-b-findStuff-cont>.zn-b-findStuff-detail>h6 span{
+     display: inline-block;
+     width: 70px;
+     height: 22px;
+     background-color: #3ebbfa;
+     border-radius: 20px;
+     color: #fff;
+     margin-right: 10px;
+     font-size: 12px;
+     line-height: 22px;
+     text-align: center;
+ }
+
+ .zn-b-findStuff-cont>.zn-b-findStuff-detail>p{
+     line-height: 26px;
+     color: #807973;
+     font-size: 14px;
+     display: -webkit-box;
+     align-items: center;
+     -webkit-line-clamp: 2;
+     /* autoprefixer: off */
+     -webkit-box-orient: vertical;
+     /* autoprefixer: on */
+ }
+
+ .zn-b-findStuff-cont>.zn-b-findStuff-detail>.zn-b-findStuff-p span{
+    padding-right: 30px;
+ }
+
+ .zn-b-findStuff-cont .zn-b-findStuff-detail .passOrNo{
+     padding: 0;
+     position: absolute;
+     right: -3px;
+     top: -1px;
+     width: 80px;
+     height: 130px;
+     padding-left: 0;
+     display: none;
+ }
+
+ .zn-b-findStuff-cont .zn-b-findStuff-detail .passOrNo li{
+    width: 78px;
+    height: 65px;
+    border: 1px solid #d9c8b8;
+    list-style: none;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+ }
+
+ .zn-b-findStuff-cont ul.passOrNo li:nth-child(1){
+    border-bottom: 0;
+    color: #1990ff;
+}
+
+.zn-b-findStuff-cont ul.passOrNo li:nth-child(2){
+    color: #fe6868;
+}
+

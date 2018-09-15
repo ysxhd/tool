@@ -1,0 +1,16 @@
+/*
+ * @Author: hf 
+ * @Date: 2018-08-03 16:02:31 
+ * @Last Modified by: hf
+ * @Last Modified time: 2018-08-03 16:06:28
+ */
+
+.hf-tmdui-container .ant-radio {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.hf-tmdui-container span.ant-radio+* {
+  padding: 0
+}

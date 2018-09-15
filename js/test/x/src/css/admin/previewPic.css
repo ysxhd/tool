@@ -1,0 +1,77 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-25 11:17:11 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-03-14 13:30:55
+ */
+.cjy-pp{
+  width: 1100px;
+  height: 800px;
+  position: fixed;
+  top: calc(50% - 400px);
+  left: calc(50% - 550px);
+  z-index: 100;
+}
+
+.cjy-pp-left,
+.cjy-pp-middle,
+.cjy-pp-right{
+  display: inline-block;
+  height: 100%;
+}
+
+.cjy-pp-left,
+.cjy-pp-right{
+  width: 200px;
+}
+
+.cjy-pp-right{
+  text-align: -webkit-right;
+}
+
+.cjy-pp-middle{
+  width: 700px;
+}
+
+.cjy-pp-leftBtn,
+.cjy-pp-RightBtn,
+.cjy-pp-closeBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+}
+.cjy-pp-closeBtn{
+  position: relative;
+  top: 100px;
+}
+.cjy-pp-leftBtn:hover,
+.cjy-pp-RightBtn:hover,
+.cjy-pp-closeBtn:hover{
+  cursor: pointer;
+}
+
+
+.cjy-pp-leftBtn i,
+.cjy-pp-RightBtn i,
+.cjy-pp-closeBtn i{
+  font-size: 50px;
+}
+
+.cjy-pp-middle .xt-imgbox,
+.cjy-pp-middle .xt-imgerror,
+.cjy-pp-middle img{
+  width: 700px;
+  height: 700px;
+}
+
+.cjy-pp-closeLine{
+  height: 100px;
+  text-align: -webkit-right;
+}
+
+.cjy-pp-closeBtn{
+  border-radius: 50%;
+}

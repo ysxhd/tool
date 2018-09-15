@@ -1,0 +1,52 @@
+/*
+ * @Author:  xiangting
+ * @Date: 2018-08-28 10:01:04 
+ * @Last Modified by: xiangting
+ * @Last Modified time: 2018-09-06 10:17:32
+ * 可视化中心-课堂质量
+ */
+
+ .xt-tea-res{
+    float: left;
+    width:590px;
+}
+
+.xt-tea-res-name{
+   width:124px;
+   height:124px;
+   border-radius: 62px;
+   color: #fff;
+   float: left;
+   display: flex;
+   justify-content:center;
+   align-items:Center;
+}
+
+.xt-tea-res-sroce{
+    height:136px;
+    width:136px;
+    border-radius: 15px;
+   text-align: center;
+   line-height: 136px;
+   color: #fff;
+   border: 1px solid #fff;
+   float: left;
+   margin-left: -30px;
+   font-size: 40px;
+   margin-top: 70px;
+}
+ 
+.xt-tea-res-item{
+    float: left;
+    margin-top: 80px;
+}
+
+.xt-tea-res-item:nth-child(1){
+    margin: 80px 80px 0 150px;
+    margin-left: calc(50% - 272px)
+}
+
+.xt-classroom-qua-table{
+    float: left;
+    width: 1190px;
+}

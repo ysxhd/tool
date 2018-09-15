@@ -1,0 +1,358 @@
+/*
+ * @Author: xq 
+ * @Date: 2018-07-23 15:11:48 
+ * @Last Modified by: xq
+ * @Last Modified time: 2018-08-28 17:01:11
+ * 首页-公共课堂/直播课堂样式
+ */
+
+.xq-index-classroom {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+.xq-class-head {
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+.xq-class-head-l,
+.xq-class-head-li {
+    float: left;
+    height: 120px;
+    line-height: 120px;
+}
+
+.xq-class-head-li {
+    width: 140px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+/* 重置下拉框样式 */
+
+.xq-class-head-li .ant-select-arrow {
+    right: 18px;
+}
+
+.xq-class-head-li .ant-select {
+    width: 140px;
+    font-size: 13px;
+}
+
+.xq-class-sort .ant-select {
+    width: 60px;
+    font-size: 13px;
+}
+
+.xq-class-head-li .ant-select-selection,
+.xq-class-sort .ant-select-selection {
+    border: none;
+    background-color: none;
+    background: none;
+}
+
+.xq-class-head-li .ant-select-selection:focus,
+.xq-class-head-li .ant-select-selection:active,
+.xq-class-sort .ant-select-selection:focus,
+.xq-class-sort .ant-select-selection:active {
+    border: none;
+    box-shadow: none;
+}
+
+.xq-class-head-li .ant-select-disabled .ant-select-selection:focus,
+.xq-class-head-li .ant-select-disabled .ant-select-selection:active,
+.xq-class-sort .ant-select-disabled .ant-select-selection:focus,
+.xq-class-sort .ant-select-disabled .ant-select-selection:active {
+    background-color: none;
+}
+
+.xq-class-head-li .ant-select-disabled,
+.xq-class-sort .ant-select-disabled {
+    color: rgba(0, 0, 0, 1)
+}
+
+.xq-class-sort .ant-select-arrow {
+    right: 8px;
+}
+
+.xq-class-sort .ant-select-selection-selected-value {
+    max-width: none;
+    color: #1ba0ff;
+}
+
+
+/* 下拉框重置结束 */
+
+.xq-class-head-center,
+.xq-class-live-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 240px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    line-height: 120px;
+    color: #199fff;
+    font-size: 30px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.xq-class-live-center {
+    color: #c23fed;
+}
+
+.xq-class-head-center:before,
+.xq-class-head-center:after,
+.xq-class-live-center:before,
+.xq-class-live-center:after {
+    content: "";
+    width: 36px;
+    height: 15px;
+    background: url('../icon/til_blue.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 52px;
+}
+
+.xq-class-live-center:before,
+.xq-class-live-center:after {
+    background: url('../icon/til_violet.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.xq-class-head-center:before,
+.xq-class-live-center:before {
+    left: 0;
+}
+
+.xq-class-head-center:after,
+.xq-class-live-center:after {
+    right: 0;
+    transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    /* IE 9 */
+    -webkit-transform: scale(-1, 1);
+    /* Safari and Chrome */
+    background: url('../icon/til_blue.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.xq-class-live-center:after {
+    background: url('../icon/til_violet.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* 左边结束 */
+
+.xq-class-more {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.xq-class-head-right,
+.xq-class-head-right>div {
+    float: right;
+    line-height: 120px;
+}
+
+
+/* 头部结束 */
+
+.xq-class-items {
+    width: 100%;
+}
+
+.xq-class-items:after,
+.xq-class-items:before {
+    content: "";
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.xq-class-item {
+    overflow: hidden;
+    cursor: pointer;
+    width: 302px;
+    float: left;
+    margin-right: 30px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 15px rgba(165, 165, 165, .5);
+    -webkit-box-shadow: 0 0 15px rgba(165, 165, 165, .5);
+}
+
+.xq-class-item:nth-child(4) {
+    margin-right: 0;
+}
+
+.xq-class-cover {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 8px;
+    position: relative;
+    background: url('../icon/default_1.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.xq-class-cover>img {
+    display: block;
+    width: 100%;
+    height: 160px;
+}
+
+.xq-class-cover-t {
+    text-align: center;
+    line-height: 160px;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    user-select: none;
+}
+
+.xq-item-info {
+    padding: 0 20px;
+}
+
+.xq-item-info-t {
+    font-size: 16px;
+    color: #333333;
+    line-height: 40px;
+    max-width: 262px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.xq-item-info-li:first-child {
+    float: left;
+}
+
+.xq-item-info-li:last-child {
+    float: right;
+}
+
+.xq-item-info-li {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xq-item-info-li>span {
+    opacity: .5;
+}
+
+.xq-item-infor-p {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #999999;
+}
+
+
+/* 直播预告入口 */
+
+.xq-live-entrance {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 100px;
+    background: url('../icon/index_live2.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(165, 165, 165, .9);
+    -webkit-box-shadow: 0 0 10px rgba(165, 165, 165, .9);
+    border-radius: 10px;
+}
+
+.xq-live-icon {
+    margin-right: 16px;
+    ;
+}
+
+.xq-public-class-btn {
+    color: #808080;
+}
+
+.xq-live-icon .icon {
+    width: 36px;
+    height: 36px;
+}
+
+
+/* 直播预告入口结束 */
+
+
+/* 直播课堂开始 */
+
+.xq-live-tag-on,
+.xq-live-tag-preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, .15);
+    font-size: 13px;
+}
+
+.xq-live-tag-on {
+    padding: 0 10px;
+    padding-left: 23px;
+}
+
+.xq-live-tag-on:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.xq-live-tag-preview {
+    padding: 0 15px;
+}
+
+
+/* 直播课堂结束 */
+
+.xq-class-sort .ant-select-dropdown-menu,
+.xq-class-sort .ant-select-dropdown-menu-item {
+    width: 100px;
+}
+
+.lxx-g-noData.xq-noData {
+    margin: 10px auto 50px;
+}
+
+.xq-live-entrance>div{
+    user-select:none;
+}

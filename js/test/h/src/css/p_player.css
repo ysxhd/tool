@@ -1,0 +1,56 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-08-08 09:26:43 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-08-08 10:40:18
+ * 资源播放样式
+ */
+
+.lxx-g-play {
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.lxx-pla-g-name {
+    height: 80px;
+    font-size: 24px;
+    width: 100%;
+}
+
+.lxx-pla-g-name>p {
+    width: 900px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.lxx-pla-g-name>svg {
+    margin-right: 20px;
+    font-size: 22px;
+    color: #B8B8B8;
+}
+
+.lxx-pla-g-cnt {
+    margin-bottom: 60px;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+    background: #FAFAFA;
+    border: 1px solid #E6E6E6;
+}
+
+.lxx-pla-g-cnt>img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.lxx-pla-g-cnt>p {
+    padding-top: 200px;
+    font-size: 16px;
+}
+
+.lxx-pla-g-noCnt>p {
+    padding-top: 200px;
+    font-size: 16px;
+}

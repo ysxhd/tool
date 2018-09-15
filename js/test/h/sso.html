@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>模拟sso</title>
+</head>
+
+<body>
+    <div>
+        <h3>模拟sso</h3>
+        <span>点击下面按钮跳转到资源平台</span>
+        <ul>
+            <li>
+                <span id='a'>管理员</span>
+            </li>
+            <li>
+                <span id='b'>教师</span>
+            </li>
+            <li>
+                <span id='c'>学生</span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // request.setConfig(G.dataServices, "A8FF7F519EB84F8EB7090B3B6BD81DF8", "2.1"); // 管理员
+        // request.setConfig(G.dataServices, "2827474D1C7545648094ABB6A18D838C", "2.1"); // 老师
+        // request.setConfig(G.dataServices, "F572BA895610454B95A166D5E42FDFA6", "2.1"); // 学生
+        window.onload = () => {
+            let or = window.location.origin,
+                token = {
+                    admin: "A8FF7F519EB84F8EB7090B3B6BD81DF8",
+                    teacher: "2827474D1C7545648094ABB6A18D838C",
+                    student: "F572BA895610454B95A166D5E42FDFA6"
+                }
+            aa = `${or}/iser-web/#/?token=${token.admin}&orgcode=2.1.20180807&page=index&argument=456`;
+            bb = `${or}/iser-web/#/?token=${token.teacher}&orgcode=2.1.20180807&page=index&argument=456`;
+            cc = `${or}/iser-web/#/?token=${token.student}&orgcode=2.1.20180807&page=index&argument=456`;
+            a.addEventListener('click', () => {
+                window.open(aa)
+            }, false)
+            b.addEventListener('click', () => {
+                window.open(bb)
+            }, false)
+            c.addEventListener('click', () => {
+                window.open(cc)
+            }, false)
+        }
+    </script>
+</body>
+</html>

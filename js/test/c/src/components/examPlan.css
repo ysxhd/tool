@@ -1,0 +1,76 @@
+/* 清除浮动 */
+.mj-clearfix:before,
+.mj-clearfix:after {
+  height: 0;
+  width: 0;
+  content: '';
+  display: table;
+  clear: both;
+}
+/* 超出显示省略号 */
+/* .mj-ellip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+.mj-ep-planContent{
+  width: 100%;
+  height: 58px;
+  line-height: 58px;
+  color: #575757;
+  text-align: left;
+  background-color: #f0f6f6;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+}
+.mj-ep-plan,
+.mj-ep-play{
+  float: left;
+  margin-left: 1.5%;
+  font-size: 12px;
+}
+.mj-ep-plan{
+  width: 27%;
+}
+.mj-ep-play{
+  width: 21%;
+}
+.mj-ep-plan > span:nth-child(1){
+  display: inline-block;
+  width: 67px;
+}
+.mj-ep-plan .ant-select{
+  margin-left: 12px;
+  width: calc(100% - 89px);
+}
+.mj-ep-play > span:nth-child(1),
+.mj-ep-org > span:nth-child(1){
+  display: inline-block;
+  width: 40px;
+}
+.mj-ep-play .ant-select,
+.mj-ep-org .ant-select{
+  margin-left: 12px;
+  width: calc(100% - 52px);
+}  
+/* .mj-ep-planContent .ant-select-selection, 
+.mj-ep-planContent .ant-input, 
+.mj-ep-planContent .ant-checkbox-inner, 
+.mj-ep-planContent .ant-select-tree-dropdown .ant-select-dropdown-search .ant-select-search__field, 
+.mj-ep-planContent .ant-pagination-options-quick-jumper input{
+  background: #ffffff;
+  border-color: #e9e9e9;
+  color: #575757;
+}
+.mj-ep-planContent .ant-select-selection-selected-value, 
+.mj-ep-planContent .ant-select-tree-dropdown .ant-select-not-found{
+  color: #575757;
+} */
+
+.mj-ep-org{
+  float: right;
+  width: 23.5%;
+  margin-right: 1.5%;
+  font-size: 12px;
+}

@@ -1,0 +1,106 @@
+/*
+ * @Author: MinJ 
+ * @Date: 2018-01-05 13:03:48
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-02-01 10:26:12
+ * 状态监督——分组树组件
+ */
+ .mj-wcl-content{
+   float: left;
+   width: 18.4%;
+   min-height: 800px;
+   background: #fff;
+   box-shadow: 0px 0px 16px 2px #cccccc;
+ }
+
+ .mj-wcl-contentTop{
+   height: 60px;
+   /* border-bottom: 1px solid #d9d9d9; */
+ }
+ .mj-wcl-contentTop p{
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 60px;
+ }
+ .mj-wcl-contentTop div{
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 20px;
+  color: #fff;
+ }
+ .mj-wcl-contentTop div span{
+   padding: 4px 10px;
+  border-radius: 20px;
+  background-color: #acb5bf;
+ }
+
+.mj-wcl-cardContrl > .ant-tabs-card > .ant-tabs-content {
+  /* height: 120px; */
+  margin-top: -16px;
+}
+
+.mj-wcl-cardContrl > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+  background: #fff;
+  padding: 16px;
+}
+
+.mj-wcl-cardContrl > .ant-tabs-card > .ant-tabs-bar {
+  border-color: #fff;
+}
+
+.mj-wcl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  height: 50px;
+  border-color: transparent;
+  background: #fafafa;
+  border: 1px solid #acb5bf;
+  border-radius: 0;
+}
+.mj-wcl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab:nth-child(2){
+  border-left: 0;
+}
+.mj-wcl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab:nth-child(3){
+  border-right: 0;
+}
+
+.mj-wcl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+  color: #ff9934;
+  border: 0;
+  border-top: 2px solid #ff9934;
+  background: #fff;
+}
+.mj-wcl-cardContrl .ant-tabs-nav{
+  width: 100%;
+}
+.mj-wcl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab,
+.mj-wcl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+  width: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 0;
+}
+.mj-wcl-cardContrl > .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container{
+  width: 100%;
+  height: 52px;
+}
+.mj-wcl-cardContrl .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected,
+.mj-wcl-cardContrl .ant-tree li .ant-tree-node-content-wrapper:hover{
+  width: 90%;
+  color: #ff7f00;
+  background-color: #ebebeb;
+}
+.mj-wcl-cardContrl .ant-tree li span.ant-tree-switcher, .ant-tree li span.ant-tree-iconEle{
+  width: 8%;
+}
+
+.mj-wcl-cardContrl .ant-tabs-tab-prev,.mj-wcl-cardContrl .ant-tabs-tab-next{
+  /* display: none; */
+}
+.mj-wcl-cardContrl .ant-tabs-tab-prev-icon:before,
+.mj-wcl-cardContrl .ant-tabs-tab-next-icon:before{
+  content: '';
+}
+.mj-wcl-cardContrl .ant-tabs-nav-container-scrolling{
+  padding: 0;
+}

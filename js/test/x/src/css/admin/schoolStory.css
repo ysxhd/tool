@@ -1,0 +1,136 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:08:25 
+ * @Last Modified by: JudyC
+ * @Last Modified time: 2018-01-31 16:48:03
+ */
+.cjy-ss{
+  display: inline-block;
+  width: 22.6%;
+  height: 280px;
+  margin-left: 1.65%;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 5px -3px #ccc;
+  padding: 10px 0.8%;
+  border: 1px solid #d9d9d9;
+  vertical-align: top;
+}
+
+.cjy-ss-block{
+  display: block;
+}
+
+.cjy-ss-none{
+  display: none;
+}
+
+/* .cjy-so-pubBoxIn{
+  width: 100%;
+  height: 100%;
+} */
+
+.cjy-ss-coverBox{
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+
+/* .cjy-ss-coverBox .ant-checkbox-wrapper{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.cjy-ss-coverBox .ant-checkbox-inner{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.cjy-ss-coverBox .ant-checkbox-checked .ant-checkbox-inner{
+  background: #ff9934;
+  border-color: #ff9934;
+}
+
+.cjy-ss-coverBox .ant-checkbox-wrapper:hover .ant-checkbox-inner, 
+.cjy-ss-coverBox .ant-checkbox:hover .ant-checkbox-inner,
+.cjy-ss-coverBox  .ant-checkbox-input:focus + .ant-checkbox-inner{
+  border-color: #ff9934;
+} */
+
+.cjy-ss-title{
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.cjy-ss-title,
+.cjy-ss-des,
+.cjy-ss-time{
+  text-decoration: none;
+}
+
+.cjy-ss-des{
+  line-height: 26px;
+  height: 48px;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-line-clamp:2; 
+  -webkit-box-orient: vertical;
+}
+
+.cjy-ss-time{
+  line-height: 26px;
+  color: #a2a2a2;
+}
+
+.cjy-ss-dropBox{
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 80px;
+  background: #fff;
+  line-height: 1.5;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  display: none;
+}
+
+.cjy-ss-drop{
+  position: absolute;
+  right: 0;
+  top: -20px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  text-align: center;
+  color: #ff9934;
+  display: none;
+}
+
+.cjy-ss-coverBox .xt-imgbox,
+.cjy-ss-coverBox .xt-imgerror,
+.cjy-ss-coverBox img{
+  width: 100%;
+  height: 150px;
+}
+
+.cjy-ss-dropBox .ant-dropdown-menu-item{
+  text-align: center;
+}
+
+.cjy-ss-dropBox .ant-dropdown-menu-item:hover{
+  background: #e5e5e5;
+  color: #ff9934;
+}
+
+.cjy-ss:hover .cjy-ss-drop{
+  display: block;
+}
+
+.cjy-ss:hover .cjy-ss-dropBox{
+  display: block;
+}

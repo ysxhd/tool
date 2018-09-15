@@ -1,0 +1,68 @@
+/*
+ * @Author: MinJ
+ * @Date: 2018-01-09 14:05:22 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-03-13 17:16:46
+ */
+
+ .mj-sps-modal{
+  width: 700px !important;
+}
+
+/* title */
+.mj-sps-modal .ant-modal-header{
+  background-color: #ebebeb;
+}
+
+/* content */
+.mj-sps-modal .ant-modal-body{
+  padding-bottom: 0;
+}
+.mj-sps-div1 span{
+  display: inline-block;
+  width: 14%;
+  text-align: right;
+}
+.mj-sps-div1 input{
+  width: 80%;
+  height: 40px;
+}
+.mj-sps-div1 p{
+  width: 94%;
+  text-align: right;
+}
+.mj-sps-div1 textarea{
+  width: 80%;
+  margin-top: 20px;
+  resize: none;
+}
+.mj-sps-contentSpan{
+  vertical-align: top;
+  margin-top: 30px;
+}
+.mj-sps-div3 span:nth-child(1){
+  display: inline-block;
+  width: 14%;
+  text-align: right;
+}
+.mj-sps-div3 .mj-sps-noneColor,
+.mj-sps-div3 .mj-sps-yellow{
+  margin-bottom: 20px;
+  padding: 8px 10px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+.mj-sps-div3 .mj-sps-yellow{
+  color: #ff9934;
+  border: 1px solid #ff9934;
+}
+
+/* footer */
+.mj-sps-modal .ant-modal-footer{
+  text-align: left;
+  border-top: 0;
+  width: 80%;
+  margin-left: 14%;
+}

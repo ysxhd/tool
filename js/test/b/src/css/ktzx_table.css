@@ -1,0 +1,124 @@
+.kyl-kt-table>thead>tr>th {
+    background: #e3e6e9;
+    height: 50px;
+    font-size: 14px;
+    color: #aaabad;
+    text-align: center;
+}
+
+.kyl-kt-table {
+    width: 100%;
+}
+
+.kyl-kt-table>tbody>tr>td {
+    height: 50px;
+    font-size: 14px;
+    color: #48596c;
+    text-align: center;
+}
+
+.kyl-kt-table>thead>tr>th:first-child,
+.kyl-kt-table>tbody>tr>td:first-child {
+    text-align: left;
+}
+
+.kyl-kt-table>thead>tr>th:first-child>span,
+.kyl-kt-table>tbody>tr>td:first-child>span {
+    margin-left: 31px;
+}
+
+.kyl-kt-table>thead>tr>th:last-child,
+.kyl-kt-table>tbody>tr>td:last-child {
+    text-align: right;
+    margin-right: 31px;
+}
+
+.kyl-kt-table>thead>tr>th:last-child>span,
+.kyl-kt-table>tbody>tr>td:last-child>span {
+    margin-right: 31px;
+}
+
+.kyl-kt-table>tbody>tr:nth-child(2n)>td {
+    background: #f5f8fa;
+}
+
+.kyl-kt-table>tbody>tr>td {
+    border-bottom: 1px solid #e1ebef;
+}
+
+.kyl-kt-fy {
+    text-align: right;
+    padding-top: 1.5%;
+    padding-right: 1%;
+    float: right;
+    padding-bottom: 20px;
+}
+
+.kyl-kt-fy>li>a {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.kyl-kt-fy>li {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    border: none;
+    border-radius: 0;
+    background: #e7ebee;
+}
+
+.kyl-kt-fy>li>a {
+    color: #a5acb1;
+}
+
+.kyl-kt-fy .ant-pagination-options {
+    display: none;
+}
+
+.kyl-kt-fy .ant-pagination-item-active {
+    background: #3498db;
+}
+
+.kyl-kt-fy .ant-pagination-item-active a {
+    color: #fff;
+}
+
+.kyl-kt-fy .ant-pagination-prev .ant-pagination-item-link,
+.kyl-kt-fy .ant-pagination-next .ant-pagination-item-link {
+    border: none;
+    border-radius: 0;
+    background: #e7ebee;
+}
+
+.kyl-kt-pageInfo {
+    padding-top: 1.5%;
+    float: left;
+    color: #99a1a7;
+    line-height: 40px;
+}
+
+.kyl-kt-clear:before,
+.kyl-kt-clear:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.lxx-g-layout .kyl-kt-jumpZdPage {
+    padding-left: 10px;
+    float: right;
+    border: 1px solid #e7ebee;
+    width: 60px;
+    height: 38px;
+    margin-top: 1.5%;
+    color: #888
+}
+
+.lxx-g-layout .kyl-kt-jumpZdPage:focus {
+    border-color: #40a9ff;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    border-right-width: 1px !important;
+}

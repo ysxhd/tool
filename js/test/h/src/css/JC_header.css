@@ -1,0 +1,395 @@
+/*
+ * @Author: JC.Liu 
+ * @Date: 2018-07-24 09:46:20 
+ * @Last Modified by: JC.Liu
+ * @Last Modified time: 2018-09-03 19:53:50
+ * header css
+ */
+
+
+/* 直播页面的header 背景为黑色 */
+
+#video {
+    z-index: 10 !important;
+}
+
+embed,
+object {
+    z-index: 1 !important;
+}
+
+.JC-headerNav-bg {
+    background: #303336;
+    color: #ffffff;
+    user-select: none;
+}
+
+.JC-headerNav-bg .ant-input-lg {
+    background: #45484a !important;
+    border: 1px solid #45484a;
+}
+
+.JC-headerNav-bg .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+    border: 1px solid #45484a !important;
+}
+
+.JC-headerNav-bg .JC-hd-ulList a,
+.JC-headerNav-bg .JC-hd-ttit a {
+    color: #ffffff !important;
+}
+
+.JC-headerNav-stu,
+.JC-headerNav-admin {
+    width: 1300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+
+/* 学生 */
+
+.JC-hd-tnav {
+    position: relative;
+    width: 100%;
+    user-select: none;
+}
+
+.JC-hd-nav-content {
+    display: inline-flex;
+}
+
+.JC-hd-ttit {
+    font-size: 26px;
+    font-size: "Microsoft YaHei";
+    margin-right: 20px;
+    min-width: 100px;
+    max-width: 400px;
+}
+
+.JC-hd-ttit a {
+    color: #333333;
+}
+
+.JC-hd-ulList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* flex: 1; */
+}
+
+.JC-hd-ulList a {
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    padding: 0 10px;
+    margin: 0 20px;
+}
+
+.JC-hd-tnav ul {
+    display: inline-flex;
+    /* width: 330px; */
+    /* flex: 1; */
+    vertical-align: top;
+}
+
+.JC-hd-tnav ul li {
+    flex: 1;
+    font-size: 16px;
+    /* margin-left: 46px; */
+    vertical-align: top;
+    text-align: center;
+}
+
+.JC-hd-tnav ul li a {
+    color: #333333;
+}
+
+.JC-hd-active {
+    display: block;
+    height: 62px;
+    color: #33aaff !important;
+    border-bottom: 4px solid #33aaff;
+    box-sizing: border-box;
+}
+
+.JC-hd-search {
+    position: relative;
+    flex: 1;
+    /* vertical-align: top; */
+}
+
+.JC-hd-inline {
+    display: inline-block;
+}
+
+div.JC-hd-kwdiv div.JC-hd-hotKeyWorld {
+    width: calc(100% - 20px - 32px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.JC-hd-search .ant-input-search-button {
+    margin: 0;
+}
+
+.JC-hd-search .ant-input {
+    background: #e5e5e5;
+}
+
+.JC-hd-search-inp {
+    width: 100%;
+}
+
+.JC-hd-ctrol {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: auto;
+}
+
+.JC-hd-ctrolBtn {
+    position: absolute;
+    top: 20px;
+    left: -180px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.JC-hd-ctrolBtn .ant-btn {
+    width: 100px;
+    margin: 0;
+    line-height: 40px;
+    height: 40px;
+}
+
+.JC-hd-CtrolSvg {
+    margin: 0 4px 0 -5px;
+}
+
+.JC-hd-avatar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.JC-hd-avatar svg {
+    margin-top: -35px;
+    margin-left: 3px;
+    width: 36px;
+    height: 36px;
+}
+
+.JC-hd-avatarSVG {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #8fd0ff;
+}
+
+.JC-hd-more {
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    color: #8fd0ff;
+    transform: rotate(90deg);
+    font-size: 22px;
+    /* font-weight: bold; */
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+
+
+/* 关键字 top5 */
+
+.JC-hd-workcode-none {
+    display: none;
+}
+
+.JC-hd-workcode {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-top: 10px;
+    box-shadow: 0px 1px 1px #f5f5f5;
+    transition: linear 2s;
+    z-index: 9999 !important;
+}
+
+.JC-hd-workcode .JC-hd-kwdiv {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+    color: #333333;
+}
+
+.JC-hd-workcode .JC-hd-kwdiv:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.JC-hd-workcode .JC-hd-kwdiv:hover {
+    background: #e5e5e5;
+}
+
+.JC-hd-kw {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+
+.JC-hd-search {
+    position: relative;
+}
+
+.JC-hd-search .ant-btn.ant-btn-primary {
+    padding: 0 10px;
+    background: -moz-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+    background: -webkit-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+    background: linear-gradient(to right, #2ABCFA 0%, #3C96EF 100%);
+    color: #fff;
+    border-color: transparent;
+}
+
+.JC-hd-search .ant-btn.ant-btn-primary svg {
+    margin-right: 5px;
+}
+
+.JC-hd-kw_1 {
+    background: #ff6666;
+}
+
+.JC-hd-kw_2 {
+    background: #ffa64c;
+}
+
+.JC-hd-kw_3 {
+    background: #4cc3ff;
+}
+
+.JC-hd-kw_2 {
+    background: #ffa64c;
+}
+
+.JC-hd-kw_4 {
+    background: #cccccc;
+}
+
+.JC-hd-kw_5 {
+    background: #cccccc;
+}
+
+
+/* 管理员 */
+
+.JC-headerNav-admin {
+    width: 100%;
+    background: #2b3238;
+    color: #ffffff;
+}
+
+.JC-hd-anav {
+    position: relative;
+    width: 1300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+.JC-hd-anav ul {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 420px;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+.JC-hd-anav ul li {
+    flex: 1;
+    font-size: 16px;
+    text-align: center;
+}
+
+.JC-hd-anav ul li a {
+    display: block;
+    color: #ffffff;
+}
+
+.JC-hd-active2 {
+    background: #41474c;
+}
+
+.JC-hd-atit2 {
+    font-size: 16px;
+}
+
+.JC-hd-atit1 {
+    color: #ffffff;
+}
+
+.JC-hd-avatar:hover .JC-hd-loginOut {
+    display: block;
+    z-index: 99999999999 !important;
+}
+
+.JC-hd-loginOut {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -42px;
+    width: 100px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px #e5e5e5;
+    z-index: 9999999999999 !important
+}
+
+.JC-hd-loginOut button {
+    width: 80px;
+    border: 0;
+}
+
+.JC-av-center {
+    color: #0094ff;
+    cursor: default;
+}
+
+.JC-av-triangle {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: -6px;
+    left: 60%;
+    border: 1px solid #e5e5e5;
+    border-right: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+    background: #ffffff;
+}

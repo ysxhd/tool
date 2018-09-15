@@ -1,0 +1,190 @@
+/*
+ * @Author: MinJ 
+ * @Date: 2018-01-05 10:57:44 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-01-31 09:53:34
+ * 在线升级——升级管理组件
+ */
+.mj-uct-content{
+  float: right;
+  width: 81%;
+  margin-top: 20px;
+  box-shadow: 0px 0px 16px 2px #cccccc;
+}
+
+/* 头部 */
+  .mj-uct-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  .mj-uct-text{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 2px;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  /* 进度条 */
+    .mj-uct-progress{
+      width: 350px;
+      padding-left: 20px;
+      padding-right: 16px;
+    }
+    .mj-uct-text .ant-progress-bg{
+      height: 14px !important;
+      background-color: #52cc8f;
+    }
+    .mj-uct-text .ant-progress-show-info .ant-progress-outer{
+      line-height: 14px;
+    }
+  .mj-uct-succes,
+  .mj-uct-default{
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .mj-uct-succes svg,
+  .mj-uct-default svg{
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  .mj-uct-succes{
+    color: #3ac17d;
+  }
+  .mj-uct-default{
+    margin-left: 10px;
+    color: #fb8674;
+  }
+
+/* 表格 */
+.mj-uct-tabCon{
+  position: relative;
+  background-color:#fff;
+}
+.mj-uct-tabCon .ant-table-wrapper{
+  width:96%;
+  margin-left: 2%;
+}
+  /* 升级状态 */
+  .mj-uct-upStatus svg{
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .mj-uct-upSucces{
+    color: #3ac17d;
+  }
+  .mj-uct-upDefaul{
+    color: #ff644c;
+  }
+  .mj-uct-upWait svg{
+    color: #bfbfbf;
+  }
+
+.mj-uct-tabCon .ant-table-bordered .ant-table-thead > tr > th, 
+.mj-uct-tabCon .ant-table-bordered .ant-table-tbody > tr > td{
+  padding: 10px 16px;
+  text-align: center;
+}
+.mj-uct-tabCon .ant-table-bordered .ant-table-thead > tr > th{
+  color: #666666;
+  font-weight: bold;
+  background-color:#f5f5f5;
+}
+.mj-uct-tabCon .ant-table-bordered .ant-table-tbody > tr > td:nth-child(1){
+  width: 20%;
+}
+.mj-uct-tabCon .ant-table-bordered .ant-table-tbody > tr > td:nth-child(2){
+  width: 26%;
+}
+.mj-uct-tabCon .ant-table-bordered .ant-table-tbody > tr > td:nth-child(3){
+  width: 18%;
+}
+.mj-uct-tabCon .ant-table-bordered .ant-table-tbody > tr > td:nth-child(4),
+.mj-uct-tabCon .ant-table-bordered .ant-table-tbody > tr > td:nth-child(5),
+.mj-uct-tabCon .ant-table-bordered .ant-table-tbody > tr > td:nth-child(6){
+  width: 12%;
+}
+
+  /* 分页 */
+  .mj-uct-subCon{
+    position: absolute;
+    max-width: 600px;
+    bottom: 16px;
+    margin-left: 20px;
+  }
+  .mj-uct-subSele{
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  .mj-uct-subSele .ant-select-selection--single{
+    height: 30px;
+    border-radius: 15px;
+  }
+  /* 页码 */
+  /* .mj-uct-tabCon .ant-pagination-prev, 
+  .mj-uct-tabCon .ant-pagination-next, 
+  .mj-uct-tabCon .ant-pagination-jump-prev, 
+  .mj-uct-tabCon .ant-pagination-jump-next{
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid #b3b3b3;
+    padding: 0 16px;
+    border-radius: 15px;
+  }
+  .mj-uct-tabCon .ant-pagination-item{
+    border: 0;
+  }
+  .mj-uct-tabCon .ant-pagination-item-active{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #626a73;
+    border-radius: 50%;
+  }
+  .mj-uct-tabCon .ant-pagination-item-active a{
+    color: #fff;
+  }
+  .mj-uct-tabCon .ant-pagination-item:focus, 
+  .mj-uct-tabCon .ant-pagination-item:hover{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #e5e5e5;
+    border-radius: 50%;
+  } 
+  .mj-uct-tabCon .ant-pagination-item:hover{
+    background: #e5e5e5;
+  }
+  .mj-uct-tabCon .ant-pagination-item:focus{
+    background: #666666;
+  }
+  .mj-uct-tabCon .ant-pagination-item:focus a{
+    color: #fff;
+  }
+  .mj-uct-tabCon .ant-pagination-item:hover a{
+    color: #666666;
+  } */
+
+  /* 无数据 */
+  .mj-uct-noData{
+    /* position: relative; */
+    height: 420px;
+    width: 100%;
+    margin-top: 2px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }

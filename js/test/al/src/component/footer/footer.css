@@ -1,0 +1,92 @@
+/*
+ * @Author: JC.Liu 
+ * @Date: 2018-07-11 16:29:59 
+ * @Last Modified by: JC.Liu
+ * @Last Modified time: 2018-09-06 17:18:59
+ */
+
+.JC-bs-f-notic {
+  width: 100%;
+  height: 84px;
+  line-height: 84px;
+  background: url("../../static/bg/通知底.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 0 2%;
+}
+
+.JC-bs-f-tit {
+  height: 84px;
+  width: 8.85%;
+  margin-right: 2.1%;
+}
+
+.JC-bs-f-inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.JC-bs-f-n {
+  color: #fed700;
+}
+
+.JC-bs-f-n1 {
+  font-size: 30px;
+}
+
+.JC-bs-f-n2 {
+  font-size: 20px;
+}
+
+.JC-bg-f-icon {
+  vertical-align: top;
+  margin-top: calc( 80px / 2 - 34px / 2);
+}
+
+.JC-bs-f-notic-info {
+  font-size: 24px;
+  margin-right: 200px;
+  float: left;
+  vertical-align: middle;
+}
+
+.JC-bs-f-right {
+  width: 12%;
+  float: right;
+}
+
+.JC-bs-f-point-div {
+  width: 50%;
+}
+
+.JC-bs-f-point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top: 32px;
+  margin-right: 12px;
+}
+
+.JC-point1 {
+  background: #fed700;
+}
+
+.JC-point2 {
+  background: #00bc23;
+}
+
+.JC-bs-f-info {
+  position: relative;
+  height: 100%;
+  width: calc(100% - 8.85% - 2.1% - 2% - 12%);
+  overflow: hidden;
+}
+
+.JC-bs-n-f-am {
+  position: relative;
+  width: 1000000%
+}
+
+.JC-bs-footer {
+  position: relative;
+  z-index: 9;
+}

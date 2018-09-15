@@ -1,0 +1,131 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-05-16 14:49:22 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-05-17 14:00:29
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-05-24 10:22:26
+ */
+
+.lxx-g-content {
+    padding: 19px 20px;
+}
+
+.lxx-g-table {
+    margin-top: 20px;
+}
+
+
+/* 简报样式 */
+
+.lxx-g-text {
+    position: relative;
+    padding: 25px 30px;
+    width: 100%;
+    /* height: 225px; */
+    background: #DFEFF0;
+}
+
+.showVi {
+    visibility: visible;
+}
+
+.hideVi {
+    visibility: hidden;
+}
+
+.lxx-g-text>div.showVi {
+    height: 102px;
+    transition: height .1s;
+}
+
+.lxx-g-text>div.hideVi {
+    height: 0px;
+    transition: height .2s;
+}
+
+.lxx-g-text>.lxx-m-text.showVi {
+    height: 50px;
+    transition: height .1s;
+}
+
+.lxx-g-text>div p {
+    color: #848889;
+}
+
+.lxx-g-text h2 {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #575757;
+    text-align: center;
+}
+
+.lxx-g-text>div p:first-child {
+    margin-top: 8px;
+}
+
+.lxx-m-meg {
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* 考点详情样式 */
+
+.lxx-g-po-search {
+    padding: 0 20px;
+    height: 80px;
+    /* line-height: 80px; */
+    background-color: #F0F6F6;
+}
+
+.lxx-g-po-search .lxx-m-flex {
+    text-align: right;
+}
+
+.lxx-g-po-search .lxx-m-flex>div {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.lxx-g-po-search .lxx-m-flex>div:last-child {
+    margin-right: 0;
+}
+
+.lxx-m-poBack {
+    width: 25%;
+}
+
+.lxx-m-poIcon {
+    color: #575757;
+    line-height: 80px;
+}
+
+.lxx-m-poIcon>svg {
+    font-size: 30px;
+    color: #1AA3AB;
+    margin-right: 10px;
+}
+
+.lxx-m-po-btn {
+    height: 34px;
+    width: 80px;
+    color: #fff;
+    background: #1AA3AB;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lxx-u-yl {
+    color: #FF8812;
+    margin-right: 3px;
+}
+
+span.lxx-u-yl:last-child>i {
+    display: none;
+}

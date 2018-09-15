@@ -1,0 +1,91 @@
+/*
+ * @Author: MinJ 
+ * @Date: 2018-01-11 09:25:23
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-03-22 09:26:35
+ * 删除提示组件
+ */
+.mj-wcd-content{
+  width: 500px !important;
+}
+/* title */
+.mj-wcd-content .ant-modal-header{
+  height: 50px;
+  background-color: #41474d;
+}
+.mj-wcd-content .ant-modal-title,
+.mj-wcd-content .ant-modal-close{
+  color: #fff;
+}
+.mj-wcd-content .ant-modal-close:focus,
+.mj-wcd-content .ant-modal-close:hover{
+  color: #d9d9d9 !important;
+}
+
+/* content */
+.mj-wcd-content .ant-modal-body,
+.mj-wcd-content .ant-modal-footer {
+  /* width: 580px; */
+  background-color: #fff;
+}
+.mj-wcd-content .ant-modal-body{
+  width: 420px;
+  margin-left: 70px;
+  padding: 44px 60px;
+  text-align: center
+}
+.mj-wcd-content .ant-modal-body:before,
+.mj-wcd-content .ant-modal-body:after{
+  content: '';
+  display: table;
+  clear:both;
+}
+.mj-wcd-content svg{
+  float: left;
+  margin-right: 10px;
+  font-size: 44px;
+  position: relative;
+  left: -50px;
+  top: 45px;
+}
+.mj-wcd-text{
+  float: right;
+  line-height: 44px;
+  font-size: 16px;
+}
+
+/* footer */
+.mj-wcd-content .ant-modal-footer{
+  text-align: center;
+  padding-bottom: 40px;
+  border: 0;
+}
+.mj-wcd-okBtn,
+.mj-wcd-cancelBtn{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+}
+.mj-wcd-okBtn{
+  background-color: #ff9934;
+  color: #fff;
+}
+.mj-wcd-content .ant-modal-footer button + button{
+  margin-left: 30px;
+}
+.mj-wcd-content .ant-btn:hover,
+.mj-wcd-content .ant-btn:focus,
+.mj-wcd-content .ant-btn:active,
+.mj-wcd-content .ant-btn.active{
+  background-color: #ff7f00;
+}
+.mj-wcd-content .ant-btn:hover,
+.mj-wcd-content .ant-btn:focus{
+  color: #fff;
+  border-color: #ff9934;
+}
+.mj-wcd-cancelBtn:hover{
+  color: #41474d !important;
+  background-color: #fff !important;
+  border-color: #d9d9d9 !important;
+}

@@ -1,0 +1,448 @@
+/*
+ * @Author: MinJ 
+ * @Date: 2018-01-05 13:03:48
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-02-11 14:01:17
+ * 状态监督——列表管理组件
+ */
+
+.mj-ucv-contain{
+  box-shadow: 0px 0px 16px 2px #cccccc;
+}
+/* title */
+.mj-ucv-title{
+  height: 50px;
+  padding-left: 20px;
+  line-height: 50px;
+  background-color: #fff;
+}
+.mj-ucv-title span:nth-child(1){
+  font-size: 16px;
+}
+.mj-ucv-titDiv{
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.mj-ucv-titDiv svg{
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+/* content */
+
+  /* 走马灯 */
+  /* 无数据 */
+  .mj-ucv-content1{
+    position: relative;
+    height:200px;
+    width:100%;
+    margin-top: 2px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .mj-ucv-txt{
+    margin-top: 10px;
+  }
+
+  .mj-ucv-carousel{
+    padding-top: 30px;
+    margin:0 30px;
+  }
+  .mj-ucv-carousel .slick-list{
+    height: 166px;
+  }
+  .mj-ucv-upgradeCom{
+    display: inline-block;
+    height: 130px;
+  }
+  .mj-ucv-androidCon{
+    float: left;
+    margin-left: calc(15% - 78px);
+    /* margin-left:88px; */
+  }
+  .mj-ucv-android,
+  .mj-ucv-androidAgo,.mj-ucv-androidAgo1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .mj-ucv-androidAgo{
+    border: 2px solid #c2c6cc;
+  }
+  .mj-ucv-androidAgo1{
+    border: 2px solid #ff9934;
+  }
+  .mj-ucv-android{
+    border: 2px solid #ff9934;
+  }
+  .mj-ucv-android svg,
+  .mj-ucv-androidAgo svg ,.mj-ucv-androidAgo1 svg{
+    margin-top: 18px;
+    font-size: 38px;
+  }
+  .mj-ucv-android svg{
+    color: #ff9934;
+  }
+  .mj-ucv-androidAgo svg {
+    color: #c2c6cc;
+  }
+  .mj-ucv-androidAgo1 svg{
+    color: #ff9934;
+  }
+  .mj-ucv-android div,
+  .mj-ucv-androidAgo div,.mj-ucv-androidAgo1 div {
+    width: 76px;
+    height: 24px;
+    border-radius: 15px;
+    color: #fff;
+  }
+  .mj-ucv-android div{
+    background-color: #ff9934;
+  }
+  .mj-ucv-androidAgo div{
+    background-color: #c2c6cc;
+  }
+  .mj-ucv-upBtn{
+    width: 80px;
+    height: 34px;
+    margin-top: 22px;
+    border-radius: 17px;
+  }
+  
+  .mj-ucv-content .ant-carousel .slick-dots{
+    height: 1px;
+    bottom: 0px;
+    background-color: #ebebeb;
+  }
+  .mj-ucv-content .ant-carousel .slick-dots li button{
+    background:#ebebeb;
+  }
+  .mj-ucv-content .ant-carousel .slick-dots li.slick-active button{
+    background: #ff9934;
+  }
+  .mj-ucv-content .ant-carousel .slick-initialized .slick-slide{
+    padding: 0 1% 30px 1%;
+  }
+
+  /* 前后按钮 */
+  .mj-ucv-prev svg,
+  .mj-ucv-next svg{
+    font-size: 50px;
+    color: #ced3d9;
+  }
+  .mj-ucv-prev{
+    position: absolute;
+    left: 4%;
+    top: 28%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .mj-ucv-next{
+    position: absolute;
+    top: 28%;
+    right: 4%;
+    cursor: pointer;
+  }
+
+/* button */
+.mj-ucv-btn{
+  background-color: #fff;
+  text-align: center;
+}
+.mj-ucv-btn button{
+  width: 160px;
+  height: 34px;
+  margin-bottom: 18px;
+  line-height: 34px;
+  border-radius: 24px;
+  background-color: #626a73;
+  color: #fff;
+}
+.mj-ucv-btn .ant-btn:hover, 
+.mj-ucv-btn .ant-btn:focus{
+  color: #fff;
+  background-color: #626a73d1;
+  border-color: #626a73;
+}
+.mj-ucv-btn .ant-btn:hover, 
+.mj-ucv-btn .ant-btn:focus, 
+.mj-ucv-btn .ant-btn:active, 
+.mj-ucv-btn .ant-btn.active{
+  background: #626a73;
+}
+
+/* modal */
+.mj-ucv-modalCon{
+  width: 640px !important;
+}
+/* title */
+.mj-ucv-modalCon .ant-modal-header{
+  height: 50px;
+  background-color: #41474d;
+}
+.mj-ucv-modalCon .ant-modal-title,
+.mj-ucv-modalCon .ant-modal-close{
+  color: #fff;
+}
+.mj-ucv-modalCon .ant-modal-close:focus,
+.mj-ucv-modalCon .ant-modal-close:hover{
+  color: #d9d9d9 !important;
+}
+
+/* footer */
+.mj-ucv-modalCon .ant-modal-footer{
+  text-align: center;
+  padding-bottom: 40px;
+  border: 0;
+}
+.mj-wcd-okBtn,
+.mj-wcd-cancelBtn{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+}
+.mj-wcd-okBtn{
+  background-color: #ff9934;
+  color: #fff;
+}
+.mj-ucv-modalCon .ant-modal-footer button + button{
+  margin-left: 30px;
+}
+.mj-ucv-modalCon .ant-btn:hover,
+.mj-ucv-modalCon .ant-btn:focus,
+.mj-ucv-modalCon .ant-btn:active,
+.mj-ucv-modalCon .ant-btn.active{
+  background-color: #ff7f00;
+}
+.mj-ucv-modalCon .ant-btn:hover,
+.mj-ucv-modalCon .ant-btn:focus{
+  color: #fff;
+  border-color: #ff9934;
+}
+.mj-wcd-cancelBtn:hover{
+  color: #41474d !important;
+  background-color: #fff !important;
+  border-color: #d9d9d9 !important;
+}
+
+/* content */
+.mj-ucv-modalCon .ant-modal-body,
+.mj-ucv-modalCon .ant-modal-footer {
+  background-color: #fff;
+}
+.mj-ucv-modalCon .ant-modal-body{
+  padding: 30px 40px;
+}
+
+  /* 文件选择 */
+  .mj-ucv-firSpan{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+  }
+  .mj-ucv-apkChoice{
+    width: 360px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .mj-ucv-apkBtn{
+    display: inline-block;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .mj-ucv-modalCon .ant-upload-list{
+    display: none;
+  }
+
+  .mj-ucv-version{
+    width: 96px;
+    display: inline-block;
+    position: relative;
+  }
+  .mj-ucv-version input{
+    position: absolute;
+    width: 83%;
+    left: 10px;
+    height: 40px;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .mj-ucv-version .ant-btn{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  /* 版本号 */
+  .mj-ucv-versionLef{
+    width: 90px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .mj-ucv-secSpan{
+    margin-left: 10px;
+  }
+  .mj-ucv-sampleSpan{
+    color: #999999;
+  }
+  /* 更新日志 */
+  .mj-ucv-textarea{
+    width: 440px;
+    height: 200px !important;
+    margin-left: 10px;
+    margin-top: 20px;
+    resize: none;
+  }
+  .mj-ucv-updSpan{
+    vertical-align: top;
+    padding-top: 20px;
+  }
+  .mj-ucv-num{
+    text-align: right;
+  }
+  .kyl-ucv-lineBox{
+    width: 100%;
+    background-color:white; 
+  }
+  .kyl-ucv-bottomLine{
+    border-top:1px solid #ebebeb;
+    width: 96%;
+    margin:0 auto;
+    height:20px;
+  }
+  .kyl-ucv-content{
+    position: relative;
+    margin-top: 2px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+    height:200px;
+    width:100%;
+    text-align: center;
+  }
+ 
+  .kyl-ucv-versionPic{
+    width:86%;
+    
+    height:200px;
+    float:left;
+    position: relative;
+    overflow: hidden;
+  }
+  .kyl-ucv-prev,.kyl-ucv-next{
+    font-size: 42px;
+    z-index: 10;
+    color:#d3d8dd;
+  }
+  .kyl-ucv-prev SVG,.kyl-ucv-next SVG{
+    position:relative;
+    top:50px;
+    left:-17px;
+    cursor: pointer;
+  }
+  .kyl-ucv-prev SVG{
+    left:16%;
+    z-index: 100;
+  }
+  .kyl-ucv-box{
+    width:400%;
+    height:200px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s ease-in 0s;
+  }
+  .mj-ucv-upgradeCom{
+    /* width: 25%; */
+  }
+  .mj-ucv-androidCon{
+    margin-top:25px;
+    
+  }
+  .kyl-ucv-loading{
+    position: relative;
+    top:30px;
+    left:-5px;
+  }
+  .kyl-ucv-loading .ant-spin-blur:after {
+    font-size: 16px;
+  }
+  .kyl-ucv-loadWord{
+    position:relative;
+    top:30px;
+  }
+  .kyl-ucv-point{
+    width:12px;
+    height:5px;
+    background-color:#aaaeb3;
+    float:left;
+    margin:0 6px;
+    border-radius: 12px;  
+    
+  }
+  .kyl-ucv-point:hover{
+    cursor: pointer;
+  }
+.kyl-ucv-pointBox{
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  top: -3px
+}
+.kyl-ucv-prev,.kyl-ucv-next{
+  width:7%;
+  height:200px;
+  float:left;
+}
+.kyl-ucv-carousel{
+  width:85%;
+  height:200px;
+  /* background-color: red; */
+  float: left;
+  margin-left: 1%;
+  
+}
+.ant-carousel .kyl-ucv-carContent .slick-slide {
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .kyl-ucv-carContent .slick-slide h3 {
+  color: #fff;
+}
+.kyl-ucv-carContent .slick-dots{
+  bottom:-38px;
+}
+.kyl-ucv-carContent .slick-dots li.slick-active button{
+  background: #ff9934;
+}
+.kyl-ucv-carContent .slick-dots li button{
+  background-color: #aaaeb3;
+}
+.mj-ucv-androidAgo div{
+  background-color: #c2c6cc;
+}

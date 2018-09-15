@@ -1,0 +1,234 @@
+/*
+ * @Author: JC.liu 
+ * @Date: 2018-05-16 10:12:48 
+ * @Last Modified by: kyl
+ * @Last Modified time: 2018-05-30 18:36:37
+ * 总览 - 设备情况
+ */
+
+.ljc-overview-equipment-wrap {
+  width: 100%;
+  padding-bottom: 30px;
+  background: #ffffff;
+}
+
+.ljc-overview-equipment {
+  width: 96%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.ljc-overview-equipment .ljc-o-tit {
+  display: block;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+
+.ljc-overview-equipment .ljc-o-tit span {
+  position: absolute;
+  left: 0;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.ljc-o-p-body {
+  width: 100%;
+  height: 175px;
+  background: #dfeff0;
+  padding: 25px 2%;
+}
+
+.ljc-o-p-body .ant-progress-bg {
+  background: #1aab65;
+}
+
+.ljc-o-p-left {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.ljc-o-p-item1,
+.ljc-o-p-item2,
+.ljc-o-p-item3 {
+  display: inline-block;
+  color: #000000;
+  vertical-align: top;
+  height: 120px
+}
+
+.ljc-o-p-item1 p,
+.ljc-o-p-item2 p,
+.ljc-o-p-item3 p {
+  margin: 0;
+}
+
+.ljc-o-p-item1,
+.ljc-o-p-item2 {
+  padding-right: 3%;
+}
+
+.ljc-o-p-item1 {
+  width: 50%;
+  border-right: 1px solid #dddddd;
+}
+
+.ljc-o-p-item2 {
+  width: 50%;
+  padding-left: 3%;
+}
+
+.ljc-o-p-item3 {
+  /* width: 40.2%; */
+  position: relative;
+}
+
+.ljc-o-p-item1 svg {
+  margin-top: 8px;
+}
+
+.ljc-o-p-1-allEquipNum {
+  color: #1aa3ab;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ljc-o-p-left-tit {
+  color: #848889;
+  text-align: center;
+  line-height: 20px;
+}
+
+.ljc-o-p-1-point {
+  display: inline-block;
+  margin-left: 10%;
+  width: 10px;
+  height: 10px;
+  background-color: #1aab65;
+  border-radius: 50%;
+  margin-top: 6px;
+  margin-right: 4px;
+}
+
+.ljc-o-p-item1 div.ljc-o-p-static,
+.ljc-o-p-item1 .ljc-o-p-progress {
+  margin-left: 11.4%;
+}
+
+.ljc-o-p-item1 .ljc-o-p-progress .ant-progress-line {
+  width: 75%;
+}
+
+.ljc-o-p-item3 .ljc-o-p-progress .ant-progress-line {
+  width: 93%
+}
+
+.ljc-o-p-item1 .ljc-o-p-progress .ant-progress-show-info .ant-progress-outer,
+.ljc-o-p-item3 .ljc-o-p-progress .ant-progress-show-info .ant-progress-outer {
+  padding-right: calc(2em+8px);
+}
+
+.ljc-o-p-item1 .ljc-o-p-progress {
+  line-height: 40px;
+}
+
+.ljc-o-p-e {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ljc-o-p-item3-ul {
+  display: inline-block;
+  width: calc(100% - 200px);
+  height:120px;
+  vertical-align: top;
+  list-style: none;
+}
+
+.ljc-o-p-item3-ul ul {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  /* width: 136px; */
+}
+
+@media screen and (max-width:1400px) {
+ .ljc-o-p-item3-ul ul{
+   line-height: 16px
+ }
+}
+
+@media screen and (max-width:1300px) {
+  .ljc-o-p-item3-ul ul{
+    line-height: 12px
+  }
+ }
+
+.ljc-o-p-item3-li {
+  display: inline-block;
+  vertical-align: top;
+  width: 75px;
+  font-size: 14px;
+  color: #575757;
+
+  margin: 3px 3px 0 0;
+}
+
+@media screen and (max-width:1410px) {
+  .ljc-o-p-item3-li {
+    font-size: 12px;
+    width: 65px;
+  }
+}
+
+.ljc-o-p-item3-li>div {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  margin-right: 8%;
+}
+
+.ljc-o-p-item3 .ljc-o-p-progress {
+  line-height: 20px;
+  margin-top: 10px;
+  color: #575757;
+}
+
+@media screen and (max-width:1350px) {
+  .ljc-o-p-item3 .ljc-o-p-progress {
+    margin-top: 6px;
+  }
+}
+
+.ljc-o-p-item3-li0>div {
+  background: #60a1a9;
+}
+
+.ljc-o-p-item3-li1>div {
+  background: #91c7af;
+}
+
+.ljc-o-p-item3-li2>div {
+  background: #bda39b;
+}
+
+.ljc-o-p-item3-li3>div {
+  background: #d58364;
+}
+
+.ljc-o-p-item3-li4>div {
+  background: #2e4454;
+}
+
+.ljc-o-p-item3-li5>div {
+  background: #c5cdd3;
+}
+
+.ljc-o-p-item3-tit {
+  color: #848889;
+  margin-left: 16%;
+  line-height: 20px;
+}

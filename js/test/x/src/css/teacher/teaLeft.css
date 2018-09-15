@@ -1,0 +1,30 @@
+.zn-tea-g-left .zn-bp-cont{
+    text-align: center;
+}
+
+.zn-tea-g-left .zn-bp-cont>.zn-bp-paizi>svg{
+    font-size: 130px;
+    margin:40px 0 10px 0; 
+}
+
+.zn-tea-g-left .zn-bp-cont>.zn-bp-paizi>h4{
+    font-size: 20px;
+    margin:0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.zn-tea-g-left .zn-bp-cont .zn-bp-paizi p{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc1b8;
+    text-align: center;
+    border-radius:25px;
+    margin-left: calc(25% - 20px);
+    margin-left: -moz-calc(25% - 20px);
+    margin-left: -webkit-calc(25% - 20px);
+    margin-top: 10px;
+    cursor: pointer;
+    color: #4d4945;
+}

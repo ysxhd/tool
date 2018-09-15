@@ -1,0 +1,209 @@
+/*
+ * @Author:  xiangting
+ * @Date: 2018-08-28 10:01:04 
+ * @Last Modified by: xiangting
+ * @Last Modified time: 2018-09-06 13:04:55
+ * 可视化中心-课堂秩序
+ */
+
+ .lxx-g-showCenter{
+     padding-left: 30px
+ }
+
+ .zq-g-visContent .ant-row:last-child{
+     margin-bottom: 0 !important;
+     padding: 0 !important;
+ }
+ 
+ .xt-today .xt-today-item:nth-child(1){
+     margin-left: calc(50% - 195px)
+ }
+
+ .xt-today .xt-tea-today.xt-today-item:nth-child(1){
+    margin-left: calc(50% - 135px)
+}
+ .xt-today-name{
+    width:60px;
+    height:60px;
+    border-radius: 30px;
+    color: #fff;
+    float: left;
+    margin-top: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:Center;
+ }
+
+ .xt-today-sroce{
+     min-height:80px;
+     min-width:80px;
+     border-radius: 40px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    float: left;
+    margin-left: -10px;
+    font-size: 30px;
+    display: flex;
+    justify-content:center;
+    align-items:Center;
+ }
+  
+ .xt-today-item{
+     float: left;
+ }
+
+ .xt-today-item:nth-child(2n+1){
+     margin-top: 80px;
+ }
+
+ .xt-clearfix:before,
+ .xt-clearfix:after {
+     content: '';
+     display: table;
+     clear: both;
+ }
+
+ .xt-classroom-dis-table .ant-table-placeholder,
+ .xt-classroom-dis-table .ant-table-thead > tr > th,
+ .xt-classroom-dis-table .ant-table-tbody > tr > td{
+     background: rgba(0, 0, 0, 0) !important;
+     color: #fff !important;
+     border-bottom:1px dashed #0b444e;
+     padding: 10px 16px;
+     text-align: center
+ }
+
+ .xt-classroomTea .xt-classroom-dis-table .ant-table-tbody > tr > td{
+     padding: 15px 16px
+ }
+
+ .xt-classroom-dis-table .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body,
+ .xt-classroom-dis-table .ant-table-header{
+    background: rgba(0, 0, 0, 0) !important;
+ }
+
+ .xt-classroom-dis-table .ant-table-header{
+    overflow-x:hidden !important;
+ }
+
+ .xt-classroom-dis-table .ant-table-body::-webkit-scrollbar,
+ .xt-classroom-dis-table .ant-table-header::-webkit-scrollbar {
+    width:10px;
+}
+
+ .xt-classroom-dis-table .ant-table-body::-webkit-scrollbar-track ,
+ .xt-classroom-dis-table .ant-table-header::-webkit-scrollbar-track {
+    display: none;
+}
+
+ .xt-classroom-dis-table .ant-table-body::-webkit-scrollbar-thumb{
+    background:#206090;
+    border-radius:5px;
+}
+
+.xt-classroom-dis-table .ant-table-body::-webkit-scrollbar-thumb{
+    opacity: 0;
+}
+
+.xt-classroom-dis-table .ant-table-scroll{
+    position: relative;
+}
+
+ .xt-classroom-dis-table .ant-table-body{
+     margin-top: 17px;
+     position: absolute
+ }
+
+ .xt-noData{
+     text-align: center;
+     color: #8a929c;
+     height: 100%;
+     padding: 20px;
+ }
+
+ .xt-noData div{
+     margin-top: 5px;
+ }
+
+ .xt-classroom-dis-table .xt-nothead-table .ant-table-thead > tr > th{
+    padding: 0
+ }
+ 
+ .xt-classroom-dis-table .ant-table-thead > tr > th{
+    border-bottom:1px solid #0b444e;
+ }
+
+ .xt-classroom-dis-table .ant-table-tbody > tr:last-child > td{
+     border-bottom: 0
+ }
+
+ .xt-sort{
+     position: relative;
+ }
+
+.xt-sort i{
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    color: #798c95;
+}
+
+.xt-sort i:nth-child(1){
+    top:4px
+}
+
+.xt-sort i:nth-child(2){
+    top:9px
+}
+
+ .xt-stu-tea{
+     float: right;
+     margin-right: 10px;
+     border: 1px solid #31a9ff;
+     height: 30px;
+     line-height: 30px;
+     border-radius: 5px;
+ }
+
+ .xt-stu-tea span{
+     text-align: center;
+     display: inline-block;
+     width: 54px;
+     cursor: pointer;
+ }
+
+ .xt-stu-tea span:nth-child(1){
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+ }
+ 
+  .xt-stu-tea span:nth-child(2){
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+  }
+
+ .xt-checked{
+     color: #fff;
+     float: left;
+     background: url('../img/matterL.png') no-repeat;
+     height: 200px;
+     background-size:10px 200px;
+     padding-left: 20px;
+     margin-top: 10px;
+ }
+
+ .xt-checked div{
+     height: 50px;
+     width: 50px;
+     border-radius: 25px;
+     margin-bottom: 35px;
+     line-height: 50px;
+     text-align: center;
+     cursor: pointer;
+ }
+
+ .xt-rank-title{
+     color: #fff;
+     line-height: 35px
+ }

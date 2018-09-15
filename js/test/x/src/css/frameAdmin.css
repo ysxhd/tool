@@ -1,0 +1,205 @@
+#root>div,
+#root>div>div {
+    height: 100%;
+}
+
+.xt-admin {
+    height: 100%;
+    width: 100%;
+    min-width: 1366px!important;
+}
+
+.xt-admin .ant-layout-sider {
+    height: 100%;
+    background-color: #41474d;
+    min-width: 1200px;
+}
+
+.xt-admin .ant-layout-sider .xt-title {
+    height: 70px;
+    line-height: 70px;
+    background-color: #ff9934;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+}
+
+.xt-admin .ant-layout-header {
+    background-color: #fff;
+    height: 70px;
+    padding: 0 20px 0 32px;
+}
+
+.xt-admin .ant-menu-dark {
+    background-color: transparent;
+}
+
+.xt-admin .ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    border-bottom: 1px solid #50555b;
+}
+
+.xt-admin .ant-menu-submenu .icon {
+    font-size: 18px;
+    margin: 0 12px 0 0;
+}
+
+.xt-admin .ant-menu-sub.ant-menu-inline>.ant-menu-item {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.xt-admin .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background-color: #41474d;
+    box-shadow: none;
+}
+
+.xt-admin .nav-text {
+    margin-left: 5px;
+}
+
+.xt-admin .ant-menu.ant-menu-dark .ant-menu-item-selected {
+    background-color: #565e66;
+    position: relative;
+    overflow: visible;
+}
+
+.xt-admin .ant-menu.ant-menu-dark .ant-menu-item-selected:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: transparent;
+    /* 一些不支持背景渐变的浏览器 */
+    background: linear-gradient(177deg, rgba(0, 0, 0, 0.6) 0, transparent 50%, transparent 100%);
+    user-select: none;
+    pointer-events: none;
+}
+
+.xt-admin .ant-menu.ant-menu-dark .ant-menu-item-selected:after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 8px solid #fff;
+    border-bottom: 6px solid transparent;
+}
+
+.xt-content .ant-layout-header .ant-menu {
+    border: 0;
+    margin-top: 15px;
+    height: 40px;
+    float: left;
+}
+
+.xt-content .ant-layout-header h2 {
+    float: left;
+}
+
+.xt-content .ant-layout-header .xt-uinfo {
+    float: right;
+}
+
+.xt-imgbox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.xt-imgbox .xt-imgerror {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #DDD;
+    padding-top: calc(50% - 25px);
+}
+
+.xt-imgbox .xt-imgerror .icon {
+    font-size: 50px;
+    vertical-align: middle;
+    color: #aaa;
+}
+
+.xt-uinfo .xt-imgbox {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.xt-uinfo .xt-imgerror {
+    border: 0;
+    padding-top: 0;
+}
+
+.xt-uinfo .xt-imgbox .xt-imgerror .icon {
+    font-size: 40px;
+    vertical-align: -14px;
+}
+
+.xt-uinfo .xt-imgbox img {
+    height: 40px;
+    width: 40px;
+    vertical-align: -14px;
+    border-radius: 50%;
+}
+
+.xt-content .ant-menu .ant-menu-item {
+    line-height: 38px;
+    padding: 0 16px 0 16px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color: #4d4d4d;
+    margin-right: 6px;
+}
+
+.xt-content .ant-menu-horizontal>.ant-menu-item:hover,
+.xt-content .ant-menu-horizontal>.ant-menu-item-active,
+.xt-content .ant-menu-horizontal>.ant-menu-item-selected {
+    border: 1px solid #ff9934;
+}
+
+.xt-content .ant-menu-horizontal>.ant-menu-item:hover a,
+.xt-content .ant-menu-horizontal>.ant-menu-item-active a,
+.xt-content .ant-menu-horizontal>.ant-menu-item-selected a {
+    color: #ff9934;
+}
+
+.xt-content .ant-menu .ant-menu-item .icon {
+    font-size: 22px;
+    vertical-align: -5px;
+    margin-right: 6px;
+    opacity: 0.7;
+}
+
+.xt-admin .ant-layout-content {
+    background-color: #f5f5f5;
+    padding: 0 20px 20px 20px;
+}
+
+.xt-breadcrumb {
+    height: 40px;
+    line-height: 40px;
+}
+
+.xt-breadcrumb .ant-breadcrumb {
+    display: inline-block;
+}
+
+.xt-breadcrumb .icon {
+    font-size: 1.4em;
+    margin-right: 6px;
+    opacity: 0.6
+}
+
+.xt-breadcrumb .ant-breadcrumb>span:last-child {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.xt-panel {
+    background-color: #fff;
+    box-shadow: 0 0 3px 3px rgba(150, 150, 150, 0.1);
+}

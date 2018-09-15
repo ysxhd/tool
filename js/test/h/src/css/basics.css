@@ -1,0 +1,84 @@
+/* @import './public.css'; */
+
+/* @import '~antd/dist/antd.css'; */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 1300px;
+    color: #333;
+    font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, Arial, STXihei, "华文细黑", Heiti, "黑体", SimSun, "宋体", sans-serif;
+    background: #fff;
+}
+
+body>#root {
+    min-height: 100%;
+    width: 100%;
+}
+
+body>#root>div {
+    min-width: 1300px;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+ol,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+input,
+button {
+    border: 0;
+    outline: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    vertical-align: middle;
+    margin-top: -0.15em;
+}
+
+a,
+a:active,
+a:hover,
+a:visited,
+a:focus {
+    text-decoration: none;
+}
+
+.ant-layout {
+    background: #fff;
+    height: 100%;
+}
+
+.JC-headerNav-stu {
+    min-height: calc(100% - 200px);
+}
+
+.JC-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ant-modal-body {
+    /* padding: 24px !important; */
+}

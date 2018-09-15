@@ -1,0 +1,135 @@
+/*
+ * @Author: JC.Liu 
+ * @Date: 2018-07-02 16:53:23 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-07-11 14:44:32
+ */
+
+ .zn-modal-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #373737;
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  z-index: 1000;
+  filter: alpha(opacity=50);
+  display: none;
+}
+
+.JC-global-modal {
+  position: fixed;
+  overflow: auto;
+  top: 15%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 1000;
+  outline: 0;
+  width: 408px;
+  height: 313px;
+  color: #ffffff !important;
+  background-image: url("../../static/操作提示框.png");
+}
+
+.JC-gm-title {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.JC-gm-contnet {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.JC-gm-desc {
+  font-size: 16px
+}
+
+.JC-gm-btn>div {
+  position: absolute;
+  bottom: 10px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.JC-gm-btn-y {
+  left: 94px;
+  background: -webkit-linear-gradient(left top, #fecc00, #e38305);
+  background: linear-gradient(left top, #fecc00, #e38305);
+  color: #34372e;
+}
+
+.JC-gm-btn-n {
+  background: #204b66;
+  color: #ffffff;
+  right: 96px;
+}
+
+/* 模态框动画 */
+@keyframes show{
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hide{
+  from {
+    opacity:1 ;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.show{
+  animation: show .5s;
+}
+
+.hide{
+  animation: hide .5s;
+}
+
+.zn-modal-mask-box>.show{
+  animation: show .5s;
+}
+
+.zn-modal-mask-box>.hide{
+  animation: hide .5s;
+}
+
+.JC-suc-modal{
+  position: absolute;
+  overflow: auto;
+  top: 50%;
+  left: 50%;
+  margin-left: -164px;
+  margin-top: -100px;
+  width: 328px;
+  height: 200px;
+  background-color: #202940;
+  border: 1px solid #16466e;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 42px;
+  color: #fff;
+}
+
+.JC-suc-modal>img{
+  padding-bottom: 18px;
+}

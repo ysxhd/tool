@@ -1,0 +1,211 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-01-09 17:34:19 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-03-13 14:51:06
+ */
+ .zn-g-teacher {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    z-index: 0;
+    min-width: 1366px!important;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.zn-g-teacher .zn-tea-u-bgImg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: block;
+    width: 1920px;
+    margin-left: -960px;
+}
+
+.zn-g-teacher .zn-tea-u-bgImg1{
+    top:488px;
+}
+
+.zn-g-teacher .ant-layout-header {
+    position: relative;
+    padding: 0;
+    min-width: 1366px;
+    background: #000;
+    opacity: 0.1;
+}
+
+.zn-g-teacher>.zn-routerBox>.zn-g-t-box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 auto;
+    height: auto;
+    width: 1220px;
+    transform: translateX(-50%);
+}
+
+.zn-g-teacher>.zn-routerBox>.zn-g-t-box>.zn-text-center{
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1;
+    font-size: 16px;
+    line-height: 64px;
+}
+
+
+.zn-g-teacher .zn-g-t-box .zn-t-logo-svg{
+    line-height: 64px;
+    color: #fff;
+}
+
+.zn-g-teacher .zn-g-t-box .zn-t-logo-svg svg{
+    margin-right: 10px;
+    font-size: 42px;
+    vertical-align: middle;
+}
+
+.zn-g-teacher .ant-layout{
+    background: transparent;
+    display: block;
+}
+
+.zn-g-teacher .ant-layout .ant-layout-content {
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+
+.zn-g-teacher .ant-layout-content .zn-tea-g-up{
+    display: flex;
+}
+
+.zn-g-teacher .ant-layout-content .zn-tea-g-right{
+    width: 880px;
+    height: 312px;
+}
+
+.zn-g-teacher .ant-layout-content .zn-tea-g-left{
+    margin-right: 20px;
+    width: 302px;
+    height: 312px;
+}
+
+.zn-g-teacher .ant-layout-content .zn-tea-g-down{
+    margin-top:20px;
+}
+
+.zn-g-teacher .ant-layout-content .zn-tea-g-bot{
+    width: 1202px;
+    border-top: 4px solid #ffbf7f;
+    height: auto;
+} 
+
+.zn-tea-g-left,.zn-tea-g-right,.zn-tea-g-bot{
+    background-color: #fff;
+    -webkit-box-shadow: -1px 4px 20px #969696;
+    box-shadow: -1px 4px 20px #969696;
+}
+
+
+.zn-text-center a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.zn-text-select{
+    background-color: #ae7134;
+}
+
+#zn-tea-overflow-y{
+    top:64px;
+    width: 100%;
+    position: absolute;
+    overflow-x: auto;
+    z-index: 0;
+}
+
+.zn-tea-t-wid{
+    width: 392px;
+    margin:0 auto;
+    position: relative;
+}
+
+
+/* 标题的内容 */
+.zn-tea-g-name{
+    height: 112px;
+    line-height: 112px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.zn-tea-g-name>.zn-tea-t-wid>span{
+    font-size: 46px;
+    letter-spacing: 5px;
+}
+
+.zn-tea-t-wid svg{
+    font-size: 38px;
+     padding-left: 15px;
+     transition: ease-in 0.8 ease-out 0.8;
+ }
+
+/* 标题的小三角旋转 */
+.zn-tea-t-wid:hover svg{
+    transform: translate(0,-6px) rotate(90deg);
+    z-index: 999;
+    text-shadow:0 4px 11px rgb(177, 26, 26);
+}
+
+
+.zn-tea-t-wid:hover .zn-tea-select-class{
+    display: block;
+}
+
+.zn-tea-t-wid>.zn-tea-select-class{
+    position: absolute;
+    right: -122px;
+    top:20px;
+    width: 150px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #807973;
+    padding: 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 4px 11px #aaa;
+    box-shadow: 0 4px 11px #aaa;
+    z-index: 2000;
+    display: none;
+}
+
+.zn-tea-t-wid>.zn-tea-select-class>li{
+    line-height: 38px;
+    cursor: pointer;
+    font-weight: normal;
+
+}
+
+.zn-tea-t-wid>.zn-tea-select-class>li:hover{
+    color: #f8bb79;
+    background-color: #f0efef;
+}
+.zn-tea-t-wid>.zn-tea-select-class>li:nth-child(1){
+    border-radius: 10px 10px 0 0;
+}
+
+.zn-tea-t-wid>.zn-tea-select-class>li:nth-last-child(1){
+    border-radius:0 0 10px 10px;
+}
+
+.zn-g-teacher>.zn-g-t-box>.zn-fontSize-20{
+    font-size: 20px;
+}

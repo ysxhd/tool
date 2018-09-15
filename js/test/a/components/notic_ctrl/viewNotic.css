@@ -1,0 +1,82 @@
+/*
+ * @Author: JC.Liu 
+ * @Date: 2018-07-03 09:39:25 
+ * @Last Modified by: xq
+ * @Last Modified time: 2018-07-10 10:36:44
+ */
+
+.JC-vn-header {
+  text-align: center;
+}
+
+.JC-vn-tit {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.JC-vn-date {
+  font-size: 16px;
+  color: #585a69;
+  margin:15px 0 25px 0;
+}
+
+.JC-vn-modal.ant-modal {
+  top: 200px;
+}
+
+.JC-vn-desc{
+  text-indent: 1.8rem;
+}
+
+.JC-vn-modal{
+  color:#ffffff !important ;
+}
+
+.JC-vn-modal .ant-modal-header {
+  border-top-right-radius: 8px !important;
+  border-top-left-radius: 8px !important;
+  background: #233257;
+  border-bottom: 1px solid #2276b6;
+  color:#ffffff;
+}
+
+.JC-vn-modal .ant-modal-content {
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  background: none;
+  border: 1px solid #2276b6;
+}
+
+.JC-vn-modal .ant-modal-body {
+  background: #21253e;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+
+.JC-vn-capacity{
+  padding:20px;
+  background: #1d2136;
+}
+
+.JC-vn-modal .ant-modal-title{
+  color: #fff;
+}
+
+.JC-vn-modal .ant-modal-close-x{
+  position: relative;
+}
+.JC-vn-modal .ant-modal-close-x:after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin:auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #2b5d7d;
+  z-index: -1;
+}

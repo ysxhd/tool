@@ -1,0 +1,316 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-01-12 17:13:55 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-03-28 16:10:06
+ */
+
+
+/* 操作成功、失败弹窗样式 */
+
+
+/* start */
+
+.lxx-g-infoDia.ant-modal {
+    top: 20%;
+}
+
+.lxx-g-infoDia>.ant-modal-content {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+}
+
+.lxx-g-infoDia .ant-modal-body {
+    padding: 10px 20px;
+}
+
+.lxx-g-infoDia>.ant-modal-content .ant-confirm-btns {
+    display: none;
+}
+
+.lxx-g-infoDia .ant-confirm-content {
+    color: #fff;
+    margin-top: 0;
+}
+
+.lxx-g-infoDia .ant-confirm-body>.anticon {
+    color: #fff;
+}
+
+
+/* end */
+
+
+/* 操作确认回调弹窗样式 */
+
+
+/* start */
+
+.lxx-g-admConDia,
+.lxx-g-stuConDia {
+    top: 25%;
+}
+
+.lxx-g-admConDia>.ant-modal-content,
+.lxx-g-stuConDia>.ant-modal-content {
+    border-radius: 0px;
+    padding: 0;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-modal-body,
+.ant-confirm.lxx-g-stuConDia .ant-modal-body {
+    padding: 0;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-modal-close,
+.ant-confirm.lxx-g-stuConDia .ant-modal-close {
+    display: block;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-modal-close>.ant-modal-close-x,
+.ant-confirm.lxx-g-stuConDia .ant-modal-close>.ant-modal-close-x {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-modal-close>.ant-modal-close-x {
+    color: rgba(255, 255, 255, 0.8);
+    ;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-body,
+.ant-confirm.lxx-g-stuConDia .ant-confirm-body {
+    text-align: center;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-body>.anticon,
+.ant-confirm.lxx-g-stuConDia .ant-confirm-body>.anticon {
+    padding: 40px 0;
+    margin-top: 50px;
+    float: none;
+    font-size: 40px;
+    color: #999;
+    vertical-align: middle;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-body>.ant-confirm-title,
+.ant-confirm.lxx-g-stuConDia .ant-confirm-body>.ant-confirm-title {
+    display: inline-block;
+    padding: 40px 0;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.7);
+    vertical-align: middle;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-body .ant-confirm-content,
+.ant-confirm.lxx-g-stuConDia .ant-confirm-body .ant-confirm-content {
+    position: absolute;
+    top: 50px;
+    margin: 0;
+    padding: 0 20px;
+    margin-top: -50px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-body .ant-confirm-content {
+    background: #41474D;
+    color: #fff;
+}
+
+.ant-confirm.lxx-g-stuConDia .ant-confirm-body .ant-confirm-content {
+    background: #EBEBEB;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-btns,
+.ant-confirm.lxx-g-stuConDia .ant-confirm-btns {
+    border: 0;
+    text-align: center;
+    padding: 10px 20px 20px;
+    margin-top: 5px;
+    float: none;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-btns>button,
+.ant-confirm.lxx-g-stuConDia .ant-confirm-btns>button {
+    padding: 8px 30px;
+    height: auto;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-btns>.ant-btn:first-child {
+    margin-left: 0;
+    background: transparent;
+    color: rgba(65, 71, 77, 0.8);
+    border: 1px solid rgba(65, 71, 77, 0.8);
+}
+
+.ant-confirm.lxx-g-stuConDia .ant-confirm-btns>.ant-btn:first-child {
+    margin-left: 0;
+    color: rgba(65, 71, 77, 0.6);
+    background: transparent;
+    border: 1px solid #B5B5B5;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-btns>.ant-btn:nth-child(2),
+.ant-confirm.lxx-g-stuConDia .ant-confirm-btns>.ant-btn:nth-child(2) {
+    margin-left: -240px;
+    color: #fff;
+    background: #ff9934;
+    border: 0;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-btns>.ant-btn:nth-child(2):after,
+.ant-confirm.lxx-g-stuConDia .ant-confirm-btns>.ant-btn:nth-child(2):after {
+    border: 1px solid #ff9934;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-btns>.ant-btn:nth-child(2):hover,
+.ant-confirm.lxx-g-stuConDia .ant-confirm-btns>.ant-btn:nth-child(2):hover {
+    color: #fff;
+}
+
+.ant-confirm.lxx-g-admConDia .ant-confirm-btns>.ant-btn:hover,
+.ant-confirm.lxx-g-stuConDia .ant-confirm-btns>.ant-btn:hover {
+    color: #ff9934;
+    border-color: #ff9934;
+}
+
+/* token的弹窗的样式 */
+.zn-tokenFirm {
+    top: 25%;
+}
+
+
+.zn-tokenFirm>.ant-modal-content{
+    border-radius: 0px;
+    padding: 0;
+}
+
+.ant-confirm.zn-tokenFirm .ant-modal-body{
+    padding: 0;
+}
+
+.ant-confirm.zn-tokenFirm .ant-modal-close{
+    display: block;
+}
+
+.ant-confirm.zn-tokenFirm .ant-modal-close>.ant-modal-close-x{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.ant-confirm.zn-tokenFirm .ant-modal-close>.ant-modal-close-x {
+    color: rgba(255, 255, 255, 0.8);
+    ;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-body {
+    text-align: center;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-body>.anticon{
+    padding: 40px 0;
+    margin-top: 50px;
+    float: none;
+    font-size: 40px;
+    color: #999;
+    vertical-align: middle;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-body>.ant-confirm-title {
+    display: inline-block;
+    padding: 40px 0;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.7);
+    vertical-align: middle;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-body .ant-confirm-content {
+    position: absolute;
+    top: 50px;
+    margin: 0;
+    padding: 0 20px;
+    margin-top: -50px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-body .ant-confirm-content {
+    background: #41474D;
+    color: #fff;
+}
+
+.ant-confirm.lxx-g-stuConDia .ant-confirm-body .ant-confirm-content {
+    background: #EBEBEB;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-btns {
+    border: 0;
+    text-align: center;
+    padding: 10px 20px 20px;
+    margin-top: 5px;
+    float: none;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-btns>button {
+    padding: 8px 30px;
+    height: auto;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-btns>.ant-btn:first-child {
+    margin-left: 0;
+    background: transparent;
+    color: rgba(65, 71, 77, 0.8);
+    border: 1px solid rgba(65, 71, 77, 0.8);
+    display: none;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-btns>.ant-btn:nth-child(2){
+    color: #fff;
+    background: #ff9934;
+    border: 0;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-btns>.ant-btn:nth-child(2):after{
+    border: 1px solid #ff9934;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-btns>.ant-btn:nth-child(2):hover{
+    color: #fff;
+}
+
+.ant-confirm.zn-tokenFirm .ant-confirm-btns>.ant-btn:hover {
+    color: #ff9934;
+    border-color: #ff9934;
+}
+
+.ant-confirm.zn-tokenFirm .ant-modal-close>.ant-modal-close-x{
+    display: none;
+}
+
+
+/* 设置modal框标题超出溢出隐藏 */
+.ant-confirm.lxx-g-admConDia .ant-confirm-body .ant-confirm-content, .ant-confirm.lxx-g-stuConDia .ant-confirm-body .ant-confirm-content{
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: pre;
+    text-overflow: ellipsis;
+}

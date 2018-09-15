@@ -1,0 +1,80 @@
+/*
+ * @Author: JC.liu 
+ * @Date: 2018-05-16 17:24:09 
+ * @Last Modified by: JC.liu
+ * @Last Modified time: 2018-05-24 10:54:57
+ */
+
+.ljc-overview-before {
+  padding: 0 2%;
+}
+
+.ljc-o-b-head {
+  margin-top: 22px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 32px;
+}
+
+.ljc-o-b-h-l {
+  display: inline-block;
+  width: 162px;
+  height: 32px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #1aa3ab;
+  color: #d3d5d7;
+  line-height: 32px;
+  font-size: 20px;
+  margin-left: 8px;
+  text-align: center;
+}
+
+.ljc-o-b-h-r {
+  margin-right: 2%;
+}
+
+.ljc-o-b-body {
+  display: flex;
+}
+
+.ljc-o-b-item {
+  flex: 1;
+  padding: 30px 0 25px 0;
+  border: 1px solid #c7d5d5;
+  height: 135px;
+}
+
+.ljc-o-b-auto {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ljc-o-b-item-row1 {
+  margin-bottom: 15px;
+}
+
+.ljc-o-b-item-row1 span {
+  font-weight: bold;
+  color: #6bbabf;
+}
+
+.ljc-o-b-item-row2 {
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.ljc-o-b-item3-percent {
+  margin-left: 5%;
+}
+
+.ljc-o-p-svg {
+  margin-right: 1%;
+  
+}
+
+.ljc-o-p-svg:last-child{
+  margin-right: 0;
+}

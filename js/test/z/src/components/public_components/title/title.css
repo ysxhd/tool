@@ -1,0 +1,62 @@
+/*
+ * @Author: 甘维添 
+ * @Date: 2018-04-11 14:39:58 
+ * @Last Modified by: 甘维添
+ * @Last Modified time: 2018-04-11 15:28:29
+ */
+
+div.gwt-title-component {
+  display: flex;
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+
+div.gwt-title-component>* {
+  flex: 1;
+  height: 80px;
+  color: #93a0bc;
+}
+
+div.gwt-title-component h2 {
+  font-size: 20px;
+  line-height: 80px;
+  text-align: center;
+}
+
+div.gwt-title-component h3 {
+  font-size: 16px;
+  line-height: 90px;
+}
+
+div.gwt-title-component .gwt-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.gwt-title-component .gwt-right>div {
+  width: 194px;
+  padding-left: 30px;
+}
+
+.gwt-title-component .gwt-right>div img{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.gwt-title-component .gwt-right>p {
+  border-right: 1px solid #ddd;
+  width: 140px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gwt-title-component .gwt-right>p span {
+  font-size: 34px;
+  vertical-align: sub;
+  padding-right: 10px;
+}

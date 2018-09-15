@@ -1,0 +1,48 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-01-08 11:19:02 
+ * @Last Modified by:   lxx 
+ * @Last Modified time: 2018-01-08 11:19:02 
+ */
+
+.waiting {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.waiting>.ant-spin-lg .ant-spin-dot {
+    width: 75px;
+    height: 75px;
+}
+
+.waiting>p {
+    font-size: 16px;
+    color: #ffA64c;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 60px;
+}
+
+.progress {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    width: 80%;
+    height: 30px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* margin: 0 auto; */
+}
+
+.waiting>div>span.ant-spin-dot i {
+    background-color: #ffA64c;
+}
+
+.progress .ant-progress-bg {
+    background-color: #ffA64c;
+}

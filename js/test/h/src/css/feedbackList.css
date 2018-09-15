@@ -1,0 +1,158 @@
+/*
+ * @Author: xq 
+ * @Date: 2018-08-01 13:04:44 
+ * @Last Modified by: xq
+ * @Last Modified time: 2018-08-31 15:18:43
+ */
+.xq-feedback-container{
+    width: 1300px;
+    margin:0 auto;
+    padding-top: 10px;
+}
+.xq-feedback-t{
+    line-height: 48px;
+    font-size: 22px;
+}
+.xq-feedback-head{
+    font-size: 14px;
+}
+.xq-feedback-head,.xq-feedback-li{
+    overflow: hidden;
+    
+}
+.xq-feedback-li{
+    border:1px #e6e6e6 solid;
+    box-shadow:0 1px 5px #e6e6e6;
+    -webkit-box-shadow: 0 1px 5px #e6e6e6;
+    margin-bottom: 10px;
+}
+.xq-feedback-head>div,
+.xq-feedback-li>div{
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    
+}
+.xq-feedback-head>div:nth-child(1),
+.xq-feedback-li>div:nth-child(1){
+    width: 12%;
+    margin-right: 6%;
+    text-align: center;
+}
+.xq-feedback-head>div:nth-child(2),
+.xq-feedback-li>div:nth-child(2){
+    width: 45%;
+    margin-right: 3%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.xq-feedback-head>div:nth-child(3),
+.xq-feedback-li>div:nth-child(3){
+    width:27%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    padding-right: 30px;
+}
+.xq-feedback-head>div:nth-child(4),
+.xq-feedback-li>div:nth-child(4){
+    width:7%;
+}
+.xq-feedback-li{
+    position: relative;
+    cursor: pointer;
+}
+.xq-feedback-li:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    transform:rotate(45deg);
+    border-color: transparent #ff9021  transparent transparent;
+}
+.xq-feedback-li>div:last-child{
+    color: #ff9021;
+}
+.xq-feedback-li.xq-feedback-li-read:after{
+    border-color: transparent #d9d9d9  transparent transparent;
+}
+.xq-feedback-li.xq-feedback-li-read>div:last-child{
+    color: #333;
+}
+/* 页码 */
+.xq-feedback-foot{
+    overflow: hidden;
+    height: 40px;
+    margin: 40px 0;
+}
+.xq-feedback-foot-r{
+    float: right;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.xq-feedback-foot-l{
+    float: left;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.xq-feedback-foot-l .ant-select.ant-select-enabled{
+    margin: 0 10px;
+}
+/* 页码结束 */
+/* 意见反馈详情页 */
+.xq-fbdetail-con{
+    width: 1300px;
+    margin:0 auto;
+}
+.xq-fbdetail-head{
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+}
+.xq-fbdetail-t{
+    font-size: 22px;
+    float: left;
+    margin-right: 16px;
+}
+.xq-fbdetail-time{
+    padding-top: 5px;;
+}
+.xq-fbdetail-goback{
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 40px;
+    margin-top: -20px;
+    right: 0px;
+    border-radius:5px;
+    overflow: hidden;
+}
+.xq-fbdetail-goback>a{
+    display: block;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #547899;
+}
+.xq-fbdetail-display{
+    padding: 10px;
+    border:1px #e6e6e6 solid;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    word-break:break-all ;
+}
+.xq-fbdetail-tel{
+    margin-bottom: 20px;
+}

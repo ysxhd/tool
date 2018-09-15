@@ -1,0 +1,58 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-01-15 09:38:58 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-03-14 13:24:04
+ */
+/* 底部内容的容器 */
+.zn-teaContBox2{
+    width: 1136px;
+    min-height: 260px;
+    border: 1px solid #ffb266;
+    position: relative;
+}
+
+
+.zn-b-teaClsSpecial-cont{
+    width: 1038px;
+    margin:60px auto;
+    position: relative;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.zn-b-teaClsSpecial-cont .zn-b-teaClsSpecial-bg{
+    width: 100%;
+    min-height: 80px;
+    background-color: #fbfbfa;
+    /* text-align: center; */
+}
+ 
+
+.zn-b-teaClsSpecial-cont .zn-b-teaClsSpecial-bg pre{
+    font-size: 24px;
+    padding: 24px 24px;
+    line-height: 24px;
+}
+
+.zn-b-teaClsSpecial-cont .zn-b-duty-btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.zn-b-teaClsSpecial-cont .zn-b-duty-btn button{
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 20px 25px 20px;
+    font-size: 16px;
+}
+
+.zn-b-teaClsSpecial-cont .zn-b-duty-btn button:nth-child(1){
+    color: #1990ff;
+}
+
+.zn-b-teaClsSpecial-cont .zn-b-duty-btn button:nth-child(2){
+    color: #ff8787;
+}

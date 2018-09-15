@@ -1,0 +1,122 @@
+.lean-myHotClass {
+    height: 500px;
+    width: 1300px;
+    margin: 30px auto;
+    padding-bottom: 20px;
+}
+
+.lean-myHotClass-title {
+    position: relative;
+}
+
+.lean-myHotClass-title h3 {
+    text-align: center;
+    color: #f48b6e;
+    font-size: 36px;
+    user-select: none;
+    font-weight: lighter;
+}
+
+.lean-myHotClass-title h3 img:last-child {
+    transform: rotateY(180deg);
+}
+
+div[class^="lean-myHotClass-publicClass"] {
+    height: 85%;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+}
+
+.lean-myHotClass-publicClass,
+.lean-myHotClass-priventClass {
+    width: 49%;
+}
+
+.lean-myHotClass-publicClass-only,
+.lean-myHotClass-priventClass-only {
+    width: 100%;
+}
+
+div[class^="lean-myHotClass-priventClass"] {
+    height: 85%;
+    border-radius: 20px;
+    float: right;
+}
+
+div[class^="lean-myHotClass-publicClass"]>p,
+div[class^="lean-myHotClass-priventClass"]>p {
+    position: relative;
+    width: 100%;
+    height: 65px;
+}
+
+.lean-myHotClass-innerpic {
+    width: 100%;
+    height: 100%;
+}
+
+.lean-myHotClass-innerHead {
+    position: absolute;
+    font-size: 28px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+div[class^="lean-myHotClass-publicClass"]>ul,
+div[class^="lean-myHotClass-priventClass"]>ul {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 65px);
+    list-style: none;
+    padding: 0 20px;
+}
+
+div[class^="lean-myHotClass-publicClass"]>ul>li,
+div[class^="lean-myHotClass-priventClass"]>ul>li {
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px dashed #e9e9e9;
+    padding-top: 4%;
+    font-size: 16px;
+}
+.lean-myHotClass-priventClass-only li{
+    padding-top:2%!important;
+}
+.lean-myHotClass-link {
+    color: #000;
+    text-decoration: none;
+}
+
+.lean-myHotClass-order {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 15px;
+    line-height: 25px;
+    border-radius: 5px;
+    background-color: #ddddde;
+    color: #fff;
+    user-select: none;
+}
+
+.lean-myHotClass-order-1 {
+    background-color: #f37f7a;
+}
+
+.lean-myHotClass-order-2 {
+    background-color: #f6b36d;
+}
+
+.lean-myHotClass-order-3 {
+    background-color: #77c8fa;
+}
+
+.lean-myHotClass-view {
+    float: right;
+    user-select: none;
+}

@@ -1,0 +1,138 @@
+/*
+ * @Author: MinJ 
+ * @Date: 2018-01-05 13:03:48
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-02-01 17:51:16
+ * 状态监督——分组树组件
+ */
+ .mj-ucl-content{
+  float: left;
+  width: 18%;
+  min-height: 472px;
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 16px 2px #cccccc;
+}
+
+/* .mj-ucl-contentTop{
+  height: 60px;
+}
+.mj-ucl-contentTop p{
+ display: inline-block;
+ padding-left: 20px;
+ font-size: 16px;
+ line-height: 60px;
+}
+.mj-ucl-contentTop div{
+ float: right;
+ height: 60px;
+ line-height: 60px;
+ margin-right: 20px;
+ color: #fff;
+}
+.mj-ucl-contentTop div span{
+  padding: 4px 10px;
+ border-radius: 20px;
+ background-color: #acb5bf;
+} */
+
+.mj-ucl-cardContrl > .ant-tabs-card > .ant-tabs-content {
+ /* height: 120px; */
+ margin-top: -16px;
+}
+
+.mj-ucl-cardContrl > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+ background: #fff;
+ padding: 16px;
+}
+
+.mj-ucl-cardContrl > .ant-tabs-card > .ant-tabs-bar {
+ border-color: #fff;
+}
+
+.mj-ucl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+ height: 50px;
+ border-color: transparent;
+ background: #fafafa;
+ border: 1px solid #acb5bf54;
+ border-radius: 0;
+}
+.mj-ucl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab:nth-child(2){
+ border-left: 0;
+}
+.mj-ucl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab:nth-child(3){
+ border-right: 0;
+}
+
+.mj-ucl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+ color: #ff9934;
+ border: 0;
+ border-top: 2px solid #ff9934;
+ background: #fff;
+}
+.mj-ucl-cardContrl .ant-tabs-nav{
+ width: 100%;
+}
+.mj-ucl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab,
+.mj-ucl-cardContrl > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+ width: 50%;
+ text-align: center;
+ line-height: 50px;
+ margin-right: 0;
+}
+.mj-ucl-cardContrl > .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container{
+ height: 52px;
+}
+.mj-ucl-cardContrl .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected,
+.mj-ucl-cardContrl .ant-tree li .ant-tree-node-content-wrapper:hover{
+ width: 90%;
+ color: #ff7f00;
+ background-color: #ebebeb;
+}
+.mj-ucl-cardContrl .ant-tree li span.ant-tree-switcher, .ant-tree li span.ant-tree-iconEle{
+ width: 8%;
+}
+.mj-ucl-cardContrl .ant-tree-checkbox-checked .ant-tree-checkbox-inner, 
+.mj-ucl-cardContrl .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner{
+  background-color: #ff7f00;
+  border-color: #ff7f00;
+}
+
+/* top输入 */
+.mj-ucl-top{
+  text-align: center;
+}
+.mj-ucl-top .ant-select{
+  width: 90%;
+}
+.mj-ucl-top .ant-select-selection--single{
+  border-radius: 15px;
+}
+.mj-ucl-top button{
+  width: 90%;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  background-color: #ff9934;
+  color: #fff;
+}
+.mj-ucl-top button:hover, 
+.mj-ucl-top button:focus{
+  border-color: #ff9935d9;
+  color: #fff;
+  background-color: #ff9935d9;
+}
+
+/* 无数据 */
+.mj-ucl-noData{
+  width: 100%;
+  margin-top: 100px;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}

@@ -1,0 +1,88 @@
+/*
+ * @Author: kangyl 
+ * @Date: 2018-01-16 15:50:17 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-02-28 12:28:13
+ */
+
+.kyl-wctl-table .ant-table-thead th{
+  background-color: #ebebeb;
+  padding: 8px 8px !important;
+}
+.kyl-wctl-table .ant-table-thead th span{
+  margin-left:84px;
+}
+.kyl-wctl-table .ant-table-tbody td{
+  padding: 12px 30px !important ;
+  color:#4d4d4d;
+}
+.kyl-wctl-table .ant-table-body{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 0 !important;
+}
+.kyl-wctl-table .ant-table table{
+  border-radius: 0 !important;
+}
+.kyl-wctl-footer{
+  position: relative;
+  top: -40px;
+  left: 33px;
+  width: 46%;
+}
+.kyl-wctl-select {
+  width: 72px;
+  color:#666666;
+ 
+}
+.kyl-wctl-select .ant-select-selection{
+  border-radius:40px ;
+  border-color: #b3b3b3 !important;
+}
+.kyl-wctl-table .ant-pagination-prev .ant-pagination-item-link:after{
+  width: 70px;
+  height:30px;
+
+}
+.kyl-wctl-page{
+  position: relative;
+  left: 350px;
+  top: -40px;
+  z-index: 100;
+}
+.kyl-wctl-wordStyle{
+  display: inline-block;
+  line-height: 2;
+  width:70px;
+  height:30px;
+  border: 1px solid #b3b3b3 !important;
+  border-radius: 40px;
+  color:#666666 !important;
+}
+.kyl-wctl-table .ant-pagination-simple .ant-pagination-simple-pager input{
+  border:0;
+  margin-right:-13px;
+}
+.kyl-wctl-table .ant-table-pagination.ant-pagination{
+  margin:12px 21px;
+}
+.kyl-wctl-table .ant-pagination-slash{
+  margin:0 2px 0 -3px;
+}
+.kyl-wctl-table input,.kyl-wctl-table button,.kyl-wctl-table select,.kyl-wctl-table optgroup,.kyl-wctl-table textarea{
+  margin: -8px;
+}
+.kyl-wctl-table .ant-pagination-simple .ant-pagination-simple-pager{
+  margin-right:15px;
+  margin-top: 3px;
+}
+.kyl-wctl-select .ant-select-selection .ant-select-arrow{
+  color:#b3b3b3 !important;
+}
+.kyl-wctl-table .ant-table-tbody > tr td{
+  background-color: white
+}
+.kyl-wctl-table .ant-table-tbody td{
+  text-align:center;
+  padding: 15px  !important;
+}

@@ -1,0 +1,68 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-arrow {
+  width: 1.7998046875em;
+}
+
+.icon-folder {
+  width: 0.8388671875em;
+}
+
+.icon-Excel {
+  width: 0.8388671875em;
+}
+
+.icon-jpg {
+  width: 0.8388671875em;
+}
+
+.icon-mp3 {
+  width: 0.8388671875em;
+}
+
+.icon-mp4 {
+  width: 0.8388671875em;
+}
+
+.icon-other {
+  width: 0.8388671875em;
+}
+
+.icon-pdf {
+  width: 0.8388671875em;
+}
+
+.icon-ppt {
+  width: 0.8388671875em;
+}
+
+.icon-swf {
+  width: 0.8388671875em;
+}
+
+.icon-txt {
+  width: 0.8388671875em;
+}
+
+.icon-Word {
+  width: 0.8388671875em;
+}
+
+.icon-zip {
+  width: 0.8388671875em;
+}

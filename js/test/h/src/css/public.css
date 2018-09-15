@@ -1,0 +1,599 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-07-23 15:18:47 
+ * @Last Modified by: junjie.lean
+ * @Last Modified time: 2018-08-30 11:47:14
+ * 项目公共样式 
+ */
+
+
+/* 蓝色渐变 */
+
+.lxx-g-layout .lxx-s-blue {
+  background: -moz-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+  background: -webkit-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+  background: linear-gradient(to right, #2ABCFA 0%, #3C96EF 100%);
+  color: #fff;
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-blue:active,
+.ant-btn.lxx-s-blue.active {
+  background: -moz-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+  background: -webkit-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+  background: linear-gradient(to right, #2ABCFA 0%, #3C96EF 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-blue:hover,
+.ant-btn.lxx-s-blue:focus,
+.ant-btn.lxx-s-blue:active,
+.ant-btn.lxx-s-blue.active {
+  color: #fff;
+  background: -moz-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+  background: -webkit-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+  background: linear-gradient(to right, #2ABCFA 0%, #3C96EF 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-blue.ant-btn-clicked:after {
+  border: 0 solid #2ABCFA;
+}
+
+
+/* 浅蓝色渐变 */
+
+.lxx-g-layout .lxx-s-wathet {
+  background: -moz-linear-gradient(left, #CDECFA 0%, #B6D4F3 100%);
+  background: -webkit-linear-gradient(left, #CDECFA 0%, #B6D4F3 100%);
+  background: linear-gradient(to right, #CDECFA 0%, #B6D4F3 100%);
+  color: #547899;
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-wathet:active,
+.ant-btn.lxx-s-wathet.active {
+  background: -moz-linear-gradient(left, #CDECFA 0%, #B6D4F3 100%);
+  background: -webkit-linear-gradient(left, #CDECFA 0%, #B6D4F3 100%);
+  background: linear-gradient(to right, #CDECFA 0%, #B6D4F3 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-wathet:hover,
+.ant-btn.lxx-s-wathet:focus,
+.ant-btn.lxx-s-wathet:active,
+.ant-btn.lxx-s-wathet.active {
+  color: #1c67ad;
+  background: -moz-linear-gradient(left, #CDECFA 0%, #B6D4F3 100%);
+  background: -webkit-linear-gradient(left, #CDECFA 0%, #B6D4F3 100%);
+  background: linear-gradient(to right, #CDECFA 0%, #B6D4F3 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-wathet.ant-btn-clicked:after {
+  border: 0 solid #CDECFA;
+}
+
+
+/* 橙色渐变 */
+
+.lxx-g-layout .lxx-s-orange {
+  background: -moz-linear-gradient(left, #F3A453 0%, #FF8149 100%);
+  background: -webkit-linear-gradient(left, #F3A453 0%, #FF8149 100%);
+  background: linear-gradient(to right, #F3A453 0%, #FF8149 100%);
+  color: #fff;
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-orange:active,
+.ant-btn.lxx-s-orange.active {
+  background: -moz-linear-gradient(left, #F3A453 0%, #FF8149 100%);
+  background: -webkit-linear-gradient(left, #F3A453 0%, #FF8149 100%);
+  background: linear-gradient(to right, #F3A453 0%, #FF8149 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-orange:hover,
+.ant-btn.lxx-s-orange:focus,
+.ant-btn.lxx-s-orange:active,
+.ant-btn.lxx-s-orange.active {
+  color: #fff;
+  background: -moz-linear-gradient(left, #F3A453 0%, #FF8149 100%);
+  background: -webkit-linear-gradient(left, #F3A453 0%, #FF8149 100%);
+  background: linear-gradient(to right, #F3A453 0%, #FF8149 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-orange.ant-btn-clicked:after {
+  border: 0 solid #F3A453;
+}
+
+
+/* 浅橙色渐变 */
+
+.lxx-g-layout .lxx-s-lightOrg {
+  background: -moz-linear-gradient(left, #FAE3CC 0%, #F3CAB6 100%);
+  background: -webkit-linear-gradient(left, #FAE3CC 0%, #F3CAB6 100%);
+  background: linear-gradient(to right, #FAE3CC 0%, #F3CAB6 100%);
+  color: #997754;
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-lightOrg:active,
+.ant-btn.lxx-s-lightOrg.active {
+  background: -moz-linear-gradient(left, #FAE3CC 0%, #F3CAB6 100%);
+  background: -webkit-linear-gradient(left, #FAE3CC 0%, #F3CAB6 100%);
+  background: linear-gradient(to right, #FAE3CC 0%, #F3CAB6 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-lightOrg:hover,
+.ant-btn.lxx-s-lightOrg:focus,
+.ant-btn.lxx-s-lightOrg:active,
+.ant-btn.lxx-s-lightOrg.active {
+  color: #826548;
+  background: -moz-linear-gradient(left, #FAE3CC 0%, #F3CAB6 100%);
+  background: -webkit-linear-gradient(left, #FAE3CC 0%, #F3CAB6 100%);
+  background: linear-gradient(to right, #FAE3CC 0%, #F3CAB6 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-lightOrg.ant-btn-clicked:after {
+  border: 0 solid #F3A453;
+}
+
+
+/* 蓝色不可用按钮渐变 */
+
+.lxx-g-layout .lxx-s-blueUnable {
+  background: -moz-linear-gradient(left, #D5F2FE 0%, #D8EAFC 100%);
+  background: -webkit-linear-gradient(left, #D5F2FE 0%, #D8EAFC 100%);
+  background: linear-gradient(to right, #D5F2FE 0%, #D8EAFC 100%);
+  color: rgba(255, 255, 255, 0.7);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-blueUnable:active,
+.ant-btn.lxx-s-blueUnable.active {
+  background: -moz-linear-gradient(left, #D5F2FE 0%, #D8EAFC 100%);
+  background: -webkit-linear-gradient(left, #D5F2FE 0%, #D8EAFC 100%);
+  background: linear-gradient(to right, #D5F2FE 0%, #D8EAFC 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-blueUnable:hover,
+.ant-btn.lxx-s-blueUnable:focus,
+.ant-btn.lxx-s-blueUnable:active,
+.ant-btn.lxx-s-blueUnable.active {
+  color: rgba(255, 255, 255, 0.7);
+  background: -moz-linear-gradient(left, #D5F2FE 0%, #D8EAFC 100%);
+  background: -webkit-linear-gradient(left, #D5F2FE 0%, #D8EAFC 100%);
+  background: linear-gradient(to right, #D5F2FE 0%, #D8EAFC 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-blueUnable.ant-btn-clicked:after {
+  border: 0 solid #D5F2FE;
+}
+
+
+/* 橙色不可用按钮渐变 */
+
+.lxx-g-layout .lxx-s-orgUnable {
+  background: -moz-linear-gradient(left, #FBE4CB 0%, #FFD9C8 100%);
+  background: -webkit-linear-gradient(left, #FBE4CB 0%, #FFD9C8 100%);
+  background: linear-gradient(to right, #FBE4CB 0%, #FFD9C8 100%);
+  color: rgba(255, 255, 255, 0.7);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-orgUnable:active,
+.ant-btn.lxx-s-orgUnable.active {
+  background: -moz-linear-gradient(left, #FBE4CB 0%, #FFD9C8 100%);
+  background: -webkit-linear-gradient(left, #FBE4CB 0%, #FFD9C8 100%);
+  background: linear-gradient(to right, #FBE4CB 0%, #FFD9C8 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-orgUnable:hover,
+.ant-btn.lxx-s-orgUnable:focus,
+.ant-btn.lxx-s-orgUnable:active,
+.ant-btn.lxx-s-orgUnable.active {
+  color: rgba(255, 255, 255, 0.7);
+  background: -moz-linear-gradient(left, #FBE4CB 0%, #FFD9C8 100%);
+  background: -webkit-linear-gradient(left, #FBE4CB 0%, #FFD9C8 100%);
+  background: linear-gradient(to right, #FBE4CB 0%, #FFD9C8 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-orgUnable.ant-btn-clicked:after {
+  border: 0 solid #FBE4CB;
+}
+
+
+/* 深灰色渐变 */
+
+.lxx-g-layout .lxx-s-darkgrey {
+  background: -moz-linear-gradient(left, #6A7A85 0%, #566773 100%);
+  background: -webkit-linear-gradient(left, #6A7A85 0%, #566773 100%);
+  background: linear-gradient(to right, #6A7A85 0%, #566773 100%);
+  color: #fff;
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-darkgrey:active,
+.ant-btn.lxx-s-darkgrey.active {
+  background: -moz-linear-gradient(left, #6A7A85 0%, #566773 100%);
+  background: -webkit-linear-gradient(left, #6A7A85 0%, #566773 100%);
+  background: linear-gradient(to right, #6A7A85 0%, #566773 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-darkgrey:hover,
+.ant-btn.lxx-s-darkgrey:focus,
+.ant-btn.lxx-s-darkgrey:active,
+.ant-btn.lxx-s-darkgrey.active {
+  color: #fff;
+  background: -moz-linear-gradient(left, #6A7A85 0%, #566773 100%);
+  background: -webkit-linear-gradient(left, #6A7A85 0%, #566773 100%);
+  background: linear-gradient(to right, #6A7A85 0%, #566773 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-darkgrey.ant-btn-clicked:after {
+  border: 0 solid #6A7A85;
+}
+
+
+/* 深蓝色渐变 */
+
+.lxx-g-layout .lxx-s-darkblue {
+  background: -moz-linear-gradient(left, #2C6883 0%, #34597F 100%);
+  background: -webkit-linear-gradient(left, #2C6883 0%, #34597F 100%);
+  background: linear-gradient(to right, #2C6883 0%, #34597F 100%);
+  color: #fff;
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-darkblue:active,
+.ant-btn.lxx-s-darkblue.active {
+  background: -moz-linear-gradient(left, #2C6883 0%, #34597F 100%);
+  background: -webkit-linear-gradient(left, #2C6883 0%, #34597F 100%);
+  background: linear-gradient(to right, #2C6883 0%, #34597F 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-darkblue:hover,
+.ant-btn.lxx-s-darkblue:focus,
+.ant-btn.lxx-s-darkblue:active,
+.ant-btn.lxx-s-darkblue.active {
+  color: #fff;
+  background: -moz-linear-gradient(left, #2C6883 0%, #34597F 100%);
+  background: -webkit-linear-gradient(left, #2C6883 0%, #34597F 100%);
+  background: linear-gradient(to right, #2C6883 0%, #34597F 100%);
+  border-color: transparent;
+}
+
+.ant-btn.lxx-s-darkblue.ant-btn-clicked:after {
+  border: 0 solid #2C6883;
+}
+
+
+/* 底部阴影 */
+
+.lxx-g-boxShadow {
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0 2px 8px #a5a5a5;
+}
+
+.lxx-g-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1300px;
+}
+
+
+/* flex */
+
+.lxx-g-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lxx-g-flex-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.lxx-m-flex {
+  flex: 1;
+}
+
+
+/* 分页样式 */
+
+.lxx-g-pagination {
+  margin-top: 40px;
+  height: 50px;
+  color: #4D4D4D;
+  text-align: right;
+}
+
+.ant-pagination-item {
+  min-width: 38px;
+  height: 38px;
+  line-height: 38px;
+}
+
+.ant-pagination-item-active {
+  border-color: #31a2f2;
+  font-weight: 500;
+  background: #30A2F2;
+}
+
+.ant-pagination-item-active a {
+  color: #fff;
+}
+
+.ant-pagination-total-text {
+  float: left;
+}
+
+.lxx-g-layout .ant-pagination-prev,
+.lxx-g-layout .ant-pagination-next {
+  padding: 0 20px;
+  height: 38px;
+  line-height: 38px;
+  background: -moz-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+  background: -webkit-linear-gradient(left, #2ABCFA 0%, #3C96EF 100%);
+  background: linear-gradient(to right, #2ABCFA 0%, #3C96EF 100%);
+  border-color: transparent;
+}
+
+.lxx-g-layout .ant-pagination-prev a,
+.lxx-g-layout .ant-pagination-next a,
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover {
+  color: #fff;
+}
+
+.ant-pagination-item-active:focus a,
+.ant-pagination-item-active:hover a {
+  color: #fff;
+}
+
+.lxx-g-layout .ant-pagination-disabled {
+  background: -moz-linear-gradient(left, #D5F2FE 0%, #D8EAFC 100%);
+  background: -webkit-linear-gradient(left, #D5F2FE 0%, #D8EAFC 100%);
+  background: linear-gradient(to right, #D5F2FE 0%, #D8EAFC 100%);
+  border-color: transparent;
+}
+
+.lxx-g-layout .ant-pagination-disabled a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* 播放页背景样式 */
+
+.lxx-g-blackBg>.lxx-g-header {
+  background: #303336;
+}
+
+.lxx-g-blackBg .JC-hd-ttit a,
+.lxx-g-blackBg .JC-hd-tnav ul li a {
+  color: #fff;
+}
+
+.lxx-g-player {
+  background: #303336;
+}
+
+.lxx-g-player .JC-player #replayVideo {
+  height: 900px !important;
+}
+
+.lxx-g-player>div {
+  width: 1300px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+
+/* 内容外框 */
+
+.lxx-g-mainCnt {
+  position: relative;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+
+/* tab切换 */
+
+.lxx-m-tab {
+  position: relative;
+  height: 60px;
+  border-bottom: 1px solid #D8D8D8;
+  box-sizing: border-box;
+}
+
+.lxx-u-tab {
+  position: relative;
+  display: inline-block;
+  min-width: 140px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.lxx-u-tab.tab-selectd {
+  color: #26A5FF;
+}
+
+.lxx-u-tab.tab-selectd::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #26A5FF;
+}
+
+
+/* hf */
+
+
+/* 两行文本超出省略号 */
+
+
+/*须加注释，以便webpack 识别：   autoprefixer:off; autoprefixer:on */
+
+.hf-text-clamp2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*   autoprefixer:off;  */
+  -webkit-line-clamp: 2;
+  /* autoprefixer:on  */
+  -webkit-box-orient: vertical;
+}
+
+/* 强制换行 */
+.hf-text-wordBreak {
+  word-break: break-word;
+}
+
+/* 弹框样式 */
+
+.ant-modal-body {
+  /* padding: 0 !important; */
+  padding: 0;
+}
+
+.ant-modal-body .hf-m-titleBar {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  background: #2b3238;
+  color: #fff;
+  /* 垂直居中 */
+  align-items: center;
+}
+
+.hf-m-title {
+  flex: 1
+}
+
+.hf-m-close {
+  color: #797e81;
+}
+
+.hf-m-close:hover {
+  cursor: pointer;
+  color: #ff3f3f;
+}
+
+.hf-m-buttons {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.hf-m-button {
+  margin: 0 10px
+}
+
+
+/* .hf-m-comfirm {
+  margin-right: 50px;
+  background: transparent;
+  color: #797e81;
+} */
+
+
+/* ------------- */
+
+
+/* hover */
+
+.hf-hover-blue:hover {
+  color: #34aaff;
+  cursor: pointer;
+}
+
+.hf-hover-red:hover {
+  color: #ff3f3f;
+  cursor: pointer;
+}
+
+
+/* ---------- */
+
+
+/* popover */
+
+.ant-popover-placement-bottomRight>.ant-popover-content>.ant-popover-arrow {
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.5)
+}
+
+.ant-popover-inner {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+}
+
+
+/* hf */
+
+
+/* 暂无数据 */
+
+.lxx-g-noData {
+  position: relative;
+  width: 200px;
+  text-align: center;
+  margin: 100px auto 100px;
+}
+
+.lxx-g-noData>img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.lxx-g-noData>p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+/* 加载 */
+
+.lxx-g-layout .lxx-g-loading {
+  display: block;
+  margin: 25px auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  z-index: 100;
+}
+
+.lxx-g-loading>div {
+  width: 55px !important;
+  height: 55px !important;
+  /* font-size: 35px !important; */
+}
+
+.lxx-g-loading span {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #30A2F2;
+}

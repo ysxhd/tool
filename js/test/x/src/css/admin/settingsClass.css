@@ -1,0 +1,194 @@
+/*
+ * @Author: kangyl 
+ * @Date: 2018-01-16 15:51:19 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-03-02 09:50:57
+ */
+
+.kyl-sc-setting{
+  width:100%;
+  height:auto;
+  border:1px solid #d9d9d9;
+  background-Color:white;
+  box-Shadow:0 2px 2px #e9e9e9
+}
+.kyl-sc-title{
+  width:100%;
+  height:auto;
+  border-Bottom:1px solid #d9d9d9;
+  overflow:auto
+}
+.kyl-sc-title>span{
+  font-Size:16px;
+  margin:24px;
+  float:left
+}
+.kyl-sc-title>.kyl-sc-bj{
+  float:right;
+  width:102px;
+  height:36px;
+  background-Color:#626a73;
+  border-Radius:20px;
+  margin-Top:18px;
+  margin-Right:22px;
+  text-align:center;
+}
+.kyl-sc-title>.kyl-sc-bj>span{
+  font-Size:14px;
+  color:white;
+  line-Height:36px
+}
+.kyl-sc-title>div:hover{
+  cursor:pointer
+}
+.kyl-sc-status{
+  width:100%;
+  height:auto;
+  overflow:auto
+}
+.kyl-sc-log{
+  width:340px;
+  height:260px;
+  box-Shadow:0 2px 2px #e9e9e9;
+  border:1px solid #d9d9d9;
+  float:left;
+  margin-Top:42px;
+  /* margin-Left:25%; */
+  margin-Bottom:42px
+}
+.kyl-sc-log>.kyl-sc-square{
+  width:140px;
+  height:140px;
+  background-Color:#f0f0f0;
+  border-Radius:50%;
+  margin:16px auto
+}
+.kyl-sc-log>div>svg{
+  width:80px;
+  height:120px;
+  margin-Left:31px;
+  margin-Top:13px;
+  color:#797f85
+}
+.kyl-sc-p1{
+  font-Size:18px;
+  margin-Left:123px
+}
+.kyl-sc-p2{
+  float:left;
+  margin-Left:70px;
+  font-Size:15px
+}
+.kyl-sc-p3{
+  float:left;
+  font-Size:15px;
+  border-Radius:5px;
+  width:85px;
+  height:35px;
+  background-Color:#f0f0f0;
+  line-Height:35px;
+  position:relative;
+  bottom:7px;
+  text-Indent:10px
+}
+.kyl-sc-p4{
+  font-Size:15px;
+  float:left
+}
+.kyl-sc-unlog{
+  width:340px;
+  height:260px;
+  box-Shadow:0 2px 2px #e9e9e9;
+  border:1px solid #d9d9d9;
+  float:left;
+  margin-Left:62px;
+  margin-Top:42px;
+}
+.kyl-sc-unlog>.kyl-sc-square{
+  width:140px;
+  height:140px;
+  background-Color:#f0f0f0;
+  border-Radius:50%;
+  margin:16px auto
+}
+.kyl-sc-unlog>div>svg{
+  width:60px;
+  height:120px;
+  margin-Left:41px;
+  margin-Top:13px;
+  color:#797f85
+}
+.kyl-sc-p11{
+  font-Size:18px;
+  margin-Left:133px
+}
+.kyl-sc-p22{
+  float:left;
+  margin-Left:70px;
+  font-Size:15px
+}
+.kyl-sc-p33{
+  float:left;
+  font-Size:15px;
+  border-Radius:5px;
+  width:85px;
+  height:35px;
+  background-Color:#f0f0f0;
+  line-Height:35px;
+  position:relative;
+  bottom:7px;
+  text-Indent:10px
+}
+.kyl-sc-p44{
+  font-Size:15px
+}
+.kyl-sc-edited{
+  float:right;
+  margin-Right:22px;
+  margin-Top:18px;
+}
+.kyl-sc-save{
+  display:inline-Block;
+  width:102px;
+  height:35px;
+  background-Color:#ff9934;
+  float:left;
+  line-Height:35px;
+  border-Radius:20px;
+  font-Size:14px;
+  color:white;
+  text-Indent:35px;
+  margin-Right:22px
+}
+.kyl-sc-cancel{
+  display:inline-Block;
+  width:102px;
+  height:35px;
+  border:1px solid #b3b3b3;
+  float:left;
+  line-Height:35px;
+  border-Radius:20px;
+  font-Size:14px;
+  text-Indent:35px
+}
+.kyl-sc-min1{
+  float:left;
+  width:85px;
+  height:35px;
+  font-Size:15px;
+  border-Radius:5px;
+  line-Height:35px;
+  position:relative;
+  bottom:6px;
+  text-Indent:2px
+}
+.kyl-sc-p1,.kyl-sc-p11{
+  margin-bottom:10px;
+}
+.kyl-sc-status{
+  margin:0 auto;
+}
+.kyl-sc-statusBox{
+  width:742px;
+  margin:0 auto;
+}

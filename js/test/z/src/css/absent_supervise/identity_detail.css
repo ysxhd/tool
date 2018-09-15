@@ -1,0 +1,46 @@
+/*
+ * @Author: JCheng.L 
+ * @Date: 2018-04-11 09:58:29 
+ * @Last Modified by: JC.liu
+ * @Last Modified time: 2018-04-20 09:39:37
+ */
+.ljc-d-qk{
+  text-align: center;
+}
+
+.ljc-d-qk span{
+  background: #e5b200;
+  border-radius: 4px;
+  color: #ffffff;
+  padding:0 5px;
+}
+
+.ljc-d-lost,
+.ljc-d-in {
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.ljc-d-lost{
+  background: #e54b00;
+}
+
+.ljc-d-in {
+  background: #3ae3bd;
+}
+
+.ljc-col-font-blue{
+  color: #4576be;
+}
+
+.ljc-d-nowrap{
+  width: 180px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ljc-colo-font-y{
+  color: #e5b200;
+}

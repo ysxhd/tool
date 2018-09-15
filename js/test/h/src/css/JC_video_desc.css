@@ -1,0 +1,130 @@
+/*
+ * @Author: JC.Liu 
+ * @Date: 2018-08-02 19:50:17 
+ * @Last Modified by: JC.Liu
+ * @Last Modified time: 2018-08-23 14:05:22
+ * 播放器下边的描述组件
+ */
+
+.JC-videoDesc {
+  min-height: 140px;
+  padding: 20px 0;
+}
+
+.JC-vd-tit span {
+  font-size: 24px;
+  color: #cfcfd0;
+}
+
+.JC-vd-col {
+  line-height: 30px;
+}
+
+.JC-vd-col span {
+  margin-right: 15px;
+}
+
+.JC-vd-color {
+  color: #adadae;
+}
+
+.JC-vd-desc {
+  position: relative;
+  width: 100%;
+  /* padding-bottom: 20px; */
+  padding-right: 100px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.JC-vd-descPulldown {
+  position: relative;
+  width: 100%;
+  padding-right: 100px;
+}
+
+.JC-vd-pulldowDesc {
+  transition: all .1s
+}
+
+.JC-video-modal .ant-modal-content {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.JC-video-modal .ant-modal-header {
+  background: #2b3238;
+}
+
+.JC-video-modal .ant-modal-title {
+  color: #ffffff;
+}
+
+.JC-video-modal .ant-modal-close-x {
+  color: #7a7e82;
+}
+
+.JC-video-content {
+  padding: 16px 24px;
+}
+
+.JC-videoPlayer .vjs-volume-panel {
+  margin-left: 1100px !important;
+}
+
+.JC-videoPlayer .vjs-menu {
+  width: 60px !important;
+  left: -0.6em !important;
+}
+
+.JC-videoPlayer .vjs-menu-content {
+  border-radius: 4px !important;
+}
+
+.JC-videoPlayer .vjs-menu-content .vjs-menu-item {
+  height: 35px !important;
+  line-height: 35px !important;
+}
+
+.JC-videoPlayer .vjs-button>.vjs-icon-placeholder:before {
+  line-height: 2 !important;
+}
+
+.JC-vd-download {
+  float: right;
+  cursor: pointer;
+}
+
+.JC-vd-mp4 {
+  line-height: 70px;
+  font-size: 18px;
+  color: #adadae;
+}
+
+.JC-vd-rate {
+  float: right
+}
+
+.JC-vd-rate-count {
+  margin: 0 !important;
+  color: #ff9f40 !important;
+  font-size: 18px !important;
+}
+
+.JC-vd-pulldown {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  color: #2873ae;
+  cursor: pointer;
+}
+
+/* .JC-vd-pullUp{
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  color: #2873ae;
+  cursor: pointer;
+} */

@@ -1,0 +1,33 @@
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* width: 100%; */
+  /* min-width: 1366px;
+  min-height: 652px; */
+  color: #ffffff;
+  font-family: "Microsoft JhengHei";
+  overflow-y: hidden;
+  user-select: none;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.JC-big-screen{
+  width: 100%;
+  height: 100%;
+}
+
+p{
+  margin: 0;
+  padding:0;
+}

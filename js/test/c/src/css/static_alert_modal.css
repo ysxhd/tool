@@ -1,0 +1,149 @@
+.ant-layout-header+div {
+    background: #fff !important;
+}
+
+.lean-alertmodal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    transition: .35s all;
+}
+
+.lean-alertmodal-show .lean-alertmodal-container {
+    z-index: 20;
+}
+
+.lean-alertmodal-hide .lean-alertmodal-container {
+    z-index: -10;
+}
+
+.lean-alertmodal-container>div {
+    position: absolute;
+    width: 590px;
+    height: 100%;
+    top: 0;
+    transition: .35s all;
+    background: #eff6f6;
+}
+
+.lean-alertmodal-content-show {
+    right: 0;
+}
+
+.lean-alertmodal-content-hide {
+    right: -590px;
+}
+
+.lean-alertmodal-head {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    border-bottom: 1px solid #bbcccb;
+    font-size: 18px;
+}
+
+.lean-alertmodal-head span {
+    float: right;
+    margin-right: 20px;
+    line-height: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.lean-alertmodal-loadingbox {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.lean-alertmodal-loadingbox>p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.lean-alertmodal-examroom-detail {
+    /* height: 100%; */
+    padding-left: 5px;
+}
+
+.lean-alertmodal-examroom-detail>p {
+    height: 40px;
+    line-height: 40px;
+    /* color: #b2b9b9; */
+}
+
+.lean-alertmodal-examroom {
+    padding: 5px 30px;
+}
+
+.lean-alertmodal-examroom>p,
+.lean-alertmodal-searchbox>p {
+    color: #b3b9b9;
+}
+
+.lean-alertmodal-examroom-inner {
+    background: #ddeff0;
+    width: 100%;
+    min-height: 120px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.lean-alertmodal-searchbox {
+    padding: 5px 30px;
+    margin-top: 15px;
+}
+
+.lean-alertmodal-searchbox-inner {
+    padding: 10px 0;
+}
+
+.lean-alertmodal-searchbox-inner>span {
+    display: inline-block;
+    color: #878a8a;
+}
+
+.lean-alertmodal-searchbox-inner>input,
+.lean-alertmodal-searchbox-inner>.ant-select {
+    width: 130px;
+    margin-right: 15px;
+}
+
+.lean-alertmodal-searchbtn {
+    background: #00a3aa!important;
+    border-color: #00a3aa!important;
+}
+
+.lean-alertmodal-datalist {
+    height: 500px;
+    /* border: 1px solid red; */
+}
+
+.lean-alertmodal-table {
+    width: 100%;
+    color: #878a8a;
+    font-size: 12px;
+}
+
+.lean-alertmodal-table tr th {
+    border-bottom: 1px solid #d7e3e3;
+}
+
+.lean-alertmodal-table tr {
+    height: 40px;
+}
+
+.lean-alertmodal-table tr td,
+.lean-alertmodal-table tr th {
+    width: 20%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.lean-alertmodal-nonedata{
+    text-align: center;
+    margin-top: 40px;
+}

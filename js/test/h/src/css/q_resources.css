@@ -1,0 +1,88 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-08-02 09:18:37 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-08-06 11:07:17
+ */
+
+.lxx-g-resource {
+    padding-top: 10px;
+    /* border-top: 1px solid #D8D8D8; */
+}
+
+.lxx-res-g-list {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #E6E6E6;
+}
+
+.lxx-res-g-cnt>div {
+    margin-bottom: 5px;
+}
+
+.lxx-res-g-img {
+    margin-right: 20px;
+    width: 94px;
+}
+
+.lxx-res-g-img img {
+    width: 100%;
+}
+
+.lxx-res-g-name>p {
+    display: inline-block;
+    width: 900px;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.lxx-res-g-name>svg {
+    font-size: 22px;
+    color: #B8B8B8;
+    cursor: pointer;
+}
+
+.lxx-res-g-info {
+    height: 52px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+}
+
+.lxx-res-g-other>span {
+    display: inline-block;
+    color: #666;
+    margin-right: 40px;
+    font-size: 12px;
+}
+
+.lxx-res-m-handle {
+    margin-right: 0 !important;
+    color: #219BF3 !important;
+    cursor: pointer;
+}
+
+.lxx-res-g-pdf {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: #FAFAFA;
+    border: 1px solid #E6E6E6;
+    border-top: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.lxx-res-g-pdf>img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.lxx-res-g-pdf .vjs_video_423-dimensions {
+    width: 1298px;
+    height: 900px;
+}

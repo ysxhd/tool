@@ -1,0 +1,121 @@
+/*
+ * @Author: lean 
+ * @Date: 2018-01-17 10:24:28 
+ * @Last Modified by: huangjing
+ * @Last Modified time: 2018-03-23 10:18:22
+ */
+
+.lean-upload-controlbar {
+  position: fixed;
+  bottom: -240px;
+  right: 5px;
+  width: 500px;
+  height: 300px;
+  z-index: 90;
+  background: #Fff;
+  box-shadow: 0 0 4px 0 #e0e0e0;
+  padding-bottom: 5px;
+  transition:.5s all;
+
+}
+.lean-upload-controlbar-close {
+  height: 0;
+}
+.lean-upload-progress {
+  width: 100%;
+  height: 100%;
+}
+
+.lean-upload-progress>p {
+  user-select: none;
+  height: 50px;
+  line-height: 50px;
+  color: #Fff;
+  padding: 0 15px;
+  background: #41474d;
+}
+
+.lean-upload-progress>p>span {
+  float: right;
+  position: relative;
+  top:12px;
+  border: 8px solid #fff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  cursor: pointer;
+}
+.lean-upload-progress>p>span.open {
+  float: right;
+  position: relative;
+  top:20px;
+  border: 8px solid #fff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  cursor: pointer;
+}
+.lean-upload-queueView{
+  list-style: none;
+  padding: 5px 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width:100%;
+  height: 243px;
+  text-align: center;
+}
+.lean-upload-queueView>li{
+  height: 50px;
+  line-height: 50px;
+  width:100%;
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 15px;
+  border:1px solid #d9d9d9;
+  box-shadow: 0 3px 5px  #ebebeb;
+  
+}
+.lean-upload-queueView>li>span.hj-upload-name{
+  width: calc(100% - 100px);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lean-upload-queueView>li>span.lean-upload-btn-beforeUpload{
+  float: right;
+  height: 100%;
+  width:80px;
+  text-align: center;
+  background: blue;
+  color:#fff;
+  cursor: pointer;
+  user-select: none;
+}
+.lean-upload-btn-uploading{
+  float: right;
+  height: 100%;
+  width:80px;
+  color:#F67E02;
+  background: transparent;
+  user-select: none;
+  text-align: center;
+}
+.lean-upload-btn-error{
+  float: right;
+  height: 100%;
+  width:80px;
+  color:#F67E02;
+  background: transparent;
+  user-select: none;
+  text-align: center;
+}
+.lean-upload-btn-afterUpload{
+  float: right;
+  height: 100%;
+  width:80px;
+  color:#3CC17C;
+  background: transparent;
+  user-select: none;
+  text-align: center;
+}

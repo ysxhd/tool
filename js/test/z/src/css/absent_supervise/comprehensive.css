@@ -1,0 +1,310 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-04-10 15:58:37 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-05-08 12:53:02
+ */
+
+
+/* 设置虚线的颜色 */
+.zn-dashline .ant-table-tbody > tr > td:nth-child(5){
+    border-right: 1px dashed #bec5d3;
+}
+
+.zn-dashline .ant-table-tbody > tr > td:nth-last-child(2){
+    border-right: 1px dashed #bec5d3;
+}
+
+.zn-decre-bg .ant-table-thead tr th{
+    background-color: #fff ;
+    color: #a2adc1 !important;
+} 
+
+
+/* 设置文字块状 */
+.zn-block-text{
+    width: 42px;
+    height: 20px;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #e5b200;
+    margin: 0 auto;
+}
+
+/* 设置文字红色背景 */
+.zn-block-red{
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    padding: 0 5px;
+    background-color: #ff0000;
+}
+
+.zn-block-orange{
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    padding: 0 5px;
+    background-color: #ff6600;
+}
+
+/* 回上级的button */
+.zn-go-button{
+    background-color: #169bd5;
+    border:none;
+    color: #fff;
+}
+
+.zn-school-name{
+    font-size: 20px;
+    color: #323232;
+    padding: 15px 0 0 20px;
+}
+
+.zn-bg-white{
+    background-color: #fff;
+}
+
+/* 设置select选中的字体颜色 */
+.zn-detail-select .ant-select-selection-selected-value{
+    color: #fff;
+}
+
+.zn-font-blue{
+    color: #4576be !important;
+}
+
+.zn-font-black{
+    color: #353535 !important;
+}
+
+.zn-font-brown{
+    color:#e5b200;
+}
+
+.zn-sf-gray{
+    color: #a2adc1;
+}
+
+/* 设置选择框背景色 */
+.zn-select-bg-red .ant-select-selection--single{
+    background-color: #e54b00;
+}
+
+.zn-select-bg-blue .ant-select-selection--single{
+    background-color: #3ae3bd;
+}
+
+.zn-select-bg-gray .ant-select-selection--single{
+    background-color: #b1b1b1;
+}
+
+.zn-select-bg-gray{
+    background-color: #b1b1b1;
+}
+
+.zn-select-bg-orange{
+    background-color: orange;
+}
+
+.zn-select-bg-blue{
+   background-color: #3ae3bd;
+}
+
+.zn-detail-select .ant-select-selection--single{
+    height: 26px;
+    border: 0;
+    
+}
+
+.zn-detail-select .ant-select-selection--multiple > ul > li, .ant-select-selection--multiple .ant-select-selection__rendered > ul > li{
+    -webkit-transition: 0 !important;
+    -o-transition: 0 !important;
+    transition: 0 !important;
+}
+
+.zn-detail-select .ant-select-arrow{
+    color: #fff !important;
+}
+
+/* 小三角点击变色 */
+.zn-narrow{
+    cursor: pointer;
+    display: flex;
+    -webkit-touch-callout: none; /* iOS Safari */
+  
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  
+  -khtml-user-select: none; /* Konqueror */
+  
+  -moz-user-select: none; /* Firefox */
+  
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  
+  user-select: none; /* Non-prefixed version, currently
+  
+  not supported by any browser */
+}
+
+.zn-narrow>div{
+    width: 6px;
+    position: relative;
+}
+
+
+.zn-narrow-up{
+    position: absolute; 
+    bottom: 10px;
+    content: "";
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 6px;
+    border-color:  transparent transparent #a8b2c5 transparent;
+    border-style:solid dashed dashed dashed;
+}
+
+.zn-narrow-upActive{
+    border-color: transparent transparent #4b97fe transparent;
+    position: absolute;
+    bottom: 10px;
+    content: "";
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 6px;
+    border-style:solid dashed dashed dashed;
+}
+
+.zn-narrow-downActive {
+    position: absolute;
+    bottom: -4px;
+    content: "111";
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 6px;
+    border-color: #4b97fe transparent transparent transparent;
+    border-style:solid dashed dashed dashed;
+}
+
+.zn-narrow-down{
+    position: absolute; 
+    bottom: -4px;
+    content: "111";
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 6px;
+    border-color:   #a8b2c5 transparent transparent transparent;
+    border-style:solid dashed dashed dashed;
+}
+
+.zn-wid200-textOverflow{
+    text-align: left;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* select样式 */
+.zn-select-pd{
+    padding: 10px;
+}
+
+/* input制作select */
+.zn-mutiple-select{
+    position: relative;
+    width: 105px;
+}
+
+.zn-detail-select .ant-select-selection__rendered{
+    line-height: 26px !important;
+}
+
+.zn-mutiple-select-input{
+  width: 90px;
+  height: 26px;
+  overflow: hidden;
+  line-height: 26px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* 向下小三角 */
+.ant-select-arrow2{
+    right: 20px !important;
+    bottom: 18% !important;
+    color: #fff !important;
+}
+
+
+
+.zn-mutiple-select>ul{
+    position: absolute;
+    left: 0;
+    top: 26px;
+    display: none;
+    border-radius: 5px;
+    -moz-box-shadow:-3px 2px 3px #C2C2C2;
+     -webkit-box-shadow:-3px 2px 3px #C2C2C2;
+     box-shadow:-3px 2px 3px #C2C2C2;
+     background-color: #fff;
+     z-index: 1000;
+     height: 164px;
+     overflow-y: auto;
+}
+
+.zn-mutiple-select>ul>li{
+    padding: 5px 12px;
+    line-height: 22px;
+    width: 94px;
+    font-weight: 400;
+    color: rgba(0,0,0,.65);
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1000;
+}
+
+.zn-mutiple-select>ul>li:hover {
+    background-color: #e6f7ff;
+}
+
+.zn-flex{
+    margin-top: 14px;
+    display: flex;
+}
+
+.zn-flex>a{
+    text-decoration: none;
+    color: #323232;
+}
+
+.zn-tab{
+
+    width: 150px;
+    height: 35px;
+    background-color: #e2e1e1;
+    text-align: center;
+    line-height: 35px;
+}
+
+.zn-tab-blue{
+    background-color: #0099ff;
+}

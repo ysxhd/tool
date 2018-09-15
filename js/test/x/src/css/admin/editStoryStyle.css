@@ -1,0 +1,36 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:07:45 
+ * @Last Modified by: JudyC
+ * @Last Modified time: 2018-01-19 11:08:58
+ * 和storyEditPic共用
+ */
+.cjy-ess-titleLine .ant-input{
+  width: 440px;
+  height: 40px;
+}
+
+.cjy-ess-titleLen{
+  width: 440px;
+  margin-left: 80px;
+  text-align: right;
+  height: 20px;
+  line-height: 20px;
+}
+
+.cjy-ess-dateLine .ant-input{
+  width: 240px;
+  height: 40px;
+}
+
+.cjy-ess-introLine{
+  margin-top: 20px;
+}
+
+.cjy-ess-introLine .ant-input{
+  width: 440px;
+  height: 160px;
+  resize: none;
+  vertical-align: top;
+}
+

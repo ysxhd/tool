@@ -1,0 +1,71 @@
+/*
+ * @Author: JC.Liu 
+ * @Date: 2018-08-02 09:48:17 
+ * @Last Modified by: JC.Liu
+ * @Last Modified time: 2018-09-03 19:31:07
+ * 关于video的样式
+ */
+
+.video-js .vjs-big-play-button {
+  font-size: 3em !important;
+  line-height: 2.5em !important;
+  height: 2.5em !important;
+  width: 2.5em !important;
+  border: 2px solid #fff !important;
+  border-radius: 50% !important;
+  top: calc( 726px / 2 - 1.5em) !important;
+  left: calc(1300px / 2 - 1.5em) !important;
+}
+
+.JC-player {
+  position: relative !important;
+
+  z-index: 1 !important
+}
+
+.JC-replayVideo-loading {
+  position: absolute !important;
+  left: calc( 1300px / 2 - 85px / 2);
+  top: calc( 726px / 2 - 85px / 2);
+  width: 70px;
+  height: 70px;
+}
+
+.loading-none {
+  display: none;
+}
+
+.loading-block {
+  display: block;
+}
+
+.JC-replayVideo-loading img {
+  width: 100%;
+  height: 100%;
+}
+
+div.JC-rc-cont {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 18px;
+}
+
+div.JC-play-error {
+  position: relative;
+  font-size: 18px;
+  width: 1300px;
+  height: 725px;
+  background: #000;
+}
+
+div.JC-play-error p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 725px;
+}

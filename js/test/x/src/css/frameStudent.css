@@ -1,0 +1,340 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-01-08 16:37:43 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-01-22 13:40:14
+ */
+
+p {
+    margin: 0;
+}
+
+.show {
+    display: block;
+}
+
+.lxx-g-student {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    background: #faad4e;
+    height: 100%;
+    min-width: 1366px!important;
+}
+
+.lxx-stu-u-bgImg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: block;
+    width: 1920px;
+    margin-left: -960px;
+}
+
+.lxx-g-student>.ant-layout-header {
+    position: relative;
+    padding: 0;
+    min-width: 1240px;
+    background: #000;
+    opacity: 0.1;
+}
+
+.lxx-g-student>.ant-row {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 64px;
+    width: 1240px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 64px;
+    transform: translateX(-50%);
+}
+
+.lxx-g-student>.ant-row>.ant-col-4 {
+    text-align: right;
+}
+
+.lxx-g-student>.ant-row .icon {
+    margin-right: 10px;
+    font-size: 42px;
+    vertical-align: middle;
+}
+
+.lxx-g-student>.ant-layout-content {
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.lxx-stu-g-name {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 46px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+
+
+/* 内容样式 */
+
+.lxx-stu-g-cnt {
+    display: flex;
+    display: -webkit-flex;
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.lxx-stu-g-left {
+    width: 242px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.lxx-stu-g-center {
+    width: 622px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.lxx-stu-g-right {
+    width: 322px;
+    height: auto;
+}
+
+
+/* 弹窗公共样式 */
+
+
+/* start */
+
+.lxx-g-dialog>.ant-modal-content {
+    border-radius: 0;
+}
+
+.lxx-g-dialog .ant-modal-body {
+    padding: 24px 20px 10px;
+}
+
+.lxx-g-dialog .ant-modal-header {
+    background: #EBEBEB;
+    padding: 13px 24px;
+}
+
+.lxx-g-dialog .ant-modal-close>.ant-modal-close-x {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.lxx-g-dialog.left .ant-modal-footer {
+    border: 0;
+    text-align: left;
+    padding: 10px 20px 30px;
+    padding-top: 5px;
+}
+
+.lxx-g-dialog.center .ant-modal-footer {
+    border: 0;
+    text-align: center;
+    padding: 10px 20px 30px;
+    padding-top: 5px;
+}
+
+.lxx-g-dialog .ant-modal-footer>div>button {
+    padding: 10px 30px;
+    height: auto;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.lxx-g-dialog .ant-modal-footer>div>.ant-btn:first-child {
+    color: #B5B5B5;
+    background: transparent;
+    border: 1px solid #B5B5B5;
+}
+
+.lxx-g-dialog.left .ant-modal-footer>div>.ant-btn:first-child {
+    margin-left: 120px;
+}
+
+.lxx-g-dialog.center .ant-modal-footer>div>.ant-btn:first-child {
+    margin-left: 0
+}
+
+.lxx-g-dialog .ant-modal-footer>div>.ant-btn:nth-child(2) {
+    margin-left: -210px;
+    color: #fff;
+    background: #ff9934;
+    border: 0;
+}
+
+.lxx-g-dialog .ant-modal-footer>div>.ant-btn:nth-child(2):hover {
+    color: #fff;
+}
+
+.lxx-g-dialog .ant-modal-footer>div>.ant-btn:hover {
+    color: #ff9934;
+    border-color: #ff9934;
+}
+
+.lxx-g-dialog .ant-input:hover {
+    border-color: #FF9934;
+}
+
+.lxx-g-dialog .ant-input:focus {
+    border-color: #FF9934;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(255, 153, 52, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 153, 52, 0.2);
+}
+
+.lxx-g-dialog .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+    border-color: #FF9934;
+}
+
+.lxx-g-dialog .ant-input-suffix>button {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #FF9934;
+    border-color: #FF9934;
+    height: 34px;
+}
+
+
+/* end */
+
+
+/* 弹性布局 */
+
+.lxx-g-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.lxx-g-flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.lxx-m-flex {
+    flex: 1;
+}
+
+
+/* 公共checkbox样式 */
+
+.stuCheck .ant-checkbox-inner {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.stuCheck .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.stuCheck .ant-checkbox:hover .ant-checkbox-inner,
+.stuCheck .ant-checkbox-input:focus+.ant-checkbox-inner {
+    border-color: #ff9934;
+}
+
+.stuCheck .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #ff9934;
+    border-color: #ff9934;
+}
+
+.stuCheck .ant-checkbox-input:hover {
+    border-color: #ff9934;
+}
+
+.stuCheck .ant-checkbox-inner:after {
+    left: 6px;
+    top: 2px;
+    width: 7px;
+    height: 10px;
+}
+
+.stuCheck .ant-checkbox-checked:after {
+    border: 1px solid #ff9934;
+    border-radius: 50%;
+}
+
+.lxx-dia-u-inform {
+    position: absolute;
+    left: 30px;
+    bottom: 85px;
+    color: #f00;
+    font-size: 12px;
+}
+
+
+/* 暂无数据 */
+
+.lxx-g-noData {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.lxx-g-noData>span {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+/* 加载中 */
+
+.lxx-g-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lxx-g-loading .ant-spin-dot i {
+    background-color: #ff9934;
+}
+
+
+/* 状态样式 */
+
+.lxx-g-winTop>.lxx-u-status {
+    margin-left: 20px;
+}
+
+.lxx-u-status {
+    padding: 2px 8px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 15px;
+}
+
+.lxx-u-status.refuse {
+    background: #ff5959;
+}
+
+.lxx-u-status.audit {
+    background: #46B8F9;
+}

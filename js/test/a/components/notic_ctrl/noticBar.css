@@ -1,0 +1,93 @@
+/*
+ * @Author: hf 
+ * @Date: 2018-06-22 10:08:16 
+ * @Last Modified by: hf
+ * @Last Modified time: 2018-06-25 10:51:35
+ */
+
+.hf-nb-main {
+  height: 100px;
+  padding: 40px 20px 20px 20px;
+}
+
+.hf-nb-main::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hf-nb-search {
+  float: left;
+  width: 440px;
+}
+
+.hf-nb-ipt {
+  width: 375px;
+  background-color: #21253e;
+  color: #fff;
+  border: none;
+}
+
+.hf-nb-icon {
+  color: #fff;
+  font-size: 22px;
+  padding: 5px;
+  background: #097ed9;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 3px;
+  position: relative;
+  top: 3px;
+}
+
+.hf-nb-btns {
+  float: right;
+  width: 350px;
+}
+
+.hf-nb-btn {
+  margin-left: 20px;
+  color: #fff;
+  border-color: transparent;
+}
+
+.hf-nb-btn:focus,
+.hf-nb-btn:hover {
+  color: #fff;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.hf-nb-btn-add:focus,
+.hf-nb-btn-add:hover,
+.hf-nb-btn-add {
+  background-color: #097ed9;
+}
+
+.hf-nb-btn-info:focus,
+.hf-nb-btn-info:hover,
+.hf-nb-btn-info {
+  background-color: #203c56;
+}
+
+.hf-nb-btn-dels:focus,
+.hf-nb-btn-dels:hover,
+.hf-nb-btn-dels {
+  background-color: #bd4040;
+}
+
+/* 弹出层 */
+
+.hf-nb-wrap {
+  min-width: 1366px;
+}
+
+.hf-nb-wrap .ant-modal {
+  border: 1px solid #097ed9;
+  border-radius: 5px;
+  padding-bottom: 0;
+}
+
+.hf-nb-wrap .ant-modal-body {
+  padding: 0;
+}

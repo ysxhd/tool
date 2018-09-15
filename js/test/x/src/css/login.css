@@ -1,0 +1,20 @@
+body{
+    background-color: #f8f8f8;
+}
+
+
+.zn-login-box{
+    width: 400px;
+    height: 300px;;
+    margin:300px auto;
+    background-color: #fff;
+    padding-top: 40px;
+    border-radius: 20px;
+}
+
+.zn-t-login{
+    margin:0 auto;
+    width: 80%;
+    text-align: center;
+
+}

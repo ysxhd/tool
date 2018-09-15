@@ -1,0 +1,449 @@
+.lean-netdesk-headnav {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 5px 5px -4px #c0c0c0;
+}
+
+.lean-netdesk-headnav>div {
+    width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    /* line-height: 80px; */
+    /* border: 1px solid transparent; */
+}
+
+.lean-netdesk-title {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-bottom: 0;
+    user-select: none;
+    vertical-align: sub;
+}
+
+.lean-netdesk-headBtn {
+    height: 36px;
+    margin-right: 30px;
+}
+
+.lean-netdesk-headright {
+    width: 38%;
+    /* float: right; */
+    text-align: right;
+    user-select: none;
+}
+
+.lean-netdesk-headprogress {
+    display: inline-block;
+    width: 35%;
+    margin: 0 15px;
+}
+
+.lean-netdesk-contentContainer {
+    width: 1300px;
+    margin: 0 auto;
+    min-height: 1000px;
+    /* border: 1px dashed greenyellow; */
+    border: 1px solid transparent;
+    margin-top: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.lean-netdesk-fliter {
+    display: inline-block;
+}
+
+.lean-netdesk-fliter>ul {
+    list-style: none;
+    border: 1px solid #e6e6e6;
+}
+
+.lean-netdesk-fliter>ul>li {
+    width: 180px;
+    height: 50px;
+    padding: 3px;
+    border-bottom: 1px dashed #e6e6e6;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.lean-netdesk-fliter>ul>li>span {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    display: inline-block;
+    color: #747474;
+}
+
+.lean-netdesk-fliter>ul>li>span:hover {
+    background: #c8eafd;
+    color: #00a7fb;
+}
+
+.lean-netdesk-fliter-active {
+    background: #c8eafd;
+    color: #00a7fb !important;
+}
+
+.lean-netdesk-content {
+    float: right;
+    border: 1px solid #e6e6e6;
+    width: 1100px;
+    /* min-height: 500px; */
+}
+
+.lean-netdesk-innerHead {
+    height: 50px;
+    width: 100%;
+    background-color: #fafafa;
+    line-height: 50px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 35px;
+    font-size: 16px;
+    color: #666;
+    user-select: none;
+}
+
+.lean-netdesk-backlast {
+    cursor: pointer;
+    color: #666;
+    margin-right: 15px;
+}
+
+.lean-netdesk-backlast:hover {
+    color: #00abfb;
+}
+
+.lean-netdesk-curlocal {
+    margin-left: 15px;
+}
+
+.lean-netdesk-curlocal>span {
+    /* font-size: 10px; */
+}
+
+.lean-netdesk-curlocal>span>span>span:hover {
+    color: #61c0f7;
+    cursor: pointer;
+}
+
+.lean-netdesk-innerHead>div {
+    float: right;
+}
+
+.lean-netdesk-innerTitle {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 35px;
+    font-size: 16px;
+    color: #666;
+    user-select: none;
+}
+
+.lean-netdest-choosedClo {
+    display: inline-block;
+    width: 65%;
+}
+
+.lean-netdesk-filesizeClo {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+
+.lean-netdesk-updateTimeClo {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+
+.lean-netdesk-innerDatalist {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    padding: 0 35px;
+    font-size: 13px;
+    color: #666;
+    border-bottom: 1px dashed #e6e6e6;
+    user-select: none;
+}
+
+.lean-netdesk-innerDatalist:hover {
+    background: #eff9fe;
+}
+
+.lean-netdesk-datalistLeft {
+    width: 65%;
+    display: inline-block;
+    position: relative;
+}
+
+.lean-netdesk-chnameDOM {
+    display: inline-block;
+    z-index: 100;
+    position: absolute;
+    left: 40px;
+    top: 7px;
+    padding: 0 !important;
+    height: 36px;
+    line-height: 36px;
+    width: 55%;
+    overflow: hidden;
+}
+
+.lean-netdesk-chnameDOM>span {
+    color: #aaa7a7;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.lean-netdesk-chnameDOM>span:hover {
+    color: #5eff00;
+}
+
+.lean-netdesk-chnameDOM>input {
+    background: #fff;
+    border-radius: 6px;
+    padding-left: 10px;
+    width: 80%;
+    height: 80%;
+}
+
+.lean-netdesk-datalistLeft>span {
+    cursor: pointer;
+    border-radius: 9px;
+    padding: 4px;
+}
+
+.lean-netdesk-datalistLeft-btnCon {
+    display: none;
+    /* display:inline-block; */
+    float: right;
+    /* width:100px; */
+    height: 100%;
+}
+
+.lean-netdesk-datalistLeft-btnCon>span {
+    margin-right: 20px;
+    display: inline-block;
+    width: 12px;
+    height: 27px;
+}
+
+.lean-netdesk-innerDatalist:hover .lean-netdesk-datalistLeft-btnCon {
+    display: inline-block;
+}
+
+.lean-netdesk-datalistLeft>img {
+    margin: 0 10px;
+    width: 17px;
+}
+
+.lean-netdesk-datalistSize,
+.lean-netdesk-datalistUptime {
+    width: 15%;
+    text-align: center;
+    display: inline-block;
+}
+
+.lean-netdesk-datalist>ul {
+    /* padding:0 30px; */
+}
+
+.lean-netdesk-datalist>ul>li:last-child {
+    border: 0;
+}
+
+.lean-netdesk-ScreenMask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+.lean-netdesk-uploadContainer {
+    position: fixed;
+    width: 650px;
+    height: 350px;
+    top: 50%;
+    background: #fff;
+    left: 50%;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.lean-netdesk-uploadTitle {
+    height: 50px;
+    line-height: 50px;
+    background: #2a3238;
+    padding: 0 10px;
+}
+
+.lean-netdesk-uploadTitle>span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+    user-select: none;
+}
+
+.lean-netdesk-uploadClose {
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.lean-netdesk-uploadClose:hover {
+    color: #0795fa;
+}
+
+.lean-netdesk-uploadFileContainer {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 45px;
+}
+
+.lean-netdesk-uploadFileContainer>span {
+    float: left;
+    width: 75%;
+    height: 100%;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: rgb(161, 159, 159);
+    padding-left: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lean-netdesk-uploadFileContainer>button {
+    z-index: 1;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #ccc;
+    /* color:#fff; */
+    border-radius: 6px;
+    /* background: #ff8f42; */
+}
+
+.lean-netdesk-fileBorder {
+    width: 20%;
+    height: 100%;
+    opacity: 0;
+    float: right;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.lean-netdesk-uploadBtnZone {
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.lean-netdesk-uploadBtnZone>button {
+    height: 45px;
+    width: 104px;
+    display: block;
+    border-radius: 6px;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.lean-netdesk-uploadBtnZone>button:hover {
+    box-shadow: 0 3px 15px 3px #ccc;
+}
+
+.lean-uploadDrawer-fileState {
+    padding: 5px 0;
+    height: 100%;
+    /* border:1px solid red; */
+    overflow: auto;
+}
+
+.lean-uploadDrawer-fileState>li {
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    color: #7c7a7a;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.lean-uploadDrawer-fileState>li>span:first-child {
+    width: 180px;
+    display: inline-block;
+    /* border:1px solid red; */
+}
+
+.lean-uploadDrawer-fileState>li>span:first-child+span {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.lean-uploadDrawer-fileState>li>span:last-child {
+    float: right;
+}
+
+/*上传中*/
+
+.lean-uploadDrawer-fileStateList--1 {
+    border: 1px solid #dcdcdc;
+    color: #7c7a7a;
+}
+
+/*上传异常*/
+
+.lean-uploadDrawer-fileStateList-1 {
+    background: #fff3f3;
+    border: 1px solid #f1caca !important;
+}
+
+.lean-uploadDrawer-fileStateList-1>span:last-child {
+    color: #ff6368;
+}
+
+.lean-uploadDrawer-fileStateList-1>svg {
+    color: #ff6368;
+}
+
+/*上传完成*/
+
+.lean-uploadDrawer-fileStateList-0 {
+    border: 1px solid #00c180 !important;
+    background: #d8f5eb;
+    color: #7c7a7a;
+}
+
+.lean-uploadDrawer-fileStateList-0>span:last-child {
+    color: #00c180;
+}
+
+.lean-uploadDrawer-fileStateList-0>svg {
+    color: #00c180;
+}

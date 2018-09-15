@@ -1,0 +1,157 @@
+/* /*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:07:55 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-02-06 13:15:58
+ */
+
+.ljc-hninfo-ctn {
+  display: inline-block;
+  width: 22.6458%;
+  height: 230px;
+  padding: 10px 0.8%;
+  margin: 0px 0px 20px 1.8%;
+  overflow: hidden;
+  border: 1px solid #d9d9d9;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 5px -3px #ccc;
+  box-shadow: 0 3px 5px -3px #ccc;
+ }
+
+.ljc-hninfo-hntags{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/btmBg.png") no-repeat;
+  background-size: 100%;
+  border: 0;
+}
+
+.ljc-hninfo-info >ul{
+  margin:0;
+  padding:15px 10% 0 10%;
+}
+
+.ljc-hninfo-info>ul li{
+  margin-bottom: 17px;
+}
+
+.ljc-hninfo-cIbg{
+  position: relative;
+  margin-left:calc(50% - 45px);
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+
+.ljc-hninfo-cIbg svg{
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+}
+
+.ljc-hninfo-icon {
+  position: relative;
+}
+
+.ljc-hninfo-itop{
+  position: absolute;
+  top:0;
+  left:50%;
+  margin-left: 7%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.ljc-hninfo-itop svg{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
+
+.ljc-hninfo-tit{
+  height: 14px;
+  line-height: 14px;
+  color: #45484d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ljc-hninfo-span {
+  padding: 3px 22px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 25px;
+  background: #aeb8c4;
+  color: #ffffff;
+}
+
+.ljc-hninfo-tool{
+  position: absolute;
+  top:23px;
+  right:0;
+  width: 34.74%;
+  transition:all .5s  linear;
+  background: #ffffff;
+}
+
+.ljc-hninfo-tdown{
+  display: block;
+  position: absolute;
+  top:0;
+  right:0;
+  width: 25px;
+  height:25px;
+  line-height: 25px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+
+.ljc-hninfo-tdown:first-child{
+  display: block;
+}
+
+.ljc-hninfo-tmenu{
+  border-top-left-radius:8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border:1px solid #d9d9d9;
+  overflow: hidden;
+}
+
+.ljc-hninfo-tmenu>ul{
+  margin:0;
+  padding:0;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ljc-hninfo-tmenu > ul > li{
+  list-style: none;  
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ljc-hninfo-tmenu>ul>li:hover{
+  background: #e5e5e5;
+  color: #ff9934;
+}

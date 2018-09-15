@@ -1,0 +1,226 @@
+.hj-myweb-content{
+    width:100%;
+    height:auto;
+    background: #fff;
+}
+.hj-myweb-head{
+    width: 100%;
+    height:50px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.hj-myweb-head p{
+    font-size: 16px;
+    color: black;
+    line-height:50px;
+    margin-left:20px; 
+}
+
+.zn-myweb-webListBox{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+}
+
+
+.zn-myweb-webListBox>div{
+    width: 30%;
+    margin:20px 18px;
+    border:1px solid #d9d9d9;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    -webkit-box-shadow: 0 3px 5px -3px #ccc;
+    box-shadow: 0 3px 5px -3px #ccc;
+}
+
+.zn-myweb-webListBox .zn-myweb-li:hover .zn-myweb-edit{
+    display: block;
+}
+
+/* 设置没有找到网站事的图片 */
+.zn-myweb-webListBox .zn-myweb-li .zn-myweb-nopic{
+    width: 100%;
+    height: 300px;
+    background-color: #fcecd8;
+    position: relative;
+    text-align: center;
+}
+
+.zn-myweb-webListBox .zn-myweb-li .zn-myweb-nopic svg{
+    width: 100px;
+    height: 100px;
+    color: #f9d19d;
+    position: absolute;
+    left:50%;
+    top:20%;
+    margin-left:-50px;    
+}
+
+.zn-myweb-webListBox .zn-myweb-li .zn-myweb-nopic p{
+    color: #ffa939;
+    font-size: 26px;
+    padding-top:55%;
+}
+
+
+.zn-myweb-webListBox>div>.addIframe{
+    width: 100%;
+    height: 325px;
+    background: #ebebeb;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.zn-myweb-webListBox>div>.addIframe>svg{
+    font-size: 70px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.zn-myweb-webListBox>div>a{
+    color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.zn-myweb-webListBox>div>a>img{
+    width: 100%;
+    height: 300px;
+}
+
+.zn-myweb-webListBox>div>a>p{
+   text-align: center;
+   font-size: 16px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
+.zn-myweb-webListBox .zn-myweb-edit{
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    z-index: 20;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+.zn-myweb-webListBox .zn-myweb-edit svg{
+    color: #ff9934;
+    font-size:14px;
+    margin-top: 2px;
+}
+
+.zn-myweb-webListBox .zn-myweb-editCon{
+    width: 80px;
+    height: 60px;
+    background: #fff;
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.zn-myweb-webListBox .zn-myweb-editCon p{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.zn-myweb-webListBox .zn-myweb-editCon p:hover{
+    background: #e5e5e5;
+    color: #ff9934;
+}
+
+
+.zn-normal-modal .ant-modal-header{
+    border-radius: 0;
+    background-color: #41474d;
+
+}
+
+.zn-normal-modal .ant-modal-content .ant-modal-header .ant-modal-title{
+    font-size: 16px;
+    color: #fff;
+    line-height: 23px;
+}
+
+.zn-normal-modal .ant-modal-close-x{
+    color: #93989c;
+}
+
+.zn-normal-modal input{
+    width: 420px;
+    height: 40px;
+    
+}
+/* loading */
+.hj-myweb-content .ant-spin{
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin-left: -10px;
+    margin-top:-12px;
+    z-index: 2000;
+    display: none;
+}
+
+
+
+.zn-normal-modal .ant-modal-footer{
+    border-top: 0;
+}
+
+.zn-normal-modal .ant-modal-footer{
+   text-align: left;
+   padding-left: 10%;
+}
+
+.zn-normal-modal .ant-modal-footer  button{
+    border-radius: 20px;
+    padding: 0 26px;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+.zn-normal-modal .ant-modal-footer .zn-btn-sure{
+    background-color: #ff9934;
+    border-color: #ff9934;
+    color: #fff;
+}
+
+.zn-normal-modal .zn-myweb-mb10{
+    margin-bottom: 22px;
+}
+
+.zn-screenModal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #373737;
+    background-color: rgba(0, 0, 0, 0.685);
+    height: 100%;
+    z-index: 1100;
+    display: none;
+}

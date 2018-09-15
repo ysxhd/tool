@@ -1,0 +1,117 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-01-09 14:05:22 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-02-01 12:39:37
+ */
+
+.lxx-stu-g-right>div>div {
+    margin: 6px 6px 22px;
+    -webkit-box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, .2);
+    box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, .2);
+    background: #fff;
+    /* min-height: 246px; */
+}
+
+/* tabs切换按钮 */
+.mj-sr-tabCon .ant-tabs-nav .ant-tabs-tab-active{
+    color: #665133;
+}
+.mj-sr-tabCon .ant-tabs-ink-bar{
+    height: 4px;
+    background-color:#ffa74d;
+}
+.mj-sr-tabCon .ant-tabs-bar{
+    margin-bottom:20px;
+    border-bottom: 1px solid #ffa74d;
+}
+.mj-sr-tabCon .ant-tabs-nav .ant-tabs-tab{
+    padding: 15px 14px;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+}
+
+/* 列表 */
+.mj-sr-leftBtn{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    padding: 11px 0;
+    cursor: pointer;
+}
+.mj-sr-leftBtn svg{
+    margin-right: 4px;
+    font-size: 18px;
+}
+.mj-sr-leftData,
+.mj-sr-leftDataOut{
+    width: 90%;
+    margin:0 auto;
+    margin-top: 24px;
+}
+.mj-sr-leftData .ant-timeline-item-content,
+.mj-sr-leftDataOut .ant-timeline-item-content{
+    padding: 0 0 14px 0;
+    margin-left:18px;
+    border-bottom: 1px dashed #d9d9d9;
+}
+.mj-sr-leftData  .ant-timeline-item,
+.mj-sr-leftDataOut  .ant-timeline-item{
+    padding: 0 0 14px;
+}
+.mj-sr-leftData  .ant-timeline-item-head-blue{
+    border-color: #fca84e;
+    color: #fca84e;
+}
+.mj-sr-leftData  .ant-timeline-item-head{
+    background-color: #fca84e;
+}
+.mj-sr-leftData .ant-timeline-item-tail{
+    border-left: 1px dashed #fca84e;
+}
+.mj-sr-leftData .ant-timeline-item-last .ant-timeline-item-tail,
+.mj-sr-leftDataOut .ant-timeline-item-last .ant-timeline-item-tail{
+    display: inline-block;
+    height: 80%;
+}
+.mj-sr-leftData .ant-timeline-item-last,
+.mj-sr-leftDataOut .ant-timeline-item-last{
+    padding: 0;
+}
+.mj-sr-leftData .ant-timeline-item-last .ant-timeline-item-content,
+.mj-sr-leftDataOut .ant-timeline-item-last .ant-timeline-item-content{
+    border-bottom: 0;
+}
+.mj-sr-checkMore{
+    height: 46px;
+    border-top: 1px dashed #cccccc;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+}
+/* 灰色 */
+.mj-sr-leftDataOut  .ant-timeline-item-head-blue{
+    border-color: #cccccc;
+    color: #cccccc;
+}
+.mj-sr-leftDataOut  .ant-timeline-item-head{
+    background-color: #cccccc;
+}
+.mj-sr-leftDataOut .ant-timeline-item-tail{
+    border-left: 1px dashed #cccccc;
+}
+
+/* 发布——无列表数据 */
+.mj-sr-pubMein{
+    text-align: center;
+    height: 320px;
+    padding-top: 76px;
+}
+.mj-sr-pubMein svg{
+    font-size: 70px;
+}
+.mj-sr-pubMein p{
+    padding-top: 16px;
+}

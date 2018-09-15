@@ -1,0 +1,31 @@
+/*
+ * @Author: zhengqi 
+ * @Date: 2018-09-04 13:54:36 
+ * @Last Modified by: zhengqi
+ * @Last Modified time: 2018-09-11 16:56:35
+ */
+/*设置页面*/
+.zq-set-container{
+  padding: 50px;
+}
+
+.zq-set-config{
+  text-align: center;
+  width: 780px;
+  margin: 100px auto 0;
+}
+
+.zq-set-config .ant-btn{
+  margin-top: 50px;
+  height: 40px;
+  width: 100px;
+}
+
+.zq-set-modal .ant-modal-body{
+  text-align: center;
+}
+
+.zq-set-modal .ant-modal-body>h4>span{
+  font-size: 24px;
+  margin: 0 10px;
+}

@@ -1,0 +1,50 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:09:09 
+ * @Last Modified by: JCheng.Liu
+ * @Last Modified time: 2018-01-23 13:53:08
+ */
+.ljc-vc-top{
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ljc-vc-title{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ljc-vc-num {
+  background: #ebebeb;
+  border-radius: 25px;
+  text-align: center;
+  color: #a4a4a4;
+  padding:2px 50px;
+}
+
+.ljc-vc-bottom{
+  margin-bottom: 10px;
+}
+
+.ljc-vc-option{
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.ljc-vc-option .ant-progress-inner{
+  background: #eaeaea;
+}
+
+.ljc-vc-option .ant-progress-bg{
+  background: #ff9934;
+}
+
+.ljc-vc-option .ant-progress-line {
+  width: 84% !important;  
+}
+
+/* 人数 */
+.ljc-vc-opnum{
+  margin-left: 20px;
+}

@@ -1,0 +1,270 @@
+/*
+ * @Author: 甘维添 
+ * @Date: 2018-04-10 13:08:15 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-05-07 17:38:59
+ */
+
+div.gwt-overview-content {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.gwt-overview .gwt-header {
+  height: 80px;
+  background-color: #374866;
+}
+
+.gwt-overview .gwt-header>div {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.gwt-overview .gwt-header h1,
+.gwt-overview .gwt-header h2 {
+  color: #fff;
+}
+
+.gwt-overview .gwt-header h1 {
+  font-size: 26px;
+  width: 230px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #091e44;
+}
+
+.gwt-overview .gwt-header h2 {
+  line-height: 80px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+div.gwt-overview .gwt-tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+div.gwt-overview .gwt-tabs>div {
+  height: 210px;
+  width: 446px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 50px 34px;
+  cursor: pointer;
+}
+
+div.gwt-overview .gwt-zhqk {
+  background-image: url('./../static/img/综合缺考管理背景.png');
+}
+
+div.gwt-overview .gwt-zhwg {
+  background-image: url('./../static/img/综合违规管理背景.png');
+}
+
+div.gwt-overview .gwt-jkqd {
+  background-image: url('./../static/img/综合成绩管理背景.png');
+  /* background-color: #e9ba37;
+  line-height: 104px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff; */
+}
+
+/* 综合缺考 */
+
+div.gwt-overview .gwt-zhqk h3 {
+  font-size: 24px;
+  color: #fff;
+}
+
+div.gwt-overview .gwt-zhqk>div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+div.gwt-overview .gwt-zhqk>ul {
+  display: flex;
+}
+
+div.gwt-overview .gwt-zhqk li {
+  flex: 1;
+}
+
+div.gwt-overview .gwt-zhqk li p {
+  text-align: center;
+  color: #fff;
+}
+
+/*综合违规 */
+
+div.gwt-overview .gwt-zhwg h3 {
+  font-size: 24px;
+  color: #fff;
+}
+
+div.gwt-overview .gwt-zhwg>div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+div.gwt-overview .gwt-zhwg ul {
+  display: flex;
+}
+
+div.gwt-overview .gwt-zhwg ul li {
+  margin-right: 20px;
+}
+
+div.gwt-overview .gwt-zhwg ul p {
+  text-align: center;
+  color: #fff;
+}
+
+
+/*监考签到 */
+
+div.gwt-overview .gwt-jkqd h3 {
+  font-size: 24px;
+  color: #fff;
+}
+
+div.gwt-overview .gwt-jkqd>div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+div.gwt-overview .gwt-jkqd ul {
+  display: flex;
+}
+
+div.gwt-overview .gwt-jkqd ul li {
+  margin-right: 20px;
+}
+
+div.gwt-overview .gwt-jkqd ul p {
+  text-align: center;
+  color: #fff;
+}
+
+div.gwt-chart-container {
+  height: 585px;
+  background-color: #fff;
+  position: relative;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 585px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: #000;
+}
+
+.ant-carousel .slick-dots li button {
+  background-color: #9c9898;
+}
+
+.ant-carousel .slick-dots {
+  bottom: 20px;
+}
+
+.ant-carousel .slick-dots li button {
+  height: 16px;
+  border-radius: 8px;
+}
+
+/* 下方charts和表格 */
+
+.gwt-chart-container {
+  padding: 20px 30px;
+  color: #a2adc1;
+}
+
+.gwt-chart-container .gwt-table {
+  position: absolute;
+  display: flex;
+  top: 334px;
+  z-index: 1;
+  background-color: #f5f6fa;
+}
+
+.gwt-chart-container .gwt-table ul {
+  border-right: 1px dashed #a2adc1;
+}
+
+.gwt-chart-container .gwt-table li {
+  text-align: left;
+  padding-left: 10px;
+  width: 94px;
+  line-height: 34px;
+}
+
+.gwt-chart-container .gwt-table>div {
+  width: 1224px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.gwt-chart-container .gwt-table p {
+  line-height: 34px;
+  text-align: left;
+  width: 100%;
+  /* white-space: nowrap; */
+  height: 34px;
+  display: flex;
+  border-bottom: 1px dashed #a2adc1;
+}
+
+.gwt-chart-container .gwt-table p:last-child{
+  border-bottom: 0;
+}
+
+.gwt-chart-container .gwt-table p span {
+  /* display: inline-block; */
+  text-align: center;
+  /* width: 245px; */
+  /* padding-left: 76px; */
+  flex: 1;
+}
+
+.gwt-chart-container>div.gwt-charts-content{
+  height: 555px;
+  position: relative;
+  z-index: 2;
+}
+
+div.gwt-chart-container div.gwt-loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+div.gwt-chart-container div.gwt-loading .ant-spin-dot{
+  height: 60px;
+  width: 60px;
+}
+
+div.gwt-chart-container div.gwt-loading .ant-spin-dot i{
+  width: 25px;
+  height: 25px;
+}
+

@@ -1,0 +1,117 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-01-17 10:35:04 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-01-19 13:41:35
+ */
+
+.lxx-mien-g-each {
+    position: relative;
+    height: 190px;
+    width: 177px;
+    margin: 0 8px 20px 8px;
+    border: 1px solid #E0DBD0;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 1px #EBEBEB;
+    float: left;
+    cursor: pointer;
+}
+
+.lxx-mien-g-each:nth-child(3n) {
+    margin-right: 0;
+}
+
+.lxx-mien-g-each>div>.lxx-u-status {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.lxx-ea-g-img {
+    height: 135px;
+    background: #EBEBEB;
+    margin: 5px;
+}
+
+.lxx-ea-g-img>svg {
+    margin-top: 35px;
+    margin-left: 45px;
+    font-size: 70px;
+}
+
+.lxx-ea-g-img>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.lxx-ea-g-til {
+    padding: 0 10px;
+}
+
+.lxx-ea-g-til>p {
+    font-size: 12px;
+    color: #807566;
+}
+
+.lxx-ea-g-til>p:first-child {
+    font-size: 14px;
+    color: #403220;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* 操作风采 */
+
+.lxx-ea-g-edit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+.lxx-mien-g-each:hover .lxx-ea-g-edit {
+    display: block;
+}
+
+.lxx-ea-g-edit>svg {
+    padding: 4px;
+    color: #ffa74c;
+    background: #fff;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.lxx-ea-g-edit>div {
+    position: absolute;
+    width: 80px;
+    left: -65px;
+    top: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    /* display: none; */
+}
+
+.lxx-ea-g-edit>div>p {
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.lxx-ea-g-edit>div>p:hover {
+    background: #E5E5E5;
+    color: #ffa74c;
+}
+
+.lxx-ea-g-edit>div>p:first-child:hover {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.lxx-ea-g-edit>div>p:last-child:hover {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}

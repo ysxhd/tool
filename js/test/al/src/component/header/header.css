@@ -1,0 +1,78 @@
+/*
+ * @Author: JC.Liu 
+ * @Date: 2018-07-11 14:24:13 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-09-07 14:00:17
+ * header
+ */
+
+.JC-bs-header {
+  height: 88px;
+ line-height: 88px;
+  background: url('../../static/bg/top背景.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 0 2%;
+}
+
+.JC-bs-h-inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.JC-bs-h-tit {
+  font-size: 34px;
+  font-weight: bold;
+}
+.ZOE-bs-h-p{
+  display: inline-block;
+  width:215px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.JC-bs-h-place {
+  width: 320px;
+  background: url('../../static/bg/教学楼背景.png') no-repeat ;
+  text-align: center;
+  color: #ffd800;
+  font-size: 20px;
+}
+
+.JC-bs-h-date {
+  font-size: 36px;
+  float: right;
+}
+
+/* 下面是天气 */
+
+.JC-bs-h-weather{
+  float: right;
+}
+
+.xq-weather{
+  float: right;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  margin-right: 40px;
+  font-size: 18px;
+  color: #fefefe;
+}
+
+.xq-weather>div{
+  margin-right: 20px;
+  letter-spacing: 1px;
+}
+
+.xq-weather>div:nth-child(2){
+  margin-right: 0;
+}
+
+.xq-weather>div:last-child{
+  margin-right:0;
+}
+
+img.xq-weather-img{
+  width: 60px;
+  display: block;
+}

@@ -1,0 +1,41 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:07:48 
+ * @Last Modified by: JCheng.Liu
+ * @Last Modified time: 2018-01-30 14:50:55
+ */
+/* .ljc-honor .xt-panel{
+  float: left;
+} */
+
+.ljc-honor .ant-tabs-nav {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.ljc-ac-active {
+  color: #ff9934;
+  font-weight: 500;
+  border-bottom: 4px solid #ff9934;
+}
+
+.ljc-honor .ant-tabs-nav .ant-tabs-tab:hover {
+  color: #ff9934;
+}
+
+.ljc-honor .ant-tabs-nav {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.ljc-honor a {
+  color: rgba(0, 0, 0, .65);
+}
+
+.cjy-hn-modal{
+  width: 720px !important;
+}
+
+.cjy-hn-modal .ant-modal-body{
+  padding: 0 !important;
+}

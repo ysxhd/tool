@@ -1,0 +1,102 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-02-24 16:21:31 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-02-26 10:38:34
+ */
+ .zn-wishHope-con{
+     margin-left:0;
+     padding: 0;
+ }
+
+.zn-wishHope-con>li{
+    width: 1095px;
+    height: 66px;
+    background-color: #f7f6f6;
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    border: 1px solid transparent;
+}
+
+.zn-wishHope-con>li:hover{
+    border: 1px solid #d9c8b8;
+}
+
+.zn-wishHope-con>li:hover .passOrNo{
+    display: block;
+}
+
+.zn-wishHope-con>li>span{
+    width: 3.8%;
+    height: 100%;
+    position: relative;
+}
+
+.zn-wishHope-con .ant-checkbox-input, .zn-wishHope-con .ant-checkbox-inner, .zn-wishHope-con .ant-checkbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -3px 0 0 -3px;
+    border-radius: 50%;
+    border-color: #9b9b9b;
+}
+
+.zn-wishHope-con .ant-checkbox-wrapper:hover .ant-checkbox-inner, .zn-wishHope-con .ant-checkbox:hover .ant-checkbox-inner, .zn-wishHope-con .ant-checkbox-input:focus+.ant-checkbox-inner{
+    border-color: #ff9934;
+}
+
+.zn-wishHope-con .ant-checkbox-checked .ant-checkbox-inner, .zn-wishHope-con .ant-checkbox-indeterminate .ant-checkbox-inner{
+    background: #ff9934;
+    border-color: #ff9934;
+}
+
+.zn-wishHope-bod{
+    width: 6%;
+    height: 100%;
+    background-color: #dedcdc;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #d9c8b8;
+}
+
+.zn-wishHope-body{
+    padding: 10px 50px 0 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.zn-wishHope-con .zn-wishHope-body .passOrNo{
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-left: 0;
+    background-color: #f7f6f6;
+    display: none;
+}
+
+
+.zn-wishHope-con .zn-wishHope-body .passOrNo li{
+   width: 70px;
+   height: 100%;
+   list-style: none;
+   text-align: center;
+   line-height: 64px;
+   cursor: pointer;
+   display: inline-block;
+}
+
+.zn-wishHope-con ul.passOrNo li:nth-child(1){
+   border-left: 1px solid #d9c8b8;
+   color: #1990ff;
+}
+
+.zn-wishHope-con ul.passOrNo li:nth-child(2){
+   color: #fe6868;
+   border-left: 1px solid #d9c8b8;
+}

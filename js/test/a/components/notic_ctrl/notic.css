@@ -1,0 +1,219 @@
+/*
+ * @Author: hf 
+ * @Date: 2018-06-22 11:24:59 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-07-25 17:28:33
+ */
+
+.hf-nc-main {
+    padding: 0 20px 20px 20px;
+    position: relative;
+    min-height: 210px;
+}
+
+.ant-table,
+.ant-table table {
+    border-radius: 0;
+}
+
+.ant-table-thead>tr>th {
+    background: #2d324f;
+    color: #b0c5ff;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #1A435F;
+    border-left: none;
+    border-right: none;
+    padding: 10px 16px;
+}
+
+.ant-table-thead>tr>th.ant-table-column-sort {
+    background: #2e334f;
+}
+
+.ant-table-placeholder {
+    background-color: #21253E;
+    border-bottom-color: #21253E;
+    color: #4f576b;
+    user-select: none;
+}
+
+.ant-table-tbody>tr>td {
+    border-bottom: 1px solid #1A435F;
+    color: #e0e0e1;
+    padding: 10px 16px;
+    position: relative;
+}
+
+.ant-table-tbody>tr:hover>td {
+    background: #5e6880;
+}
+
+.ant-pagination {
+    color: #fff;
+    border: 1px solid #526088;
+    border-radius: 10px;
+}
+
+.ant-pagination,
+.ant-pagination-prev,
+.ant-pagination-next,
+.ant-pagination-jump-prev,
+.ant-pagination-jump-next,
+.ant-pagination-prev a,
+.ant-pagination-next a,
+.ant-pagination-item a {
+    color: #fff;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+    padding: 0 10px;
+}
+
+.ant-pagination-item:focus,
+.ant-pagination-item:hover {
+    border-right: 1px solid #526088;
+}
+
+.ant-pagination-disabled a,
+.ant-pagination-disabled:hover a,
+.ant-pagination-disabled:focus a,
+.ant-pagination-disabled .ant-pagination-item-link,
+.ant-pagination-disabled:hover .ant-pagination-item-link,
+.ant-pagination-disabled:focus .ant-pagination-item-link,
+.ant-pagination-jump-prev:after,
+.ant-pagination-jump-next:after {
+    color: #aaa;
+}
+
+.ant-pagination-prev,
+.ant-pagination-jump-prev,
+.ant-pagination-jump-next,
+.ant-pagination-item {
+    margin-right: 0;
+    background: transparent;
+    border: none;
+    border-right: 1px solid #526088;
+    border-radius: 0;
+}
+
+.ant-pagination .ant-pagination-item-active {
+    background: #097ed9;
+}
+
+.ant-pagination-item-active:focus a,
+.ant-pagination-item-active:hover a {
+    color: #fff;
+}
+
+.ant-table-tbody>tr.ant-table-row-selected td {
+    background: #14172b;
+}
+
+.hf-nc-total {
+    position: absolute;
+    bottom: -20px;
+    color: #fff;
+}
+
+.hf-nc-icons {
+    width: 200px;
+}
+
+.hf-nc-icon {
+    padding: 8px;
+    background: #204b66;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #113046;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hf-nc-icons .icon-delete {
+    color: #fd4a08;
+}
+
+.hf-nc-icons .icon-check:hover,
+.hf-nc-icons .icon-edit:hover {
+    color: #fff;
+    background: #087dd9;
+}
+
+.hf-nc-icons .icon-delete:hover {
+    color: #fff;
+    background: #fd4a08;
+}
+
+ 
+ .ant-input-number.xq-notic-key-up,
+ .xq-notic-key-up .ant-input-number-input-wrap{
+    display: inline-block;
+    width: 55px;
+    border-radius: 4px;
+    height: 30px;
+    background-color: #303554;
+    border:none;
+    color: #fff;
+ } 
+
+ .ant-input-number.xq-notic-key-up{
+     margin:0 10px;
+ }
+
+ .xq-notic-key-up .ant-input-number-handler-wrap{
+     display: none;
+ }
+
+ .xq-notic-key-up .ant-input-number-input{
+     text-align: center;
+ }
+
+ .xq-page-box .ant-pagination {
+     display: inline-block;
+ }
+
+ .xq-page-box{
+     position: absolute;
+     right:20px;
+     bottom: -30px;
+     color: #fff;
+ }
+ .xq-page-box .ant-pagination{
+     border-radius: 0;
+ }
+ .xq-page-first,.xq-page-last{
+     border:1px solid #526088;
+     cursor: pointer;
+     display: block;
+     float: left;
+     width: 60px;
+     height: 34px;
+     line-height: 34px;
+     background-color: #2b314b;
+     text-align: center;
+ }
+ .xq-page-first{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right:0;
+    
+ }
+ .xq-page-last{
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left:0;
+ }
+
+ .xq-nc-main .ant-pagination.ant-table-pagination{
+     display: none;
+ }
+
+ .zn-table-limit{
+     max-width:800px;
+     overflow: hidden; 
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     cursor: default;
+ }

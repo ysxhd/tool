@@ -1,0 +1,94 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-01-12 11:17:44 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-02-07 11:02:08
+ */
+.zn-b-duty-cont h5{
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+    margin-bottom: 0;
+}
+
+.zn-b-duty-cont h5 span{
+    font-size: 14px;
+    color: #807973;
+    letter-spacing: 2px;
+    vertical-align: top;
+    padding-left: 4px;
+}
+
+.zn-b-duty-cont .ant-table-thead > tr > th{
+    background-color: #fbfbfa;
+    width: 186px;
+    height: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.zn-b-duty-cont .ant-table-tbody > tr > td{
+    width: 186px;
+    height: 178px;
+    text-align: center;
+    background-color: #fbfbfa;
+    padding: 0;
+}
+
+.zn-b-duty-cont .ant-table-thead > tr > th:nth-child(1){
+    width: 100px;
+}
+
+.zn-b-duty-cont .ant-table-bordered .ant-table-tbody > tr >  td:nth-child(1){
+    width: 100px;
+}
+
+.zn-b-duty-cont .ant-table-wrapper{
+    margin:0 54px 26px 54px;
+}
+/* SVG icon */
+.zn-b-duty-cont .zn-b-teaClsDutyIcon{
+    font-size: 30px;
+    color: #ffa64c;
+}
+
+.zn-b-duty-cont .zn-b-teaClsDutyIcon p{
+    font-size: 14px;
+    color: #4d4945;
+}
+/* tbody下td内部的样式 */
+.zn-b-teaClsDutycont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.zn-b-teaClsDutycont div{
+    width: 50%;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #4d4945;
+}
+.zn-b-duty-cont .zn-b-duty-btn{
+    width: 100%;
+    text-align: center;
+}
+
+.zn-b-duty-cont .zn-b-duty-btn button{
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 20px 25px 20px;
+    font-size: 16px;
+}
+
+.zn-b-duty-cont .zn-b-duty-btn button:nth-child(1){
+    color: #1990ff;
+}
+
+.zn-b-duty-cont .zn-b-duty-btn button:nth-child(2){
+    color: #ff8787;
+}

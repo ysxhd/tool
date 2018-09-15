@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 1366px;
+    min-height: 768px;
+    background-color: #14172b !important;
+}
+
+body>#__next,
+#__next>.JC-page-html {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.JC-page-body {
+    height: calc(100% - 74px);
+    padding-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* 初始化a标签 */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/* 初始化表格样式 */
+
+.ant-table,
+.ant-table table {
+    border-radius: 0;
+}
+
+.ant-table-thead>tr>th {
+    background: #2d324f;
+    color: #b0c5ff;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #1A435F;
+    border-left: none;
+    border-right: none;
+    padding: 10px 16px;
+}
+
+.ant-table-thead>tr>th.ant-table-column-sort {
+    background: #2e334f;
+}
+
+.ant-table-placeholder {
+    background-color: #323847;
+    border-bottom-color: #555e73;
+    color: #4f576b;
+    user-select: none;
+}
+
+.ant-table-tbody>tr>td {
+    border-bottom: 1px solid #1A435F;
+    color: #e0e0e1;
+    padding: 10px 16px;
+    position: relative;
+}
+
+.ant-table-tbody>tr:hover>td {
+    background: #5e6880;
+}
+
+.ant-pagination {
+    color: #fff;
+    border: 1px solid #526088;
+    border-radius: 10px;
+}
+
+.ant-pagination,
+.ant-pagination-prev,
+.ant-pagination-next,
+.ant-pagination-jump-prev,
+.ant-pagination-jump-next,
+.ant-pagination-prev a,
+.ant-pagination-next a,
+.ant-pagination-item a {
+    color: #fff;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+    padding: 0 10px;
+}
+
+.ant-pagination-item:focus,
+.ant-pagination-item:hover {
+    border-right: 1px solid #526088;
+}
+
+.ant-pagination-disabled a,
+.ant-pagination-disabled:hover a,
+.ant-pagination-disabled:focus a,
+.ant-pagination-disabled .ant-pagination-item-link,
+.ant-pagination-disabled:hover .ant-pagination-item-link,
+.ant-pagination-disabled:focus .ant-pagination-item-link,
+.ant-pagination-jump-prev:after,
+.ant-pagination-jump-next:after {
+    color: #aaa;
+}
+
+.ant-pagination-prev,
+.ant-pagination-jump-prev,
+.ant-pagination-jump-next,
+.ant-pagination-item {
+    margin-right: 0;
+    background: transparent;
+    border: none;
+    border-right: 1px solid #526088;
+    border-radius: 0;
+}
+
+.ant-pagination .ant-pagination-item-active {
+    background: #097ed9;
+}
+
+.ant-pagination-item-active:focus a,
+.ant-pagination-item-active:hover a {
+    color: #fff;
+}
+
+.ant-table-tbody>tr.ant-table-row-selected td {
+    background: #14172b;
+}
+
+.ant-table-pagination.ant-pagination {
+    margin-right: 10px;
+}

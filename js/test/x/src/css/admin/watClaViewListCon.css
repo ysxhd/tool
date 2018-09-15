@@ -1,0 +1,139 @@
+/*
+ * @Author: kangyl 
+ * @Date: 2018-01-16 15:50:00 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-02-01 14:08:04
+ */
+
+.kyl-wcvlc-msgList{
+  width:202px;
+  height:auto;
+  border:1px solid #d9d9d9;
+  box-shadow: 0 2px #ebebeb;
+}
+.kyl-wcvlc-listPic{
+  width:202px;
+  height:113px;
+}
+.kyl-wcvlc-listPic IMG{
+  width:200px;
+  height:113px;
+  
+}
+.kyl-wcvlc-edit svg{
+  color:#ff9d3c;
+  margin-left:3px;
+  margin-top:1px;
+}
+.kyl-wcvlc-edit{
+  width:22px;
+  height:22px;
+  background-color:white;
+  position:relative;
+  left:172px;
+  top:-130px;
+  /* z-index: 10; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border:1px solid #dfdfdf;
+}
+.kyl-wcvlc-edit:hover{
+  cursor:pointer;
+  
+}
+/* 点击全选左上白色的点 */
+
+.kyl-wcvlc-listPic .ant-checkbox-inner{
+  width:21px ;
+  height:21px ;
+  border-radius: 50%;
+  left:10px;
+  top:-105px;
+}
+.kyl-wcvlc-listPic .ant-checkbox-checked:after{
+  left:10px;
+  top:-105px;
+}
+.kyl-wcvlc-listPic .ant-checkbox-inner:hover{
+  border:1px solid #ff9c3a;
+}
+.kyl-wcvlc-listPic .ant-checkbox-inner:after{
+  left:6.5px;
+  top:3.1px;
+}
+.kyl-wcvlc-listPic .ant-checkbox-inner:after{
+  width: 6.7px;
+}
+.kyl-wcvlc-listPic .ant-checkbox-checked .ant-checkbox-inner{
+  background-color:#ff9c3a; 
+  border:1px solid #ff9c3a;
+}
+.kyl-wcvlc-listPic .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.kyl-wcvlc-listPic  .ant-checkbox:hover .ant-checkbox-inner,.kyl-wcvlc-listPic  .ant-checkbox-input:focus + .ant-checkbox-inner{
+  border:1px solid #ff9c3a;
+}
+
+.kyl-wcvlc-listCont .kyl-wcvlc-sp1{
+  display:block;
+  margin:6px 13px; 
+  font-size: 14px;
+  color:#b8b8b8
+}
+.kyl-wcvlc-listCont .kyl-wcvlc-sp2{
+  color:#4d4d4d;
+  text-overflow: ellipsis;/* 超出内容显示为省略号*/
+  white-space: nowrap;/*文本不进行换行*/
+}
+.kyl-wcvlc-set{
+  width:81px;
+  height:104px;
+  background-color: white;
+  position:relative;
+  left:113px;
+  top:-131px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border:1px solid #dfdfdf;
+  box-shadow: 0 1px #eaeaea;
+}
+.kyl-wcvlc-set>div{
+  width:81px;
+  height:34px;
+  text-indent: 12px;
+  line-height: 32px;
+}
+.kyl-wcvlc-set>div:hover{
+  cursor:pointer;
+  
+}
+.kyl-wcvlc-set div:hover{
+  background-color: #e5e5e5;
+  color:#ff9c3a;
+}
+.kyl-wcvlc-see{
+  border-top-left-radius: 8px;
+}
+.kyl-wcvlc-delete{
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+  
+}
+.kyl-wcvlc-notOnlinePic{
+  width:200px;
+  height:113px;
+  background-color: #d9d9d9;
+}
+.kyl-wcvlc-sp1{
+  height:25px;
+}
+.kyl-wcvlc-etr4{
+  left:15px
+}
+.kyl-wcvlc-etr3{
+  left:-5px
+}
+
+
+
+

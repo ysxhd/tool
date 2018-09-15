@@ -1,0 +1,197 @@
+/*
+ * @Author: MinJ
+ * @Date: 2018-01-09 14:05:22 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-03-13 15:28:37
+ */
+
+ .mj-srm-modal{
+  width: 760px !important;
+}
+
+/* title */
+.mj-srm-modal .ant-modal-header{
+  background-color: #ebebeb;
+}
+
+/* content */
+.mj-srm-modal .ant-modal-body{
+  padding:24px 0 0 0;
+}
+  /* checkBox */
+  .mj-srm-checkCon .ant-checkbox-wrapper{
+    margin-left: 6%;
+  }
+  .mj-srm-modal .ant-checkbox-inner{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .mj-srm-modal .ant-checkbox-checked .ant-checkbox-inner, 
+  .mj-srm-modal .ant-checkbox-indeterminate .ant-checkbox-inner{
+    background-color: #ff9934;
+    border-color: #ff9934;
+  }
+  .mj-srm-modal .ant-checkbox-inner:after{
+    left: 5.571429px;
+    top: 2.142857px;
+  }
+  /* button */
+  .mj-srm-deleBtn{
+    margin-left: 30px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+  }
+  .mj-srm-deleBtn span{
+    padding: 10px 6px;
+  }
+/* 内容模块 */
+.mj-srm-listContent{
+  width: 700px;
+  margin: 0 auto;
+}
+.mj-srm-listCon{
+  height: 60px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  box-shadow: 0px 2px 2px #ccc;
+}
+.mj-srm-listCon:hover > p{
+  display: inline-block;
+}
+.mj-srm-listCheck{
+  float: left;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  border-right: 1px solid #ccc;
+}
+.mj-srm-listText{
+  float: left;
+  width: 530px;
+  height: 100%;
+}
+.mj-srm-listText p{
+  display: inline-block;
+  width: 80%;
+  padding-left: 10px;
+  padding-top: 8px;
+  color: #353535;
+}
+
+.mj-srm-listStatus,
+.mj-srm-gray,
+.mj-srm-blue,
+.mj-srm-red,
+.mj-srm-black{
+  float: right;
+  width: 60px;
+  height: 22px;
+  /* margin-right: 46px; */
+  margin-top: 6px;
+  color: #fff;
+  padding-left: 4px;
+}
+.mj-srm-listStatus div,
+.mj-srm-gray div,
+.mj-srm-blue div,
+.mj-srm-red div,
+.mj-srm-black div{
+  float: right;
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-right: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+}
+.mj-srm-listStatus{
+  background-color: #ffb266;
+}
+.mj-srm-gray{
+  background-color: #cccccc;
+}
+.mj-srm-blue{
+  background-color: #46b8f9;
+}
+.mj-srm-red{
+  background-color: #ff5959;
+}
+.mj-srm-black{
+  background-color: #727881;
+}
+
+.mj-srm-listText span:last-child{
+  padding-left: 10px;
+  font-size: 12px;
+}
+.mj-srm-listIcon{
+  float: right;
+  width: auto;
+  height: 100%;
+  background-color: #717981;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  display: none;
+}
+.mj-srm-listIcon span:nth-child(1){
+  margin-left: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.mj-srm-listIcon span:nth-child(2){
+  margin-left: 18px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.mj-srm-listIcon span:nth-child(3){
+  margin-left: 8px;
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* 分页 */
+.mj-srm-listBottom{
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.mj-srm-listTotal{
+  float: left;
+}
+.mj-srm-listTotal .ant-select{
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.mj-srm-listTotal .ant-select-selection--single{
+  border-radius: 15px;
+}
+.mj-srm-listBottom .ant-pagination-simple .ant-pagination-simple-pager input{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.mj-srm-listBottom .ant-pagination-simple .ant-pagination-prev, 
+.mj-srm-listBottom .ant-pagination-simple .ant-pagination-next{
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+.mj-srm-listBottom .ant-pagination-prev a, 
+.mj-srm-listBottom .ant-pagination-next a{
+  padding: 0 10px;
+}
+.mj-srm-listBottom .ant-pagination-simple .ant-pagination-simple-pager{
+  margin-top: 4px;
+}
+.mj-srm-listPage{
+  float: right;
+}
+
+/* footer */
+.mj-srm-modal .ant-modal-footer{
+  border-top: 0;
+}

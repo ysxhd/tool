@@ -1,0 +1,176 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:08:22 
+ * @Last Modified by: JCheng.L
+ * @Last Modified time: 2018-03-20 15:27:52
+ */
+.ljc-rpe-modal {
+  min-width: 600px;
+}
+
+.ljc-rpe-modal .ant-modal-content {
+  border-radius: 0;
+}
+
+.ljc-rpe-modal .ant-modal-header {
+  background: #41474d;
+  border-radius: 0;
+}
+
+.ljc-rpe-modal .ant-modal-close,
+.ljc-rpe-modal .ant-modal-header .ant-modal-title {
+  color: #ffffff;
+}
+
+.ljc-rpe-modal .ant-modal-body {
+  padding: 30px 30px 30px 30px;
+  position: relative;
+}
+
+.ljc-rpe-rangLine {
+  margin-bottom: 20px;
+}
+
+.ljc-rpe-label {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  line-height: 40px;
+}
+
+.ljc-rpe-label:after{
+  content: ":";
+  margin: 0 8px 0 2px;
+  position: relative;
+  top: -0.5px;
+}
+
+.ljc-rpe-range {
+  display: inline-block;
+  width: 110px;
+  height: 50px;
+  border: 5px solid #fff;
+  padding: 10px;
+  text-align: center;
+  margin-left: 2px;
+  background: #ebebeb;
+  outline: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.ljc-rpe-range svg {
+  margin-right: 10px;
+}
+
+.ljc-rpe-left10 {
+  margin-left: 10px;
+}
+
+.ljc-rpe-formwrap .ant-form-item-required:before {
+  content: " "
+}
+
+.ljc-rpe-numtip {
+  position: relative;
+}
+
+.ljc-rpe-numlm {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+
+.ljc-rpe-lmtip {
+  position: relative;
+}
+
+.ljc-rpe-lmtxt {
+  position: absolute;
+  left: 38%;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.ljc-rpe-lmtip .ant-input {
+  width: 23.7%;
+}
+
+.ljc-rpe-result {
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  margin-top: -8px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #4d4d4d;
+}
+
+.ljc-rpe-result>label {
+  margin-right: 10px;
+}
+
+.ljc-rpe-result .ant-checkbox-checked .ant-checkbox-inner,
+.ljc-rpe-result .ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: #ff9934;
+  border-color: #ff9934;
+}
+
+.ljc-rpe-txta {
+  position: relative;
+}
+
+.ljc-rpe-txta .ant-input {
+  height: 160px;
+  resize: none;
+  vertical-align: top;
+}
+
+.ljc-rpe-tareallm {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  line-height: 14px;
+}
+
+.ljc-rpe-btn {
+  padding-left: 16.66666667%;
+}
+
+.ljc-rpe-btn button {
+  width: 100px;
+  height: 38px;
+  border-radius: 25px;
+  outline: 0;
+}
+
+.ljc-rpe-btn button:first-child{
+  background: #ff9934;
+  border: 1px solid #ff9934;
+  color: #ffffff;
+}
+
+.ljc-rpe-btn button:first-child,
+.ljc-rpe-btn button:first-child:hover {
+  margin-right: 30px;
+}
+
+.ljc-rpe-btn button:last-child:hover,
+.ljc-rpe-btn button:last-child {
+  background: #ffffff;
+  color: #666666;
+  border: 1px solid #999999;
+}
+
+/* 所有的input 高为40px */
+.ljc-rpe-formwrap input,
+.ljc-rpe-formwrap .ant-calendar-picker-input {
+  height:40px;
+}
+
+.ljc-rpe-formwrap .ant-calendar-picker-input{
+  padding:0;
+}
+
+.ljc-rpe-formwrap  .ant-calendar-range-picker-separator {
+  vertical-align: -webkit-baseline-middle;
+}

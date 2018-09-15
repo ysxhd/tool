@@ -1,0 +1,88 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:07:35 
+ * @Last Modified by: JudyC
+ * @Last Modified time: 2018-01-26 14:08:00
+ */
+.cjy-dm{
+  position: relative;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 3px 5px #d9d9d9;
+  margin-top: 8px;
+  padding: 14px;
+  min-height: 100px;
+}
+
+.cjy-dm-disIconBox,
+.cjy-dm-timeBox{
+  display: inline-block;
+  background: #f5f5f5;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: top;
+}
+
+.cjy-dm-disIconBox{
+  width: 30%;
+}
+
+.cjy-dm-disIcon{
+  width: 40px;
+  height: 40px;
+  background: #ffe6cc;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.cjy-dm-disIcon svg{
+  font-size: 20px;
+  color: #f1ae69;
+}
+
+.cjy-dm-disIconTxt,
+.cjy-dm-timeIconTxt{
+  display: inline-block;
+  width: calc(90% - 40px);
+  text-align: center;
+}
+
+.cjy-dm-timeBox{
+  width: 63%;
+  margin-left: 4%;
+}
+
+.cjy-dm-con{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.cjy-dm:hover .cjy-dm-setBtnBox{
+  display: block;
+}
+
+.cjy-dm-setBtnBox{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 98px;
+  background: #717a81;
+}
+
+.cjy-dm-setBtnBox span{
+  display: block;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.cjy-dm-setBtnBox svg{
+  font-size: 20px;
+  color: #fff;
+}

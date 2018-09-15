@@ -1,0 +1,213 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-07-31 13:35:43 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-08-31 13:55:13
+ * 评论样式
+ */
+
+.lxx-g-comment {
+    position: relative;
+    width: 100%;
+    border: 1px solid #CCC;
+    border-top: 0;
+    border-radius: 3px;
+}
+
+.lxx-g-comment .ant-input:focus {
+    border-color: #E6E6E6;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+    border-right-width: 1px !important;
+}
+
+.lxx-g-comText {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.lxx-g-comText.ant-input:hover {
+    border-color: #E6E6E6;
+}
+
+.lxx-g-comRate {
+    height: 80px;
+    padding: 0 20px;
+}
+
+.lxx-g-comRate button {
+    padding: 0 25px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.lxx-g-perType {
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #E6E6E6;
+    box-sizing: border-box;
+}
+
+
+/* 评论列表 */
+
+.lxx-g-cmt {
+    padding: 20px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.lxx-cmt-g-img {
+    padding-right: 22px;
+    width: 105px;
+}
+
+.lxx-cmt-g-img>div,
+.lxx-cmt-g-img>img {
+    width: 82px;
+    height: 82px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.lxx-cmt-g-img>div.man {
+    background: #6BCEFF;
+}
+
+.lxx-cmt-g-img>div.woman {
+    background: #EBA0E6;
+}
+
+.lxx-cmt-g-img>div svg {
+    font-size: 60px;
+    margin-top: 22px;
+}
+
+.lxx-cmt-g-cnt .lxx-cmt-u-flooer {
+    position: relative;
+    padding: 2px 8px;
+    margin-right: 10px;
+    background: #66B9F5;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.lxx-cmt-u-flooer::after {
+    position: absolute;
+    content: '';
+    top: 7px;
+    right: -5px;
+    border-top: 4px solid transparent;
+    border-left: 6px solid #66B9F5;
+    border-bottom: 4px solid transparent;
+}
+
+.lxx-cmt-u-name {
+    font-size: 16px;
+    color: #1391EB;
+}
+
+.lxx-cmt-m-right {
+    display: inline-block;
+    float: right;
+}
+
+.lxx-cmt-m-right>span {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.lxx-cmt-m-right>span:hover,
+.lxx-rep-u-del:hover {
+    color: #1391EB;
+}
+
+.lxx-cmt-m-sorce {
+    color: #FF9F40;
+}
+
+.lxx-cmt-u-gray {
+    color: #666;
+    margin-right: 20px;
+}
+
+.lxx-cmt-g-reply {
+    margin-top: 20px;
+    padding-top: 20px;
+    background: #F5F5F5;
+}
+
+.lxx-cmt-g-reply .ant-input {
+    height: 38px;
+}
+
+.lxx-rep-m-btn {
+    padding: 0 27px;
+    height: 38px;
+    margin-left: 20px;
+}
+
+.lxx-rep-g-img {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.lxx-rep-g-img>div,
+.lxx-rep-g-img>img {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.lxx-rep-g-img>div.man {
+    background: #6BCEFF;
+}
+
+.lxx-rep-g-img>div.woman {
+    background: #EBA0E6;
+}
+
+.lxx-rep-g-img>div svg {
+    font-size: 40px;
+    margin-top: 8px;
+}
+
+.lxx-rep-g-name {
+    color: #1391EB;
+}
+
+.lxx-rep-u-del {
+    padding-left: 20px;
+    color: #666;
+    text-align: right;
+    cursor: pointer;
+}
+
+.lxx-s-gray {
+    color: #808080;
+}
+
+.lxx-rep-g-up {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    border-top: 1px dashed #D9D9D9;
+    box-sizing: border-box;
+}
+
+.lxx-rep-g-up>span {
+    cursor: pointer;
+}
+
+.lxx-rep-g-up svg {
+    margin: 0 8px;
+}
+
+.lxx-rep-g-noData {
+    padding: 20px;
+    color: #666;
+    text-align: center;
+}

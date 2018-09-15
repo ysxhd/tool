@@ -1,0 +1,53 @@
+/*
+ * @Author: JC.Liu 
+ * @Date: 2018-07-24 16:36:59 
+ * @Last Modified by: JC.Liu
+ * @Last Modified time: 2018-08-03 20:01:32
+ */
+
+.JC-footer {
+  width: 100%;
+  height: 200px;
+  color: #bebfbf;
+  background: #2e3133;
+}
+
+.JC-layout-footer {
+  padding: 0 !important;
+}
+
+.JC-footer-wrap {
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.JC-ft-btn {
+  margin-left: 10px;
+}
+
+.JC-ft-desc {
+  width: 1100px;
+}
+
+.JC-ft-desc div {
+  line-height: 35px;
+}
+
+.JC-ft-wx {
+  float: right;
+  text-align: center;
+}
+
+.JC-ft-wximg {
+  display: block;
+  width: 110px;
+  height: 110px;
+}
+
+.JC-ft-wximg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: cover;
+}

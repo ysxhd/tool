@@ -1,0 +1,109 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-01-15 10:19:50 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-02-05 14:25:47
+ */
+
+
+/* 搜索 */
+
+.lxx-set-g-search {
+    padding: 0 20px 18px;
+    border-bottom: 1px solid #CCC;
+    box-sizing: border-box;
+}
+
+.lxx-se-g-sear {
+    width: 280px;
+}
+
+.lxx-se-g-sear>.ant-input {
+    padding: 0 15px;
+    height: 34px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.lxx-se-g-que {
+    padding: 6px 30px;
+    background: #ff9934;
+    color: #fff;
+    border: 0;
+    border-radius: 17px;
+}
+
+
+/* 学生列表展示 */
+
+.zn-set-g-cnt {
+    height: 536px;
+    padding: 0 20px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.zn-set-g-cnt {
+    overflow-y: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.zn-set-g-cnt>div {
+    position: relative;
+    margin-top: 20px;
+    width: calc(100%/7);
+    text-align: center;
+    cursor: pointer;
+}
+
+.zn-set-g-cnt>div>svg {
+    font-size: 100px;
+    margin-bottom: 10px;
+    color: #ffe6cc;
+}
+
+.zn-set-g-cnt>div>span {
+    display: block;
+}
+
+.zn-set-g-cnt>div>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+/* 选择框样式 */
+
+.zn-set-g-cnt .ant-checkbox-wrapper {
+    position: absolute;
+    right: 15px;
+}
+
+.zn-set-g-cnt .ant-checkbox-inner {
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+}
+
+.zn-set-g-cnt .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #ff9934;
+    border-color: #ff9934;
+}
+
+.zn-set-g-cnt .ant-checkbox-inner:after {
+    left: 8px;
+    top: 3px;
+    width: 8px;
+    height: 12px;
+}
+
+.zn-set-g-cnt .ant-checkbox-checked:after {
+    border: 1px solid #ff9934;
+    border-radius: 50%;
+}

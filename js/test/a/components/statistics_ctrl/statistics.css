@@ -1,0 +1,64 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-06-19 17:15:04 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-06-27 10:42:55
+ */
+
+.zn-pd-bg {
+    padding: 30px 20px 20px 40px;
+}
+
+.zn-bg-pd {
+    color: #fff;
+}
+
+.zn-tab-bg>.ant-tabs .ant-tabs-nav-wrap {
+    padding-left: 40px;
+}
+
+.zn-tab-bg>.ant-tabs .ant-tabs-content.ant-tabs-content-animated {
+}
+
+.ant-tabs:not(.ant-tabs-vertical) > .ant-tabs-content > .ant-tabs-tabpane{
+    padding: 0 40px;
+}
+
+.zn-flex {
+    display: flex;
+    font-size: 16px;
+    color: #a7a7ab;
+}
+
+.zn-flex div {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.zn-select {
+    color: #097ed9;
+    font-weight: bold;
+    border-bottom: 4px solid #097ed9;
+}
+
+.zn-tab-bg {
+    height: 100%;
+}
+
+.zn-tab-bg .ant-tabs-bar {
+    border-bottom: 1px solid #2d324f;
+    margin: 0;
+}
+
+.zn-tab-bg .ant-tabs-tab {
+    color: #a7a7ab;
+}
+
+.zn-tab-bg .ant-tabs-nav .ant-tabs-tab-active {
+    color: #1890ff;
+    font-weight: 500;
+}
+
+.zn-tab-bg .ant-tabs-ink-bar {
+    height: 3px;
+}

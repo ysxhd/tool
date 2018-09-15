@@ -1,0 +1,194 @@
+/*
+ * @Author: MinJ 
+ * @Date: 2018-01-09 14:41:58
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-01-12 16:50:31
+ * 状态监督——列表管理组件
+ */
+
+.mj-wcto-content{
+  width: 580px !important;
+}
+/* title */
+.mj-wcto-content .ant-modal-header{
+  height: 50px;
+  background-color: #41474d;
+}
+.mj-wcto-content .ant-modal-title,
+.mj-wcto-content .ant-modal-close{
+  color: #fff;
+}
+.mj-wcto-content .ant-modal-close:focus,
+.mj-wcto-content .ant-modal-close:hover{
+  color: #d9d9d9 !important;
+}
+
+/* content */
+.mj-wcto-content .ant-modal-body,
+.mj-wcto-content .ant-modal-footer {
+  /* width: 580px; */
+  background-color: #fff;
+}
+.mj-wcto-content .ant-modal-body{
+  padding: 30px 40px;
+}
+
+/* 策略选择 */
+.mj-wcto-type{
+  margin-bottom: 20px;
+}
+.mj-wcto-type .ant-radio-group{
+  margin-left: 22px;
+}
+.mj-wcto-type .ant-radio-wrapper{
+  margin-right: 36px;
+}
+.mj-wcto-type .ant-radio-inner{
+  width: 20px;
+  height: 20px;
+}
+.mj-wcto-type .ant-radio-checked .ant-radio-inner{
+  border-color: #ff9933;
+}
+.mj-wcto-type .ant-radio-wrapper:hover .ant-radio-inner,
+.mj-wcto-type .ant-radio-checked:hover .ant-radio-inner{
+  border-color: #ff9933;
+}
+.mj-wcto-type .ant-radio-inner:after{
+  width: 16px;
+  height: 16px;
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+  background-color: #ff9933;
+}
+
+/* 周次选择 */
+.mj-wcto-none{
+  display: none;
+}
+.mj-wcto-weekCheck{
+  /* width: 500px; */
+  position: relative;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.mj-wcto-weekCheck .ant-checkbox-group{
+  padding-bottom: 20px;
+  text-align: left
+}
+.mj-wcto-weekCheck .ant-checkbox-group-item{
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.mj-wcto-weekCheck .ant-checkbox-checked .ant-checkbox-inner {
+  background: #ff9934;
+  border-color: #ff9934;
+}
+.mj-wcto-weekCheck .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.mj-wcto-weekCheck .ant-checkbox:hover .ant-checkbox-inner,
+.mj-wcto-weekCheck .ant-checkbox-input:focus+.ant-checkbox-inner {
+  border-color: #ff9934;
+}
+.mj-wcto-weekCheck .ant-checkbox-inner {
+  width: 17px;
+  height: 17px;
+}
+.mj-wcto-weekCheck .ant-checkbox-inner:after {
+  left: 4.571429px;
+  top: 1.142857px;
+  width: 6.714286px;
+  height: 10.142857px;
+}
+/* 周期范围 */
+.mj-wcto-timeCheck{
+  position: relative;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.mj-wcto-timeCheck .ant-calendar-picker{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.mj-wcto-timeCheck .ant-calendar-picker-input{
+  width: 340px;
+  height: 40px;
+  margin-left: 10px;
+}
+.mj-wcto-timeCheck::after,
+.mj-wcto-weekCheck::after{
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 46%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 14px solid #f0f0f0;
+}
+.mj-wcto-weekCheck::after{
+  left: 24.5%;
+}
+.mj-wcto-timeCheck .ant-calendar-picker-icon:after{
+  font-size: 20px;
+}
+
+/* 开关机时间 */
+.mj-wcto-onOff{
+  margin-top: 30px;
+}
+.mj-wcto-on,
+.mj-wcto-off{
+  display: inline-block;
+}
+.mj-wcto-onOff .ant-time-picker-input{
+  height: 40px;
+}
+.mj-wcto-off{
+  float: right;
+}
+.mj-wcto-onOff .ant-time-picker{
+  width: 140px;
+  margin-left: 10px;
+}
+.mj-wcto-onOff .ant-time-picker-icon:after{
+  font-size: 20px;
+  line-height: inherit;
+}
+
+/* footer */
+.mj-wcto-content .ant-modal-footer{
+  text-align: center;
+  padding-bottom: 40px;
+  border: 0;
+}
+.mj-wcto-okBtn,
+.mj-wcto-cancelBtn{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+}
+.mj-wcto-okBtn{
+  background-color: #ff9934;
+  color: #fff;
+}
+.mj-wcto-content .ant-modal-footer button + button{
+  margin-left: 30px;
+}
+.mj-wcto-content .ant-btn:hover,
+.mj-wcto-content .ant-btn:focus,
+.mj-wcto-content .ant-btn:active,
+.mj-wcto-content .ant-btn.active{
+  background-color: #ff7f00;
+}
+.mj-wcto-content .ant-btn:hover,
+.mj-wcto-content .ant-btn:focus{
+  color: #fff;
+  border-color: #ff9934;
+}
+.mj-wcto-cancelBtn:hover{
+  color: #41474d !important;
+  background-color: #fff !important;
+  border-color: #d9d9d9 !important;
+}

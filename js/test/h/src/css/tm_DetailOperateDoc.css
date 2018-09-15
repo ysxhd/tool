@@ -1,0 +1,87 @@
+/*
+ * @Author: hf 
+ * @Date: 2018-08-06 14:26:30 
+ * @Last Modified by: hf
+ * @Last Modified time: 2018-08-06 15:05:44
+ */
+
+.hf-tmdod-container {
+  width: 380px;
+  height: 410px;
+  padding: 20px 20px 0;
+  overflow: auto;
+}
+
+.hf-tmdod-contenBox .ant-timeline-item-tail {
+  border-left: 2px dashed #e8e8e8;
+}
+
+.hf-tmdod-contenBox .ant-timeline-item-head {
+  width: 16px;
+  height: 16px;
+  left: -3px;
+  background: #bfe8ff;
+  border: none;
+}
+
+.hf-tmdod-contenBox .ant-timeline-item-head::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background: #37b4fe;
+  border-radius: 50%;
+}
+
+.hf-tmdod-box {
+  position: relative;
+  min-height: 100px;
+  width: 100%;
+  line-height: 20px;
+  background: #dae8f2;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+
+}
+
+.hf-tmdod-box::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 6px;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border: 6px solid;
+  border-color: transparent #dae8f2 transparent transparent;
+}
+
+.hf-tmdod-reason {
+  min-height: 40px;
+  margin-bottom: 10px;
+}
+
+.hf-tmdod-title {
+  font-weight: bold;
+}
+
+.hf-tmdod-flexDiv {
+  display: flex;
+}
+
+.hf-tmdod-time {
+  flex: 1
+}
+
+.hf-tmdod-queryMore {
+  text-align: center;
+  color: #0c92f2;
+  border-top: 2px dashed #e8e8e8;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}

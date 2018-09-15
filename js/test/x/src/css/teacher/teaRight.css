@@ -1,0 +1,229 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-01-10 14:36:51 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-02-01 14:27:42
+ */
+.zn-r-box{
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+.zn-r-box .zn-r-boxLeft,.zn-r-box .zn-r-boxRight{
+    margin:33px 0 0 30px;
+}
+
+.zn-r-box .zn-r-boxLeft img{
+    width: 360px;
+    height: 250px;
+}
+
+.zn-r-box .zn-r-boxRight{
+    width: 428px;
+    height: 250px;
+    border: 1px solid #ffad5b;
+    border-radius: 10px;
+    background-color: #fffaf6;
+    padding: 0;
+}
+
+.zn-r-box .zn-r-boxRight li{
+    list-style: none;
+    height: 65px;
+    border-bottom: 1px dashed #e0d8d1;
+    margin: 0 20px;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center; 
+}
+
+.zn-r-box .zn-r-boxRight li:nth-child(1){
+    height: 50px;
+}
+
+.zn-r-box .zn-r-boxRight li:nth-child(4){
+    border-bottom: 0;
+}
+
+.zn-r-box #zn-r-boxRight li h5{
+    font-size: 18px;
+    color: #4d4945;
+}
+
+
+.zn-r-box #zn-r-boxRight li h6{
+    font-size: 14px;
+    color: #66615c;
+    margin-right: 12px;
+}
+
+.zn-r-box #zn-r-boxRight li p{
+    width: 90px;
+    height: 34px;
+    border: 1px solid #ccc1b8;
+    border-radius: 25px;
+    margin:0;
+    line-height: 34px;
+    padding-left: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    color: #8c857e;
+}
+
+.zn-r-box #zn-r-boxRight li p:active{
+    background-color: #ffa64c;
+    color: #fff;
+    border: 0;
+}
+
+.zn-r-box #zn-r-boxRight li svg{
+    color: #8c857e;
+    font-size: 16px;
+}
+
+.zn-r-box #zn-r-boxRight span{
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+
+
+.zn-r-box #zn-r-boxRight .mr0{
+    position: relative;
+    width: 90px;
+    height: 34px;
+    border: 1px solid #ccc1b8;
+    border-radius: 25px;
+    margin:0;
+    line-height: 34px;
+    padding-left: 16px;
+    cursor: pointer;
+    color: #8c857e;
+}
+
+.zn-r-box #zn-r-boxRight .mr0:active{
+    background-color: #ffa64c;
+    color: #fff;
+    border: 0;
+}
+
+/* 音量选中出现阴影滑块 */
+.zn-r-videoShadow{
+    width: 280px;
+    height: 38px;
+    background: rgba(127,125,123, .7);
+    position: absolute;
+    top:-50px;
+    left:-170px;
+    border-radius: 5px;
+}
+
+/* 改写ant design的样式 */
+.zn-r-videoShadow .ant-slider-handle{
+    width: 7px;
+    background-color: #ffa64c;
+    border-color: #ffa64c;
+    border-radius: 25%;
+}
+
+.zn-r-videoShadow .ant-tooltip-open{
+    border-color: #ffa64c;
+}
+
+.zn-r-videoShadow .ant-slider-rail{
+    background-color: #fff;
+}
+
+.zn-r-videoShadow .ant-slider-track{
+    background-color: #ffa64c;
+}
+
+.zn-r-videoShadow .ant-slider:hover .ant-slider-track{
+    background-color: #ffa64c;
+}
+
+.zn-r-videoShadow .ant-slider:hover{
+    border:0;
+}
+
+.zn-r-videoShadow .ant-btn{
+    height: 20px;
+    line-height: 20px;
+    padding:0;
+    text-align: center;
+    border-radius: 34px;
+    border: 0;
+    margin-left: 15px;
+}
+
+.zn-r-videoShadow .ant-btn span{
+    padding: 0 8px;
+    font-size: 12px;
+}
+
+.zn-r-videoShadow::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 55px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid rgba(127,125,123, .7);
+}
+
+.zn-r-videoShadow .ant-input-number{
+    width: 30px;
+    background-color: rgba(127,125,123, .7);
+    margin: 0;
+}
+
+.zn-r-videoShadow .ant-input-number-input-wrap{
+    width: 30px;
+}
+
+/* 鼠标点中时候的样式 */
+.zn-r-box #zn-r-boxRight li .active{
+    background-color: #ffa64c;
+    color: #fff;
+    border: 0;
+}
+
+#zn-r-boxRight li p.active svg{
+    color: #fff;
+    font-size: 16px;
+}
+
+#zn-r-boxRight li .mr0.active svg{
+    color: #fff;
+    font-size: 16px;
+}
+
+/* 如果没有数据时候的样式 */
+.zn-r-box .zn-r-noClick{
+    width: 880px;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+}
+
+
+.zn-r-box #zn-r-boxRight.zn-r-dataNull p{
+    color: #d8d8d8;
+    border: 1px solid #d8d8d8;
+}
+
+.zn-r-box #zn-r-boxRight.zn-r-dataNull li svg{
+    color: #d8d8d8;
+}
+
+.zn-r-box #zn-r-boxRight.zn-r-dataNull .mr0{
+    color: #d8d8d8;
+    border: 1px solid #d8d8d8;
+}

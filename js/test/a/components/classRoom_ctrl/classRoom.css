@@ -1,0 +1,186 @@
+/*
+ * @Author: JC.Liu 
+ * @Date: 2018-06-25 16:38:19 
+ * @Last Modified by: JC.Liu
+ * @Last Modified time: 2018-09-12 17:45:58
+ */
+
+.JC-reset {
+  width: 100%;
+  height: 100px;
+  text-align: right;
+  line-height: 100px;
+  padding-right: 20px;
+}
+
+.JC-reser-btn {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background: #203c56;
+  border-color: #203c56;
+  color: #dfe1e4;
+}
+
+.JC-reset .ant-btn:hover,
+.JC-reset .ant-btn:focus {
+  background: #203c56;
+  color: #dfe1e4;
+  border-color: #203c56;
+}
+
+.JC-classRoom-body {
+  padding: 0 20px;
+}
+
+.JC-card {
+  margin-bottom: 15px;
+}
+
+.JC-card-left {
+  display: inline-block;
+  vertical-align: top;
+  width: 130px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  /* background-image: url('../../static/bg2.png'); */
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 4%;
+}
+
+.JC-card-right {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 130px - 4%)
+}
+
+.JC-card-point {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+.JC-card-point .ant-switch-checked {
+  background-color: #00bc23 !important;
+}
+
+.JC-card-point .ant-switch {
+  border: 1px solid #fff;
+}
+
+.JC-cr-capacity {
+  padding: 20px;
+  border-radius: 6px;
+  font-family: 'Microsoft JhengHei'
+}
+
+.JC-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 18%;
+  height: 120px;
+  position: relative;
+  padding-left: 5px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 10px solid transparent;
+  border-image-source: url("../../static/bg1.png");
+  border-image-slice: 10 fill;
+  margin: 0 1.5% 20px 0.5%;
+}
+
+.JC-card-body-left {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 70px;
+  background: #fed700;
+  border-radius: 50%;
+  color: #000000;
+  text-align: center;
+  font-size: 22px;
+  margin-top: calc(60px - 45px);
+}
+
+.JC-card-body-left-Progress {
+  display: inline-block;
+  margin-top: calc(60px - 45px);
+}
+
+.JC-card-body-left-Progress .ant-progress-inner {
+  width: 4.1rem !important;
+  height: 4.1rem !important;
+  font-size: 22px !important;
+  background: #1e2c4d;
+}
+
+.JC-card-body-left-Progress .ant-progress-text {
+  color: #fed700;
+}
+
+.JC-card-body-left-Progress .ant-progress-circle-path {
+  stroke: #00bc23;
+}
+
+.JC-card-body-left-Progress .ant-progress-inner {
+  vertical-align: inherit !important;
+}
+
+.JC-card-body-left-Progress .ant-progress-circle-trail {
+  stroke: #3b4b6d;
+}
+
+/* 不空闲的 */
+
+.JC-card-body-right {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 2% - 4rem - 10px);
+  font-size: 16px;
+  margin-left: 2%;
+  margin-top: calc( 60px - 34px);
+}
+
+/* 空闲教室的数据文字 */
+
+.JC-card-body-right-info {
+  display: inline-block;
+  /* display: -webkit-box;
+  -webkit-line-clamp: 3; */
+  /* autoprefixer:off */
+  /* -webkit-box-orient: vertical; */
+  /* autoprefixer:on */
+  overflow: hidden;
+  width: calc(100% - 2% - 4rem - 10px);
+  vertical-align: top;
+  font-size: 1rem;
+  margin-top: calc(60px - 10px - 27px);
+  margin-left: 2%;
+}
+
+.JC-card-body-info-use {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width:1700px) {
+  .JC-card-body-right-info {
+    font-size: 14px;
+  }
+  .JC-card-body-info-use {
+    font-size: 16px;
+  }
+}
+
+.JC-item-mask {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: 120px;
+  background: rgba(14, 8, 8, 0.36);
+  border-radius: 8px;
+}

@@ -1,0 +1,72 @@
+/*
+ * @Author: MinJ 
+ * @Date: 2018-01-09 14:05:22 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-03-13 15:50:39
+ */
+ 
+/* 标题 */
+/* .mj-srlc-title p, */
+.mj-srlc-gray p,
+.mj-srlc-blue p,
+.mj-srlc-red p,
+.mj-srlc-yellow p,
+.mj-srlc-black p{
+  display: inline-block;
+  padding-left: 4px;
+}
+.mj-srlc-gray span,
+.mj-srlc-blue span,
+.mj-srlc-red span,
+.mj-srlc-yellow span,
+.mj-srlc-black span{
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 15px;
+}
+.mj-srlc-gray p{
+  color:#756d64cc;
+}
+.mj-srlc-gray span{
+  background: #d9d9d9;
+  color: #999999;
+}
+.mj-srlc-blue span{
+  background: #46b8f9;
+  color: #fff;
+}
+.mj-srlc-red span{
+  background: #ff5959;
+  color: #fff;
+}
+.mj-srlc-yellow span{
+  background: #ffb266;
+  color: #fff;
+}
+.mj-srlc-black span{
+  background: #727881;
+  color: #fff;
+}
+
+/* 图标 */
+.mj-srlc-content{
+  color: #998f82;
+}
+.mj-srlc-iconList{
+  display: none;
+}
+.mj-srlc-iconList{
+  float: right;
+}
+.mj-srlc-dataCon:hover .mj-srlc-iconList{
+  display: block;
+}
+.mj-srlc-iconList span{
+  cursor: pointer;
+}
+.mj-srlc-iconList span:nth-child(1) > svg{
+  font-size: 15px;
+}
+.mj-srlc-iconList span:nth-child(2) > svg{
+  margin:0 12px;
+}

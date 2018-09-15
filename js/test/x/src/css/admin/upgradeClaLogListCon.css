@@ -1,0 +1,73 @@
+.kyl-ucllc-list{
+  border-left: 1px solid #e0e0e0;
+  position: relative;
+  left:50px;
+  top:11px;
+  margin-top: -31px;
+}
+.kyl-ucllc-lastBottomLine{ 
+  border-bottom:1px dashed #d9d9d9; 
+  width: 95%;
+  margin-left:55px;
+  height:11px;
+} 
+.kyl-ucllc-bottomLine{
+  border-bottom:1px dashed #d9d9d9; 
+  width: 92.8%;
+  margin-left:70px;
+  margin-right:1%;
+} 
+.kyl-ucllc-svg0 .icon{
+  margin-left: 5px;
+  margin-bottom: 1px;
+  color:white;
+}
+
+
+.kyl-ucllc-container{
+  word-wrap:break-word;
+  width: 88%;
+}
+
+.kyl-ucllc-svg0{
+  font-size: 22px;
+  position:relative;
+  left:35px;
+  top:12px;
+  background-color: #828d99;
+  width: 34px;
+  border-radius: 20px;
+  z-index: 1
+}
+.kyl-ucllc-list .ant-timeline-item-head-blue{
+  display: none;
+}
+.kyl-ucllc-list1{
+  margin-top: 30px;
+  margin-left:10px;
+}
+.kyl-ucllc-list .ant-timeline-item{
+  margin-top:-30px;
+}
+.kyl-ucllc-list .ant-timeline-item-content{
+  padding: 20px 0 0 38px;
+}
+.kyl-ucllc-list .ant-timeline-item-content{
+  min-height:100px;
+  font-size: 16px;
+  color:#4d4d4d;
+}
+.kyl-ucllc-idWord{
+  font-size: 16px;
+  margin-left: 40px;
+  line-height: 33px;
+}
+.kyl-ucllc-id{
+  width: 124px;
+  height:33px;
+  border-radius:20px;
+  background-color:#dfe4eb;
+  position: relative;  
+  left: 46px;
+  bottom: 21px;
+}

@@ -1,0 +1,171 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-08-28 11:32:50 
+<<<<<<< .mine
+ * @Last Modified by: zhengqi
+ * @Last Modified time: 2018-09-13 14:26:45
+||||||| .r3997
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-09-05 13:35:50
+=======
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-09-13 11:05:13
+>>>>>>> .r4068
+ * 项目公共css文件
+ */
+
+
+/* loading页 */
+
+.lxx-g-loadPage {
+    padding: 150px 300px;
+    height: 100%;
+    width: 100%;
+    background: #273138;
+}
+
+.lxx-g-loadPage>h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    -webkit-animation: flash 6s infinite ease-in-out;
+    -moz-animation: flash 6s infinite ease-in-out;
+    -ms-animation: flash 6s infinite ease-in-out;
+    animation: flash 6s infinite ease-in-out;
+}
+
+@-webkit-keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.lxx-g-layout .scrollbar-container {
+    height: calc(100% - 75px);
+    width: calc(100% - 260px);
+}
+
+.lxx-g-showCenter {
+    height: 100%;
+    width: 100%;
+    background: #000D1D url('./../img/bc.png') center/ 100% 100% no-repeat;
+}
+
+.zq-report-container {
+    padding: 20px 20px 30px 20px;
+    float: right;
+    /* height: calc(100% - 75px);
+    width: calc(100% - 260px); */
+    width: 100%;
+    min-height: 100%;
+}
+
+.zq-report-nodates{
+    text-align: center;
+    padding-top: 200px;            
+}
+
+.zq-report-nodates>img{
+    margin-bottom: 42px; 
+}
+
+.zq-report-nodates>p{
+    text-align: center;
+    color: #b7b9ba;
+    font-size: 26px;
+}
+
+.zq-report-nodates>p:last-child{
+    padding-top: 20px;
+    color: #81878a;
+    font-size: 28px;
+}
+
+.zq-g-visBox {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    height: calc(100% - 116px);
+}
+
+.zq-g-visContent {
+    flex: 1;
+}
+
+
+/* flex */
+
+.lxx-g-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.lxx-g-flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.lxx-m-flex {
+    flex: 1;
+}
+
+
+/* 表格无数据 */
+
+.lxx-g-layout .ant-table-placeholder {
+    padding-top: 235px;
+    margin-top: 100px;
+    height: 300px;
+    background: #fff url('./../img/nodata1.png') 50% 24%/170px 170px no-repeat;
+    border-bottom: 0;
+}

@@ -1,0 +1,238 @@
+/*
+ * @Author: lxx 
+ * @Date: 2018-07-24 11:04:19 
+ * @Last Modified by: lxx
+ * @Last Modified time: 2018-08-31 16:14:52
+ * 公共课堂样式
+ */
+
+.lxx-g-pubTil {
+    padding: 12px 0;
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    background: #446EF3 url('./../icon/publicClassroom.png') center/ 100% 100% no-repeat;
+}
+
+.lxx-g-pubMenu {
+    padding: 30px 0 10px 0;
+}
+
+.lxx-g-pubMenu>div {
+    position: relative;
+    line-height: 35px;
+    min-height: 55px;
+}
+
+.lxx-u-menuName {
+    font-size: 15px;
+}
+
+.lxx-g-menuList>div {
+    transition: all .3s;
+    overflow: hidden;
+}
+
+.lxx-m-menuList {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.lxx-m-menuList:hover {
+    background: #E6E6E6;
+    border-radius: 5px;
+}
+
+.ant-menu-vertical>.ant-menu-item {
+    height: 30px;
+}
+
+
+/* 选中样式 */
+
+.lxx-m-menuList.lxx-u-selected {
+    background: #30A2F2;
+    color: #fff;
+}
+
+.lxx-g-label>div {
+    position: relative;
+    display: inline-block;
+    padding: 0 30px 0 10px;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #34ABFF;
+    border: 1px dashed #34ABFF;
+    border-radius: 5px;
+}
+
+
+/* .lxx-g-label>div::after {
+    position: absolute;
+    content: '';
+    right: -20px;
+    top: 50%;
+    margin-top: -5px;
+    height: 10px;
+    width: 10px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+
+.lxx-g-label>div:last-child::after {
+    width: 0;
+} */
+
+.lxx-g-label>div>label {
+    position: absolute;
+    right: -15px;
+    color: #999;
+}
+
+.lxx-g-label>div:last-child>label {
+    display: none;
+}
+
+.lxx-g-label>div>svg {
+    position: absolute;
+    top: 11px;
+    font-size: 12px;
+    right: 5px;
+}
+
+.lxx-m-isUnfold {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    color: #30A2F2;
+    cursor: pointer;
+}
+
+.lxx-m-isUnfold>span {
+    padding-right: 8px;
+}
+
+
+/* 课堂列表 */
+
+.lxx-g-pubClass {
+    padding: 30px 0;
+}
+
+.lxx-pc-g-til {
+    text-align: right;
+}
+
+.lxx-pc-g-til>div {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.lxx-pc-g-til>div>svg {
+    color: #9F9F9F;
+}
+
+.lxx-pc-g-til>div.selected {
+    color: #0C92F2;
+}
+
+.lxx-pc-g-til>div.selected>svg {
+    color: #1FA2FF;
+}
+
+.lxx-pc-g-licnt {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #f2f2f2;
+}
+
+.lxx-li-g-img {
+    position: relative;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.lxx-li-g-img>img {
+    width: 100%;
+    height: 86px;
+    border-radius: 5px;
+}
+
+.lxx-li-g-img>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.lxx-li-g-detail>div {
+    color: #666;
+    font-size: 14px;
+}
+
+.lxx-li-g-detail>div.lxx-li-m-name {
+    color: #1A1A1A;
+    font-size: 16px;
+    width: 700px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.lxx-li-g-detail>div.lxx-li-m-name>span {
+    cursor: pointer;
+}
+
+.lxx-li-g-detail>div:nth-child(2) {
+    margin: 10px 0;
+}
+
+.lxx-li-g-detail>div>p {
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: middle;
+}
+
+.lxx-li-g-num {
+    width: 185px;
+}
+
+.lxx-li-g-num>div {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+    text-align: right;
+}
+
+.lxx-li-g-num>div svg {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.ant-rate,
+.lxx-li-g-num>div:first-child {
+    color: #FF9F40 !important;
+}

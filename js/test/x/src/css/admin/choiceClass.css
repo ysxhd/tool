@@ -1,0 +1,99 @@
+/*
+ * @Author: JudyC 
+ * @Date: 2018-01-05 11:07:25 
+ * @Last Modified by:   JudyC 
+ * @Last Modified time: 2018-01-05 11:07:25 
+ */
+.cjy-cc-container{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 260px;
+  background: #fff;
+  box-shadow: -3px 0 15px #ccc;
+}
+
+.cjy-cc-tabBtnBox{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 260px;
+}
+
+.cjy-cc-tabBtnBox .ant-btn{
+  width: 50%;
+  height: 40px;
+  border-radius: 0;
+  border: none;
+}
+
+.cjy-cc-sure{
+  background: #626a73;
+  color: #fff;
+}
+
+.cjy-cc-cancel{
+  background: #f5f5f5;
+}
+
+.cjy-cc-sure:hover{
+  background-color: #717880;
+  border-color: #717880;
+  color: #fff;
+}
+
+.cjy-cc-container .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab{
+  margin-right: 0;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+}
+.cjy-cc-container .ant-tabs-bar{
+  border-bottom: none;
+}
+
+.cjy-cc-container .ant-tabs-nav{
+  width: 100%;
+}
+
+.cjy-cc-container .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+  background: #fff;
+  color: #ff9934;
+  padding-bottom: 1px;
+  border-top: 2px solid #ff9934;
+  border-radius: 0;
+}
+
+.cjy-cc-container .ant-tabs-nav .ant-tabs-tab:hover{
+  color: #ff9934;
+}
+
+.cjy-cc-container .ant-tabs{
+  height: calc(100% - 40px);
+}
+
+.cjy-cc-container .ant-tabs-content{
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.cjy-cc-container .ant-tree-checkbox-wrapper:hover .ant-tree-checkbox-inner,
+.cjy-cc-container .ant-tree-checkbox:hover .ant-tree-checkbox-inner,
+.cjy-cc-container .ant-tree-checkbox-input:focus + .ant-tree-checkbox-inner{
+  border-color: #ff9934;
+}
+
+.cjy-cc-container .ant-tree-checkbox-checked .ant-tree-checkbox-inner,
+.cjy-cc-container .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner{
+  background: #ff9934;
+  border-color: #ff9934;
+}
+
+.cjy-cc-block{
+  display: block;
+}
+
+.cjy-cc-none{
+  display: none;
+}

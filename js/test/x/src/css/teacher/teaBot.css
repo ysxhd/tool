@@ -1,0 +1,114 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-01-11 11:17:36 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-02-24 16:19:47
+ */
+ .zn-tea-b-con{
+     padding: 0 30px 30px 30px;
+     position: relative;
+ }
+.zn-tea-b-con>h4{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.zn-tea-b-con .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab{
+    margin-right: 0;
+    background-color: #fff; 
+    border:1px solid #ccc1b8;
+    border-radius: 10px 10px 0 0;
+    border-left: 0;
+    width: 138px;
+    text-align: center;
+    border-bottom: 1px solid #ffb266;
+}
+
+.zn-tea-b-con .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab:nth-child(2){
+    border-left: 1px solid #ccc1b8 ;
+}
+
+.zn-tea-b-con .ant-tabs-bar{
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.zn-tea-b-con .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+    background-color: #ffb266;
+    color: #fff;
+}
+
+
+
+/* 底部内容的容器 */
+.zn-teaContBox{
+    width: 1136px;
+    min-height: 260px;
+    border: 1px solid #ffb266;
+    position: relative;
+}
+
+/* loading的配置 */
+.zn-teaContBox .ant-spin{
+    position: absolute;
+    left:50%;
+    top:50%;
+    
+}
+
+/* 没有数据的图片 */
+.zn-tea-b-noDataPic{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+}
+
+/* 标题4个数字小球 */
+.zn-b-tea-num{
+    position: absolute;
+    height: 20px;
+    width: 26px;
+    font-size: 12px;
+    background-color: #ff7575;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 20px;
+    z-index: 1;
+    top:68px;
+}
+
+.zn-b-tea-num1{
+    left:136px;
+}
+
+.zn-b-tea-num2{
+    left:270px;
+}
+
+.zn-b-tea-num3{
+    left:408px;
+}
+
+.zn-b-tea-num4{
+    left:548px;
+}
+
+.zn-b-tea-num5{
+    left:686px;
+}
+
+.zn-b-tea-num6{
+    left:826px;
+}
+
+.zn-b-tea-num7{
+    left:960px;
+}
+
+.zn-b-tea-num8{
+    left:1098px;
+}

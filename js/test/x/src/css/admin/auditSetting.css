@@ -1,0 +1,68 @@
+/*
+ * @Author: huangjing 
+ * @Date: 2018-01-15 16:53:49 
+ * @Last Modified by: huangjing
+ * @Last Modified time: 2018-01-15 16:59:03
+ 审核设置
+ */
+.hj-as-content{
+    width: 100%;
+    height: 380px;
+    background: #fff;
+    padding-top:40px;
+}
+.hj-as-content>.hj-as-audit{
+    width:340px;
+    height:300px;
+    border: 1px solid #d9d9d9;
+    margin:auto; 
+}
+.hj-as-content>.hj-as-audit>.hj-as-circle{
+    width: 140px;
+    height: 140px;
+    background: #f0f0f0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    line-height:140px;
+    margin:auto;
+    margin-top:15px;
+    text-align: center;
+}
+.hj-as-content>.hj-as-audit>.hj-as-circle>.icon{
+    margin:auto;
+    overflow: hidden;
+    width:120px;
+    height:95px;
+    margin-top:23px;
+   
+}
+.hj-as-content>.hj-as-audit>.hj-as-switchContent{
+    margin:auto;
+    text-align:center;
+    margin-top:28px;
+
+}
+.hj-as-content>.hj-as-audit>.hj-as-switchContent>p{
+    display: inline-block;
+    margin-right:10px;
+    font-size:18px;
+    color:black;
+}
+.hj-as-content>.hj-as-audit>.hj-as-switchContent>.ant-switch{
+    width:50px;
+    height:24px;
+}
+.hj-as-content>.hj-as-audit>.hj-as-switchContent>.ant-switch-checked {
+    background-color: #ff9934;
+}
+
+.hj-as-content>.hj-as-audit>.hj-as-note{
+    text-align:center;
+    line-height:25px;
+    margin-top:15px;
+}
+
+.hj-as-content>.hj-as-audit>.hj-as-note>p>span{
+    color:#ff9934;
+}

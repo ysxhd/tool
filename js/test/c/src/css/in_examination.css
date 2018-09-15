@@ -1,0 +1,149 @@
+/*
+ * @Author: zhangning 
+ * @Date: 2018-05-16 13:20:11 
+ * @Last Modified by: zhangning
+ * @Last Modified time: 2018-05-24 10:31:09
+ */
+.zn-examin-head{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.zn-pes-comtitle{
+    width: 162px;
+    height: 32px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #1aa3ab;
+    color: #d3d5d7;
+    line-height: 32px;
+    font-size: 20px;
+    margin-left: 41px;
+    text-align: center;
+    position: relative;
+} 
+
+.zn-top-line{
+    position: absolute;
+    width:1px;
+    height: 22px;
+    border-left: 2px dashed #21a5ad;
+    top:-24px;
+    left:50%;
+    margin-left: -2px;
+    
+}
+
+/* 下面内容部分 */
+.zn-examin-body{
+   height: 164px;
+   width: 96.5%;
+   border: 1px solid #c7d5d5;
+   margin: 0 auto;
+   background-color: #f0f6f6;
+   display: flex;
+   text-align: left;
+   font-size: 14px;
+   position: relative;
+}
+
+.zn-examin-body .ant-spin-spinning{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.zn-examin-body .zn-examin-left{
+    width: 50%;
+    height: 100%;
+}
+
+.zn-examin-left{
+    border-right: 1px solid #c7d5d5;
+}
+
+.zn-examin-left .zn-examin-top{
+    height: 134px;
+    border-bottom: 1px solid #c7d5d5;
+    display: flex;
+}
+
+.zn-examin-left .zn-examin-top>div{
+    padding: 18px;
+    width: 50%;
+}
+
+.zn-border-right{
+    border-right: 1px solid #c7d5d5;
+}
+
+.zn-mb26{
+    margin-bottom: 26px;
+}
+
+.zn-flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.zn-examin-ball-red{
+    width: 10px;
+    height: 10px;
+    background-color: #fe6530;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right:4px; 
+}
+
+.zn-examin-ball-green{
+    width: 10px;
+    height: 10px;
+    background-color: #1aab65;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right:4px; 
+}
+
+.zn-examin-number>span{
+   color: #1aa3ab;
+   font-weight: bold;
+   font-size: 18px;
+   padding-right: 5px;
+}
+
+/* 进度条 */
+
+.zn-examin-progress{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.zn-examin-progress .ant-progress-line{
+    width: 74%;
+    padding-left: 20px;
+}
+
+.zn-examin-progress .ant-progress-inner{
+    background-color: #d7d7d7;
+    height: 10px !important;
+}
+
+.zn-examin-progress .ant-progress-bg{
+   background-color: #1aab65;
+   height: 10px !important;
+}
+
+.zn-examin-bottom{
+    text-align: center;
+    background-color: #ebf1f1;
+    height: 28px;
+    line-height: 28px;
+}
+
+.zn-border-rnone{
+    border-right: 0;
+}
