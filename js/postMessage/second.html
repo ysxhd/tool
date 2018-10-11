@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>kkkkkkkkkkkkkkkkk</h1>
+    <script>
+    // setTimeout(() => {
+    //     window.close();
+    //     window.location.href = "http://127.0.0.1:5500/iframe/ifame.html";
+    // }, 3000);
+      // 设置监听，如果有数据传过来，则打印
+      window.onmessage = function(e){
+			// if(e.origin !== 'http://localhost') return;
+			console.log(e.data);
+            e.source.postMessage({a: "我是子页面传递的"},e.origin);
+            // postMessage({ "age": 234234234 }, 'http://127.0.0.1:5500');
+		}
+
+    </script>
+</body>
+</html>
