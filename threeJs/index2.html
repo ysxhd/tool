@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./three.js"></script>
+    <script>
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);
+        camera.position.set(0, 0, 100);
+        camera.lookAt(0, 0, 0);
+
+        var scene = new THREE.Scene();
+        var material = new THREE.LineBasicMaterial({ color: 0x0000ff });
+
+        var geometry = new THREE.Geometry();
+        geometry.vertices.push(new THREE.Vector3(-10, 0, 0));
+        geometry.vertices.push(new THREE.Vector3(0, 10, 0));
+        geometry.vertices.push(new THREE.Vector3(10, 0, 0));
+
+        var line = new THREE.Line(geometry, material);
+
+        scene.add(line);
+
+        var curve = new THREE.EllipseCurve(
+            0,  0,            // ax, aY
+            20, 10,           // xRadius, yRadius
+            0,  2 * Math.PI,  // aStartAngle, aEndAngle
+            false,            // aClockwise
+            0                 // aRotation
+        );
+
+        var points = curve.getPoints( 50 );
+        var geometry1 = new THREE.BufferGeometry().setFromPoints( points );
+
+        var material1 = new THREE.LineBasicMaterial( { color : 0xff0000 } );
+
+        // Create the final object to add to the scene
+        var ellipse = new THREE.Line( geometry1, material1 );
+        scene.add(ellipse);
+
+        renderer.render(scene, camera);
+
+    </script>
+</body>
+
+</html>

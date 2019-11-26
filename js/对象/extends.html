@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Greeting extends React.Component {
+            render() {
+                return <p>Hello</p>;
+            }
+        }
+
+        let c = new Greeting();
+        console.log(c.__proto__); // Greeting.prototype
+        console.log(c.__proto__.__proto__); // React.Component.prototype
+        console.log(c.__proto__.__proto__.__proto__); // Object.prototype
+
+        c.render();      // Found on c.__proto__ (Greeting.prototype)
+        c.setState();    // Found on c.__proto__.__proto__ (React.Component.prototype)
+        c.toString();    // Found on c.__proto__.__proto__.__proto__ (Object.prototype)
+    </script>
+</body>
+</html>

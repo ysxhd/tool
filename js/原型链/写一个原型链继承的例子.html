@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content_wrapper"><span>22</span></div>
+    <script>
+           function Elem (id){ 
+                this.elem = document.getElementById(id);
+           } 
+           Elem.prototype.html = function(val){ 
+                var elem = this.elem;
+                if(val){ 
+                    elem.innerHTML = val;
+                    return this;   //链式操作
+                }else{ 
+                    return elem.innerHtml; 
+                }
+           } 
+
+           Elem.prototype.on = function(type,fn){
+                var elem = this.elem
+                elem.addEventListener(type,fn)
+                return this;
+            }
+
+            var div1 = new Elem('content_wrapper');
+                div1.html('<p>放大放大放大发范德萨大点的我请萨</p>').on('click',() =>{
+                    alert('click');
+                }).html("<div>change</div>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // Just a function
+         class Person{
+            constructor(name) {
+                this.name = name;
+            }
+            sayHi() {
+                alert('Hi, I am ' + this.name);
+            }
+        }
+        var fred = new Person('Fred'); // ✅ Person {name: 'Fred'}
+        fred.sayHi();
+        
+        var george = new Person('George'); 
+        console.log(george);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+// 多态的实际含义是：同一操作作用于不同的对象上面，可以产生不同的解释和不同的执行结果。
+// 换句话说，给不同的对象发送同一个消息的时候，这些对象会根据这个消息分别给出不同的反馈。
+// 从字面上来理解多态不太容易，下面我们来举例说明一下。
+// 主人家里养了两只动物，分别是一只鸭和一只鸡，当主人向它们发出“叫”的命令时，鸭会“嘎嘎嘎”地叫，
+// 而鸡会“咯咯咯”地叫。这两只动物都会以自己的方式来发出叫声。它们同样“都是动物，并且可以发出叫声”，但根据主人的指令，它们会各自发出不同的叫声。
+// 其实，其中就蕴含了多态的思想。下面我们通过代码进行具体的介绍
+         var makeSound = function( animal ){
+             console.log( animal instanceof Duck );
+            if ( animal instanceof Duck ){
+                console.log( '嘎嘎嘎' );
+            }else if ( animal instanceof Chicken ){
+                console.log( '咯咯咯' );
+            }
+        };
+
+        var Duck = function(){};
+        var Chicken = function(){};
+
+        makeSound( new Duck() );        //嘎嘎嘎
+        makeSound( new Chicken() );    //咯咯咯
+    </script>
+</body>
+</html>
