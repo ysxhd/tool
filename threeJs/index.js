@@ -1,7 +1,10 @@
 class Disk3D {
-    constructor(data, number) {
+    constructor(data, number, cicleTwoData, cicleOneData, cilcleNum) {
       this.data = data;
-      this.number = number; // 最外层一共有多少数据
+      this.cicleTwoData = cicleTwoData; // 第二圈数据
+      this.cicleOneData = cicleOneData; // 第一圈数据
+      this.number = number; // 最外层小球一共有多少数据
+      this.cilcleNum = cilcleNum; // cicleNum是圆形平面类型数量
       this.middleRadius = 400; // 最大圆半径,小球环绕的最外层看不到的圆
       this.cicleRadius = 340; // 饼图圆
       this.width = 0;  // 场景宽
@@ -58,8 +61,8 @@ class Disk3D {
         this.camera.position.y = this.cameraY; // -140
         this.camera.position.z = this.cameraZ; // 300
         // 坐标轴调试用的
-        // let axes = new THREE.AxisHelper(280);
-        // this.scene.add(axes);
+        let axes = new THREE.AxisHelper(280);
+        this.scene.add(axes);
     }
     /**
      * 绘制光
@@ -179,7 +182,7 @@ class Disk3D {
             let count = val.length;
             // 当前类型占整个圆的占比
             let proportion = count / this.number;
-            let angle = Math.PI * proportion * 2;
+            let angle = Math.PI * 2 * proportion;
             circleGeometry = new THREE.CircleGeometry( this.cicleRadius, 60, originAngle, angle );
             circleMaterial = new THREE.MeshBasicMaterial( { color:  this.colors[i] } );
             circle = new THREE.Mesh( circleGeometry, circleMaterial );
@@ -187,20 +190,43 @@ class Disk3D {
             this.pieGroup.add(circle);
             // 求出类型的分隔线
             this.pieGroup.add(this.splitLine(originAngle));
+            // 求出最外圈竖线分割线
+            this.splitVerticalLine(originAngle, i);
+
         })
-        console.log(this.data);
         this.pieGroup.rotateX(-Math.PI / 2);
         this.scene.add(this.pieGroup);
+    }
+    /**
+     * @param {number} angle 每个竖线所对应的夹角 
+     */
+    splitVerticalLine(angle, i){
+        // 每个扇形区分出多少份，求出夹角
+        let splitAngle = angle / this.cicleTwoData[i].length;
+        let originAngle = 0;
+        var geometry = new THREE.Geometry();
+        var material = new THREE.MeshBasicMaterial( { color: 0xffffff} );
+        this.cicleTwoData[i].map((val) => {
+            originAngle += splitAngle;
+            let transformAn = 180 / Math.PI * originAngle;
+            console.log(transformAn);
+            
+            let { x, y } = this.italicLineGenerate(transformAn, true);
+            geometry.vertices.push(
+                new THREE.Vector3( 0, 0, 0 ),
+                new THREE.Vector3( x, y, 0 )
+            );
+            var line = new THREE.Line(geometry, material);
+            this.pieGroup.add(line);
+        })
     }
     /**
      * 
      * @param {number} angle 角度
      */
     splitLine(angle){
-        console.log(angle );
         var geometry = new THREE.Geometry();
         let transformAn = 180 / Math.PI * angle;
-        console.log(transformAn);
         let { x, y } = this.italicLineGenerate(transformAn, true);
         geometry.vertices.push(
             new THREE.Vector3( 0, 0, 0 ),
@@ -232,18 +258,18 @@ class Disk3D {
         
         // 盘旋控制
         this.orbitControl = new THREE.OrbitControls(this.camera, this.renderer.domElement);
-        // this.orbitControl.minDistrance = 0;
-        // this.orbitControl.maxDistrance = 0;
-        // this.orbitControl.enableZoom = false;
-        // this.orbitControl.enabled = false;
-        // orbitControl.maxPolarAngle = Math.PI / 2;
+        this.orbitControl.minDistrance = 0;
+        this.orbitControl.maxDistrance = 0;
+        this.orbitControl.enableZoom = false;
+        this.orbitControl.enabled = false;
+        this.orbitControl.maxPolarAngle = Math.PI / 2;
     }
     animate(that) {
         let n = 0;
         let animateDeg = 0.002;
         n = n + animateDeg;
         this.renderer.render(this.scene, this.camera);
-        this.scene.rotation.y -= animateDeg;
+        // this.scene.rotation.y -= animateDeg;
         requestAnimationFrame(this.animate.bind(this));
     }
 }

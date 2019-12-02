@@ -39,20 +39,23 @@
         // var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 900);
         // camera.position.set(0, 0, 100);
         // camera.lookAt(0, 0, 0);
-        let num = 0;
-        let data = [];
-        allData.map((val, i) => {
-            data.push([]);
-            val.children.map((item) => {
-                item.children.map((ele) => {
-                    num ++;
-                    data[i].push(ele.name);
-                });
-            })
-         });
-         console.log(data);
+        let num = 0, cilcleNum = 0; // cicleNum是圆形平面类型数量
+        let data = [], cicleTwoData = [], cicleOneData = [];
+        cicleTwoData = allData.map((val, i) => {
+                        data.push([]);
+                        cicleOneData.push(val.name);
+                        return val.children.map((item) => {
+                               cilcleNum ++;
+                               item.children.map((ele) => {
+                                    num ++;
+                                    data[i].push(ele.name);
+                               });
+                               return item.name;
+                        })
+                   });
+         console.log(allData);
          
-        let dask3d = new Disk3D(data, num);
+        let dask3d = new Disk3D(data, num, cicleTwoData, cicleOneData, cilcleNum);
         dask3d.init();
         
         // var scene = new THREE.Scene();
