@@ -26,6 +26,7 @@
     <div id="Stats-output">
         </div>
     <script src="./js/three.js"></script>
+    <script src="./js/OrbitControls.js"></script>
     <script src="./js/stats.js"></script>
     <script src="./js/dat.gui.js"></script>
     <script src="./index.js"></script>
@@ -39,12 +40,18 @@
         // camera.position.set(0, 0, 100);
         // camera.lookAt(0, 0, 0);
         let num = 0;
-        let data = allData.map((val) => {
-            return val.children.map((item) => {
-                num ++;
-                return item.name;
+        let data = [];
+        allData.map((val, i) => {
+            data.push([]);
+            val.children.map((item) => {
+                item.children.map((ele) => {
+                    num ++;
+                    data[i].push(ele.name);
+                });
             })
-         })
+         });
+         console.log(data);
+         
         let dask3d = new Disk3D(data, num);
         dask3d.init();
         
@@ -168,7 +175,7 @@
         //     requestAnimationFrame(render);
         //     renderer.render(scene, camera);
         // }
-        //  圆
+        //  // 圆
         // var curve = new THREE.EllipseCurve(
         //     0,  0,            // ax, aY
         //     20, 20,           // xRadius, yRadius
@@ -185,9 +192,7 @@
         // // Create the final object to add to the scene
         // var ellipse = new THREE.Line( geometry1, material1 );
         // scene.add(ellipse);
-        /*
-        * parmas angle 角度
-        */
+    
         // function italicLineGenerate(angle){
         //     var xPoint = Math.cos(angle * (Math.PI / 180)) * 21.6;
         //     var yPoint = Math.sin(angle * (Math.PI / 180)) * 21.6;

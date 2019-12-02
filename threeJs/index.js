@@ -2,20 +2,25 @@ class Disk3D {
     constructor(data, number) {
       this.data = data;
       this.number = number; // 最外层一共有多少数据
-      this.middleRadius = 24; // 实线最大圆半径
+      this.middleRadius = 400; // 最大圆半径,小球环绕的最外层看不到的圆
+      this.cicleRadius = 340; // 饼图圆
       this.width = 0;  // 场景宽
       this.height = 0; // 场景高
       this.renderer = null; // 渲染器
       this.scene = null; // 场景
       this.sceneScale = {x: 1, y: 1, z: 1};  // 场景缩放比例
-      this.cameraY = 0; // 相机的y轴位置
-      this.cameraZ = 230; // 相机的y轴位置
+      this.cameraY = 200; // 相机的y轴位置
+      this.cameraZ = 500; // 相机的z轴位置
       this.camera = null;
       this.centerSphere = null; // 底部正中间小球
       this.centerPoint = { x: 0, y: -330, z: 0 }; // 底部正中间小球中心点
-      this.colors = [ 0xC6974A, 0xBC5A5F, 0x4CA96F ]; 
+      this.colors = ['#c5974a', '#bc5a5e', '#4ca96f' ]; 
       this.hasPosData = []; // 最外层小球的位置
       this.lineGroup = new THREE.Object3D(); // 线段组合
+      this.pointGroup = new THREE.Object3D(); // 旋转组合
+      this.pieGroup = new THREE.Object3D(); // 原形的饼状组合
+      this.clock = null;
+      this.orbitControl = null;
     }
   
     init(){
@@ -27,9 +32,10 @@ class Disk3D {
         this.drawCenter();
         this.drawCicleFact();
         this.getPosPoint();
+        this.drawCilcle();
         this.drawRenderer();
+        this.orbitControlFun();
         this.animate();
-        this.orbitControl();
 
     }
     getWidHeight(){
@@ -47,35 +53,39 @@ class Disk3D {
     }
     drawCamera() {
         this.camera = new THREE.OrthographicCamera(this.width / - 2, 
-            this.width / 2, this.height / 2, this.height / - 2, 1, 1000);
+            this.width / 2, this.height / 2, this.height / - 2, 0.1, 1000);
         this.camera.position.x = 0;
-        this.camera.position.y = this.cameraY; // 180
-        this.camera.position.z = this.cameraZ; // 400
+        this.camera.position.y = this.cameraY; // -140
+        this.camera.position.z = this.cameraZ; // 300
         // 坐标轴调试用的
-        let axes = new THREE.AxisHelper(280);
-        this.scene.add(axes);
+        // let axes = new THREE.AxisHelper(280);
+        // this.scene.add(axes);
     }
     /**
      * 绘制光
      */
     drawLight(){
         // 绘制聚光灯光
-        let spotLight = new THREE.SpotLight( '#ffffff', 0.5);
-        spotLight.position.set( 0, -100, 100 );
-        spotLight.shadow.camera.near = 500;
-        spotLight.shadow.camera.far = 4000;
-        spotLight.shadow.camera.fov = 30;
+        // var spotLight = new THREE.SpotLight( '#fff', 0.1);
+        // spotLight.position.set( 100, -1400, 100 );
+        
         // spotLight.castShadow = true;
-        this.scene.add( spotLight );
+        // spotLight.shadow.camera.near = 30;
+        // spotLight.shadow.camera.far = 1000;
+        // spotLight.shadow.camera.fov = 100;
+        // spotLight.castShadow = true;
+        // this.scene.add( spotLight );
+        let ambientLight = new THREE.AmbientLight('#fff');
+        this.scene.add( ambientLight );
     }
     /**
      * @desc 绘制中心点小球
      */
     drawCenter() {
         // 设置球体的值
-        let radius = 5, segemnt = 16, rings = 16;
+        let radius = 1, segemnt = 8, rings = 8;
         let sphereGeometry = new THREE.SphereGeometry(radius, segemnt, rings);
-        let sphereMaterial = new THREE.MeshLambertMaterial({ color: 0x880000 });
+        let sphereMaterial = new THREE.MeshLambertMaterial({ color: 0xbc5a5e });
         this.centerSphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
         let { x, y, z } = this.centerPoint;
         this.centerSphere.position.x = x;
@@ -89,11 +99,14 @@ class Disk3D {
     drawCicleFact(){
         // 圆型 白线 实线
         let materialLine = new THREE.LineBasicMaterial( { color: 0xffffff } );
-        let radius = 200;
+        let radius = 226;
         let segments = 620; //<-- Increase or decrease for more resolution I guess
         let circleGeometryLine = new THREE.CircleGeometry( radius, segments );    
+        circleGeometryLine.rotateX(Math.PI/2)
+
         // Remove center vertex
         circleGeometryLine.vertices.shift();
+        let line = new THREE.Line( circleGeometryLine, materialLine );
         this.scene.add( new THREE.Line( circleGeometryLine, materialLine ) );
     }
     /**
@@ -107,7 +120,8 @@ class Disk3D {
              val.map((item) => {
                 splitAngle += defaultAngle;
                 let { x, y, z } = this.italicLineGenerate(splitAngle);
-                this.hasPosData.push({ name: item, x, y, z, color: this.colors[i]});
+                this.hasPosData.push({ name: item, x: x, y, z, color: this.colors[i]});
+                // this.hasPosBallData.push({ name: item, x, y, z, color: this.colors[i]}); // 小球的位置
              })
         })
         // 连线小球与底部中心点小球
@@ -129,25 +143,72 @@ class Disk3D {
             let geometry = new THREE.Geometry();
             geometry.vertices = curve.getPoints(1);
             let line = new THREE.Line(geometry, material);
-            // if(list[i].joinState === '已接入'){
-            //     lineAnimateArr.push(lineAnimate(curve));
-            // }else{
-            //     lineAnimateArr.push('');
-            // }
-            
             this.lineGroup.add(line);
+            // 绘制小球
+            let radius = 5, segemnt = 16, rings = 16;
+            let sphereGeometry = new THREE.SphereGeometry(radius, segemnt, rings);
+            var sphereMaterial = new THREE.MeshLambertMaterial({ color: eachPoint.color });
+            
+            let sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+            sphere.position.x = eachPoint.x;
+            sphere.position.y = eachPoint.y;
+            sphere.position.z = eachPoint.z;
+            this.pointGroup.add(sphere);
         }
         this.scene.add(this.lineGroup);
+        this.scene.add(this.pointGroup);
     }
     /**
      * 根据角度以及半径 ，求出当前点xy的坐标
      * @param {*} angle 角度
-     * 
+     * @param {*} onlyXy 是否包含z轴
      */
-    italicLineGenerate(angle){
-            let x = +(Math.cos(angle * (Math.PI / 180)) * 200).toFixed(2);
-            let y = +(Math.sin(angle * (Math.PI / 180)) * 200).toFixed(2);
-            return {x, y, z: 0};
+    italicLineGenerate(angle, onlyXy){
+        if(onlyXy){
+            let x = +(Math.cos(angle * (Math.PI / 180)) * this.cicleRadius).toFixed(2);
+            let y = +(Math.sin(angle * (Math.PI / 180)) * this.cicleRadius).toFixed(2);
+            return {x, y};
+        }
+        let x = +(Math.cos(angle * (Math.PI / 180)) * this.middleRadius).toFixed(2);
+        let z = +(Math.sin(angle * (Math.PI / 180)) * this.middleRadius).toFixed(2);
+        return {x, y: 0, z};
+    }
+    drawCilcle(){
+        let originAngle = 0, circleGeometry, circleMaterial, circle;
+        this.data.map((val, i) => {
+            let count = val.length;
+            // 当前类型占整个圆的占比
+            let proportion = count / this.number;
+            let angle = Math.PI * proportion * 2;
+            circleGeometry = new THREE.CircleGeometry( this.cicleRadius, 60, originAngle, angle );
+            circleMaterial = new THREE.MeshBasicMaterial( { color:  this.colors[i] } );
+            circle = new THREE.Mesh( circleGeometry, circleMaterial );
+            originAngle += angle;
+            this.pieGroup.add(circle);
+            // 求出类型的分隔线
+            this.pieGroup.add(this.splitLine(originAngle));
+        })
+        console.log(this.data);
+        this.pieGroup.rotateX(-Math.PI / 2);
+        this.scene.add(this.pieGroup);
+    }
+    /**
+     * 
+     * @param {number} angle 角度
+     */
+    splitLine(angle){
+        console.log(angle );
+        var geometry = new THREE.Geometry();
+        let transformAn = 180 / Math.PI * angle;
+        console.log(transformAn);
+        let { x, y } = this.italicLineGenerate(transformAn, true);
+        geometry.vertices.push(
+            new THREE.Vector3( 0, 0, 0 ),
+            new THREE.Vector3( x, y, 0 )
+        );
+        var material = new THREE.MeshBasicMaterial( { color: 0xffffff} );
+        var line = new THREE.Line(geometry, material);
+        return line;
     }
     /**
      * 初始化renderer
@@ -157,7 +218,6 @@ class Disk3D {
             alpha: true,
             antialias: true
         });
-        console.log(this.renderer, '--');
         this.renderer.setClearColor(0x08172D);
         this.renderer.setSize(this.width, this.height);
         document.body.appendChild(this.renderer.domElement);
@@ -167,20 +227,20 @@ class Disk3D {
         /**
      * @desc 绘制实线圆形
      */
-    orbitControl() {
+    orbitControlFun() {
         // console.log(this.renderer);
         
         // 盘旋控制
-        // let orbitControl = new THREE.OrbitControls(this.camera, this.renderer.domElement);
-        // orbitControl.minDistrance = 0;
-        // orbitControl.maxDistrance = 0;
-        // orbitControl.enableZoom = false;
-        // orbitControl.enabled = false;
+        this.orbitControl = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+        // this.orbitControl.minDistrance = 0;
+        // this.orbitControl.maxDistrance = 0;
+        // this.orbitControl.enableZoom = false;
+        // this.orbitControl.enabled = false;
         // orbitControl.maxPolarAngle = Math.PI / 2;
     }
     animate(that) {
         let n = 0;
-        let animateDeg = 0.01;
+        let animateDeg = 0.002;
         n = n + animateDeg;
         this.renderer.render(this.scene, this.camera);
         this.scene.rotation.y -= animateDeg;
