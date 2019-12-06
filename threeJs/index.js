@@ -64,8 +64,8 @@ class Disk3D {
         this.camera.position.y = this.cameraY; // -140
         this.camera.position.z = this.cameraZ; // 300
         // 坐标轴调试用的
-        // let axes = new THREE.AxisHelper(280);
-        // this.scene.add(axes);
+        let axes = new THREE.AxisHelper(280);
+        this.scene.add(axes);
     }
     /**
      * 绘制光
@@ -104,7 +104,7 @@ class Disk3D {
      */
     drawCicleFact(){
         // 圆型 白线 实线
-        let materialLine = new THREE.LineBasicMaterial( { color: 0xffffff } );
+        let materialLine = new THREE.LineBasicMaterial( { color: '#8b9199', opacity: 0.1 } );
         let radius = 226;
         let segments = 620; //<-- Increase or decrease for more resolution I guess
         let circleGeometryLine = new THREE.CircleGeometry( radius, segments );    
@@ -113,7 +113,7 @@ class Disk3D {
         // Remove center vertex
         circleGeometryLine.vertices.shift();
         let line = new THREE.Line( circleGeometryLine, materialLine );
-        this.scene.add( new THREE.Line( circleGeometryLine, materialLine ) );
+        this.scene.add( line );
     }
     /**
      * 求出每个小球的位置
@@ -152,7 +152,7 @@ class Disk3D {
             // 绘制小球
             let radius = 5, segemnt = 16, rings = 16;
             let sphereGeometry = new THREE.SphereGeometry(radius, segemnt, rings);
-            var sphereMaterial = new THREE.MeshLambertMaterial({ color: eachPoint.color });
+            var sphereMaterial = new THREE.MeshLambertMaterial({ color: eachPoint.color, transparent: true });
             
             let sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
             sphere.position.x = eachPoint.x;
@@ -160,20 +160,22 @@ class Disk3D {
             sphere.position.z = eachPoint.z;
             this.pointGroup.add(sphere);
             // 绘制文字
-            this.drawText(eachPoint, i);
+            this.textGroup.add(this.drawText(eachPoint, i));
         }
+        console.log(this.cicleOneData);
+        
+        this.scene.add(this.textGroup);
         this.scene.add(this.lineGroup);
         this.scene.add(this.pointGroup);
-        // this.scene.add(this.textGroup);
     }
     /**
      * 
      * @param {*} eachPoint 文字坐标轴位置，名字
      */
     drawText(eachPoint, i){
-        let canvasWidth = 256;
+        let canvasWidth = 356;
         let canvasHeight = 128;
-        let textFontsize = 0;
+        let textFontsize = 100;
         let scale = null;
         let name = eachPoint.name;
         let nameLenght = name.length;
@@ -208,16 +210,21 @@ class Disk3D {
             scale = {x: x, y: x / 2, z: 1.25 * x};
             locationX = locationX > 0 ? (locationX + 22) : (locationX - 22);
             locationZ = locationZ > 0 ? (locationZ + 15) : (locationZ - 15);
+        }else{
+            textFontsize = 30;
+            let x = 3.6;
+            scale = {x: x, y: x / 2, z: 1.25 * x};
+            locationX = locationX > 0 ? (locationX + 32) : (locationX - 32);
+            locationZ = locationZ > 0 ? (locationZ + 25) : (locationZ - 25);
         }
         let radian = this.defaultAngle * i;
         // 创建文字
-        let rotation = Math.PI * 3 / 2 + radian;
+        let rotation = Math.PI * 3 / 2 * this.defaultAngle;
         let spriteMaterialColor = eachPoint.color;
 
-        var text = this.makeTextSprite(name, scale, spriteMaterialColor, { fontsize: textFontsize, width: canvasWidth, height: canvasHeight}, rotation);
-        console.log(text);
+        var text = this.makeTextSprite(name, scale, spriteMaterialColor, { fontsize: textFontsize, width: canvasWidth, height: canvasHeight}, 280);
         text.position.set(locationX, locationY, locationZ);
-        this.textGroup.add(text);
+        return text;
     }
         /**
      * 创建永远面向相机的2D文字
@@ -249,8 +256,7 @@ class Disk3D {
         var texture = new THREE.Texture(canvas);
         texture.needsUpdate = true;
 
-        var spriteMaterial = new THREE.SpriteMaterial({ map: texture, rotation: rotation, color: '#ffffff'}); // color: '#ffffff'
-        spriteMaterial.color = spriteMaterialColor;
+        var spriteMaterial = new THREE.SpriteMaterial({ map: texture, rotation: rotation, color: spriteMaterialColor}); // color: '#ffffff'
 
         var sprite = new THREE.Sprite(spriteMaterial);
         let spriteScale = 0.85;
@@ -274,8 +280,10 @@ class Disk3D {
         let z = +(Math.sin(angle * (Math.PI / 180)) * radius).toFixed(2);
         return {x, y: 0, z};
     }
+    // 画出不同扇区的圆
     drawCilcle(){
         let originAngle = 0, circleGeometry, circleMaterial, circle;
+        console.log(this.data);
         this.data.map((val, i) => {
             let count = val.length;
             // 当前类型占整个圆的占比
@@ -290,8 +298,11 @@ class Disk3D {
             this.pieGroup.add(this.splitLine(originAngle));
             // 求出最外圈竖线分割线
             this.splitVerticalLine(angle, i);
+            // 求出第一圈类型文字位置
+            // this.drawTypeOnetext()
         })
         this.pieGroup.rotateX(-Math.PI / 2);
+        this.pieGroup.rotateZ(166);
         this.scene.add(this.pieGroup);
     }
     /**
