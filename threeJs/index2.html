@@ -60,6 +60,18 @@
                    });
         let dask3d = new Disk3D(data, num, cicleTwoData, cicleOneData, cilcleNum);
         dask3d.init();
+        let  abc = [
+            { data: [1,2,3]},
+            { data: [1,2,3]}
+        ];
+        abc.map((item) => {
+            item.data.map((value, i) => {
+                if(i === 0){
+                    item.data.splice(0, 1);
+                }
+            })
+        });
+        console.log(abc);
         
         // var scene = new THREE.Scene();
         // // show axes in the screen

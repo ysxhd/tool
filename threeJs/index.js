@@ -8,6 +8,7 @@ class Disk3D {
       this.middleRadius = 400; // 最大圆半径,小球环绕的最外层看不到的圆
       this.cicleRadius = 340; // 饼图圆
       this.defaultAngle = 0; // 每个环绕小球的夹角
+      this.eachRadian = 0; // 每个环绕小球的夹角 弧度
       this.width = 0;  // 场景宽
       this.height = 0; // 场景高
       this.renderer = null; // 渲染器
@@ -24,9 +25,14 @@ class Disk3D {
       this.lineGroup = new THREE.Object3D(); // 线段组合
       this.pointGroup = new THREE.Object3D(); // 旋转组合
       this.pieGroup = new THREE.Object3D(); // 原形的饼状组合
+      this.threeText = new THREE.Group(); // 原形的饼状组合
+      this.threeText.name = 'wenzi';
       this.originAngle = 0; // 分隔竖线的角度
       this.clock = null;
       this.orbitControl = null;
+      this.spriteMaterialGroup = [];
+      this.spriteMaterialGroupLength = 0;
+      this.n = 0;
     }
   
     init(){
@@ -54,11 +60,12 @@ class Disk3D {
         }
     }
     drawScene() {
-        this.scene = new THREE.Scene();
+       this.scene = new THREE.Scene();
+       window.scene = this.scene;
         this.scene.scale.set(this.sceneScale.x, this.sceneScale.y, this.sceneScale.z);
     }
     drawCamera() {
-        this.camera = new THREE.OrthographicCamera(this.width / - 2, 
+        window.camera =  this.camera = new THREE.OrthographicCamera(this.width / - 2, 
             this.width / 2, this.height / 2, this.height / - 2, 0.1, 1000);
         this.camera.position.x = 0;
         this.camera.position.y = this.cameraY; // -140
@@ -122,6 +129,7 @@ class Disk3D {
         // 求出每个小球之间的角度
         let splitAngle = +(360 / this.number).toFixed(2);
         this.defaultAngle = splitAngle;
+        this.eachRadian =  Math.PI * 2 / this.number;
         this.data.map((val, i) => {
              val.map((item) => {
                 splitAngle += this.defaultAngle;
@@ -162,9 +170,10 @@ class Disk3D {
             // 绘制文字
             this.textGroup.add(this.drawText(eachPoint, i));
         }
+        this.spriteMaterialGroupLength = this.spriteMaterialGroup.length;
         this.scene.add(this.textGroup);
-        // this.scene.add(this.lineGroup);
-        // this.scene.add(this.pointGroup);
+        this.scene.add(this.lineGroup);
+        this.scene.add(this.pointGroup);
     }
     /**
      * 
@@ -212,14 +221,15 @@ class Disk3D {
             textFontsize = 34;
             let x = 3.6;
             scale = {x: x, y: x / 2, z: 1.25 * x};
-            locationX = locationX > 0 ? (locationX + 52) : (locationX - 52);
-            locationZ = locationZ > 0 ? (locationZ + 45) : (locationZ - 45);
+            locationX = locationX > 0 ? (locationX + 32) : (locationX - 32);
+            locationZ = locationZ > 0 ? (locationZ + 35) : (locationZ - 35);
         }
-        let radian = this.defaultAngle * i;
+        let radian = this.eachRadian * i;
         // 创建文字
-        let rotation = Math.PI * 3 / 2 * this.defaultAngle;
+        let rotation = Math.PI * 3 / 2 * radian;
         let spriteMaterialColor = eachPoint.color;
-
+        // console.log(rotation);
+        
         var text = this.makeTextSprite(name, scale, spriteMaterialColor, { fontsize: textFontsize, width: canvasWidth, height: canvasHeight}, rotation);
         text.position.set(locationX, locationY, locationZ);
         return text;
@@ -255,9 +265,9 @@ class Disk3D {
         texture.needsUpdate = true;
         texture.minFilter = THREE.LinearFilter;
         var spriteMaterial = new THREE.SpriteMaterial({ map: texture, rotation: rotation, color: spriteMaterialColor}); // color: '#ffffff'
-
+        this.spriteMaterialGroup.push(spriteMaterial);
         var sprite = new THREE.Sprite(spriteMaterial);
-        let spriteScale = 1;
+        let spriteScale = 0.85;
         sprite.scale.set(scale.x * fontsize * spriteScale, scale.y * fontsize * spriteScale, scale.z * fontsize * spriteScale);
         // sprite.scale.set(2 *  20, 1 * 20, 1 * 20);
         return sprite;
@@ -291,6 +301,7 @@ class Disk3D {
             circle = new THREE.Mesh( circleGeometry, circleMaterial );
              // 求出第一圈类型文字位置
             this.drawTypeOnetext(angle / 2 + originAngle, i);
+            // this.drawTypeOnetext.push()
             originAngle += angle;
             this.pieGroup.add(circle);
             // 求出类型的分隔线
@@ -302,6 +313,7 @@ class Disk3D {
         this.pieGroup.rotateX(-Math.PI / 2);
         // this.pieGroup.rotateZ(166);
         this.scene.add(this.pieGroup);
+        this.scene.add(this.threeText);
     }
     /**
      * 求出第一圈类型文字位置
@@ -310,27 +322,22 @@ class Disk3D {
      */
     drawTypeOnetext(angle, i){
         let text = this.cicleOneData[i];
-        
         var canvas = document.createElement('canvas');
         canvas.width = 100;
         canvas.height = 100;
         var context = canvas.getContext('2d');
-        context.font = 12 + 'px ' + 'Microsoft YaHei';
+        context.font = 12 + 'px ';
         context.textAlign = 'left';
         context.fillStyle = 'rgba(255, 255, 255, 1.0)'; 
-        context.fillText(text, 0, 16);
+        context.fillText(text, 0, 12);
         var texture = new THREE.Texture(canvas);
         texture.needsUpdate = true;
         texture.minFilter = THREE.LinearFilter;
-        var spriteMaterial = new THREE.SpriteMaterial({ map: texture, color: '#081B41'}); // color: '#ffffff'
+        var spriteMaterial = new THREE.SpriteMaterial({ map: texture, color: '#fff', rotation: Math.PI * 2}); // color: '#ffffff'
+        this.spriteMaterialGroup.push(spriteMaterial);
         var sprite = new THREE.Sprite(spriteMaterial);
-
-        sprite.scale.set(200, 200, 220);
-        let { x, y } = this.italicLineGenerate(angle, true, 113);
-        console.log(x, y, 180 / Math.PI * angle);
-        
-        sprite.position.set(0, 0, 0);
-        this.pieGroup.add(sprite);
+        sprite.scale.set(180, 180, 180);
+        this.threeText.add(sprite);
     }
     /**
      * @param {number} angle 每个竖线所对应的夹角 
@@ -399,11 +406,36 @@ class Disk3D {
         this.orbitControl.maxPolarAngle = Math.PI / 2;
     }
     animate(that) {
-        let n = 0;
         let animateDeg = 0.002;
-        n = n + animateDeg;
+        this.n = this.n + animateDeg;
         this.renderer.render(this.scene, this.camera);
-        this.scene.rotation.y -= animateDeg;
+        if (this.n > Math.PI * 2) {
+            this.n = this.n - Math.PI * 2;
+        }
+        // this.revisesTextLoacation(this.n);
+        // this.scene.rotation.y -= animateDeg;
         requestAnimationFrame(this.animate.bind(this));
+    }
+    revisesTextLoacation(rt) {
+        let jg = parseInt(rt / this.eachRadian, 10);
+        for (let i = 0; i < this.spriteMaterialGroupLength; i++) {
+            let radian = this.eachRadian * i;
+
+            let rotation = Math.PI * 3 / 2 + radian;
+            let halfLength = parseInt(this.spriteMaterialGroupLength / 2, 10);
+            if (jg < halfLength) {
+                if (i > (jg - 1) && i < (halfLength + jg)) {
+                    this.spriteMaterialGroup[i].rotation = rotation - rt;
+                } else {
+                    this.spriteMaterialGroup[i].rotation = rotation - rt - Math.PI;
+                }
+            } else {
+                if (i > (jg - halfLength) && i < jg) {
+                    this.spriteMaterialGroup[i].rotation = rotation - rt - Math.PI;
+                } else {
+                    this.spriteMaterialGroup[i].rotation = rotation - rt;
+                }
+            }
+        }
     }
 }
