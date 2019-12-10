@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="WebGL-output">
+    </div>
+    <div id="Stats-output">
+    </div>
+    <!-- <script src="./js/zrender.js"></script> -->
+    <script src="./js/dat.gui.js"></script>
+    <script src="./js/Detector.js"></script>
+    <script src="./js/three.js"></script>
+    <script src="./js/OrbitControls.js"></script>
+    <script src="./js/stats.js"></script>
+    <script src="./js/Projector.js"></script>
+    <script src="./js/ThreeCSG.js"></script>
+    <script src="./js/GPUParticleSystem.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        // var renderer = new THREE.WebGLRenderer({antialias:true});
+        // renderer.setSize(window.innerWidth, window.innerHeight);
+        // renderer.shadowMapEnabled = true;
+        // document.body.appendChild(renderer.domElement);
+
+        // var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 900);
+        // camera.position.set(0, 0, 100);
+        // camera.lookAt(0, 0, 0);
+        let num = 0, cilcleNum = 0; // cicleNum是圆形平面类型数量
+        let data = [], cicleTwoData = [], cicleOneData = [];
+        cicleTwoData = allData.map((val, i) => {
+            data.push([]);
+            cicleOneData.push(val.name);
+            return val.children.map((item) => {
+                cilcleNum++;
+                item.children.map((ele) => {
+                    num++;
+                    data[i].push(ele.name);
+                });
+                return item.name;
+            })
+        });
+        let dask3d = new Disk3D(data, num, cicleTwoData, cicleOneData, cilcleNum);
+        dask3d.init();
+
+        // var scene = new THREE.Scene();
+        // // show axes in the screen
+        // var axes = new THREE.AxisHelper(80);
+        // scene.add(axes);
+
+        // var material = new THREE.MeshBasicMaterial( { color: 0xffffff} );
+        // var circleGeometry, circleMaterial, circle;
+        // // 第一个圆 黄色
+        // circleGeometry = new THREE.CircleGeometry( 24, 60, 0, Math.PI / 2 );
+        // circleMaterial = new THREE.MeshBasicMaterial( { color: 0xc6964b } );
+        // circle = new THREE.Mesh( circleGeometry, circleMaterial );
+        // scene.add(circle);
+        // document.getElementById("WebGL-output").appendChild(renderer.domElement);
+        // // 第二个圆 红色 #bd5a60
+        // var circleGeometry2 = new THREE.CircleGeometry( 24, 60, -Math.PI / 2, Math.PI / 2 );
+        // var circleMaterial2 = new THREE.MeshBasicMaterial( { color: 0xbd5a60 } );
+        // var circle2 = new THREE.Mesh( circleGeometry2, circleMaterial2 );
+        // scene.add(circle2);
+
+        // // 第二个圆 绿色 #4da970
+        // var circleGeometry3 = new THREE.CircleGeometry( 24, 60, Math.PI / 2, Math.PI   );
+        // var circleMaterial3 = new THREE.MeshBasicMaterial( { color: 0x4da970 } );
+        // var circle3 = new THREE.Mesh( circleGeometry3, circleMaterial3 );
+        // scene.add(circle3);
+
+        //    // 圆型 白线 实线
+        // var materialLine = new THREE.LineBasicMaterial( { color: 0xffffff } );
+        // var radius = 16;
+        // var segments = 620; //<-- Increase or decrease for more resolution I guess
+        // var circleGeometryLine = new THREE.CircleGeometry( radius, segments );    
+        // // Remove center vertex
+        // circleGeometryLine.vertices.shift();
+        // scene.add( new THREE.Line( circleGeometryLine, materialLine ) );
+
+        // // 圆型 白线 虚线
+        // var dashMaterial = new THREE.LineDashedMaterial( { 
+        // color: 0xffffff, dashSize: Math.PI*10/40, gapSize: 1, linewidth: 1  } ),
+        // circGeom = new THREE.CircleGeometry( 40, 120 );
+        // circGeom.vertices.shift();
+        // circGeom.computeLineDistances();
+        // var circ = new THREE.Line( circGeom, dashMaterial);
+        // scene.add( circ );
+        // // 白色线
+        // var geometry = new THREE.Geometry();
+        // geometry.computeLineDistances();
+        // geometry.vertices.push(
+        //     new THREE.Vector3( 0, 0, 10 ),
+        //     new THREE.Vector3( 0, 21.6, 10 )
+        // );
+        // geometry.vertices.push(
+        //     new THREE.Vector3( 0, 0, 10 ),
+        //     new THREE.Vector3( 21.6, 0, 10 )
+        // );
+        // geometry.vertices.push(
+        //     new THREE.Vector3( 0, 0, 10 ),
+        //     new THREE.Vector3( 0, -21.6, 10 )
+        // );
+
+        // let point = italicLineGenerate(60);
+        // geometry.vertices.push(
+        //     new THREE.Vector3( 0, 0, 10 ),
+        //     new THREE.Vector3( point.xPoint, point.yPoint, 10 )
+        // );
+        // let point2 = italicLineGenerate(120);
+        // geometry.vertices.push(
+        //     new THREE.Vector3( 0, 0, 10 ),
+        //     new THREE.Vector3( point2.xPoint, point2.yPoint, 10 )
+        // );
+        // let point3 = italicLineGenerate(200);
+        // geometry.vertices.push(
+        //     new THREE.Vector3( 0, 0, 10 ),
+        //     new THREE.Vector3( point3.xPoint, point3.yPoint, 10 )
+        // );
+        // let point4 = italicLineGenerate(220);
+        // geometry.vertices.push(
+        //     new THREE.Vector3( 0, 0, 10 ),
+        //     new THREE.Vector3( point4.xPoint, point4.yPoint, 10 )
+        // );
+        // var line = new THREE.Line(geometry, material);
+        // scene.add(line);
+
+        // var controls = new function () {
+        //     // we need the first child, since it's a multimaterial
+        //     // console.log(circle.children[0].geometry);
+        //     this.radius = 14;
+        //     this.thetaStart =  0;
+        //     this.thetaLength = Math.PI / 2;
+        //     this.segments = 40;
+        //     this.rotationY = 0;
+        //     this.rotationX = 0;
+        //     this.rotationZ = 0;
+        //     this.redraw = function () {
+        //         // remove the old plane
+        //         scene.remove(circle);
+        //         // create a new one
+        //         // circle = createMesh(new THREE.CircleGeometry(controls.radius, controls.segments, controls.thetaStart, controls.thetaLength));
+        //         var circleGeometry = new THREE.CircleGeometry(controls.radius, controls.segments, controls.thetaStart, controls.thetaLength);
+        //         circle = new THREE.Mesh(circleGeometry, circleMaterial);
+        //         // add it to the scene.
+        //         scene.add(circle);
+        //     };
+        // };
+        // var gui = new dat.GUI();
+        // gui.add(controls, 'radius', 0, 40).onChange(controls.redraw);
+        // gui.add(controls, 'segments', 0, 40).onChange(controls.redraw);
+        // gui.add(controls, 'thetaStart', 0, 2 * Math.PI).onChange(controls.redraw);
+        // gui.add(controls, 'thetaLength', 0, 2 * Math.PI).onChange(controls.redraw);
+        // gui.add(controls, 'rotationY', 0, 2 * Math.PI).onChange(controls.redraw);
+        // gui.add(controls, 'rotationX', 0, 2 * Math.PI).onChange(controls.redraw);
+        // gui.add(controls, 'rotationZ', 0, 2 * Math.PI).onChange(controls.redraw);
+        // render();
+        // function render() {
+        //     circle.rotation.y = controls.rotationY;
+        //     circle.rotation.x = controls.rotationX;
+        //     circle.rotation.z = controls.rotationZ;
+        //     circle.radius = controls.radius;
+        //     // render using requestAnimationFrame
+        //     requestAnimationFrame(render);
+        //     renderer.render(scene, camera);
+        // }
+        //  // 圆
+        // var curve = new THREE.EllipseCurve(
+        //     0,  0,            // ax, aY
+        //     20, 20,           // xRadius, yRadius
+        //     0,  2 * Math.PI,  // aStartAngle, aEndAngle
+        //     false,            // aClockwise
+        //     0                 // aRotation
+        // );
+
+        // var points = curve.getPoints( 60 );
+        // var geometry1 = new THREE.BufferGeometry().setFromPoints( points );
+
+        // var material1 = new THREE.LineBasicMaterial( { color : 0xff0000 } );
+
+        // // Create the final object to add to the scene
+        // var ellipse = new THREE.Line( geometry1, material1 );
+        // scene.add(ellipse);
+
+        // function italicLineGenerate(angle){
+        //     var xPoint = Math.cos(angle * (Math.PI / 180)) * 21.6;
+        //     var yPoint = Math.sin(angle * (Math.PI / 180)) * 21.6;
+        //     return {xPoint, yPoint};
+        // }
+    </script>
+</body>
+
+</html>
