@@ -540,13 +540,7 @@ class Disk3D {
 
         // 固定视角控制器
         this.orbitControl = new THREE.OrbitControls(this.camera, this.renderer.domElement);
-        this.orbitControl.maxDistance = 252;
-        this.orbitControl.minDistance = 0;
-        this.orbitControl.enableZoom = true;
-        this.orbitControl.enabled = true;
-        this.orbitControl.enablePan = false;
-        this.orbitControl.maxPolarAngle = Math.PI / 3;
-        this.orbitControl.minPolarAngle = Math.PI / 3;
+        this.orbitControl.enabled = false;
     }
 
     animate(that) {
