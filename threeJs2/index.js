@@ -83,15 +83,15 @@ class Disk3D {
         this.camera.updateProjectionMatrix();
 
         // 坐标轴调试用的
-        // let axes = new THREE.AxesHelper(280);
-        // axes.position.set(0, 1, 0);
-        // this.scene.add(axes);
+        let axes = new THREE.AxesHelper(280);
+        axes.position.set(0, 1, 0);
+        this.scene.add(axes);
     }
     /**
      * 绘制光
      */
     drawLight() {
-        // 绘制聚光灯光
+        // 绘制聚光灯光 
         var spotLight = new THREE.SpotLight( '#fff', 0.1);
         spotLight.position.set( 100, 400, 0 );
 
@@ -252,7 +252,7 @@ class Disk3D {
         }
         let spriteMaterialColor = eachPoint.color;
         let rotation = Math.PI * 2 / this.number * i; // 根据文字数量 计算每个文字的旋转角度
-
+       
         var text = this.makeTextSprite(name, scale, spriteMaterialColor, { fontsize: textFontsize, width: canvasWidth, height: canvasHeight }, rotation);
         return text;
     }
@@ -277,7 +277,7 @@ class Disk3D {
         sprite.canvas.style.height = '32px';
         sprite.context = sprite.canvas.getContext('2d');
         sprite.context.font = `16px ${fontface}`;
-
+        // document.body.appendChild(sprite.canvas);
         sprite.context.lineWidth = borderThickness;
         sprite.context.textAlign = 'left';
         sprite.context.fillStyle = spriteMaterialColor;
@@ -321,21 +321,21 @@ class Disk3D {
             //    console.log(camera);
                
                 camera.getWorldPosition(cameraWorlPosition); // 获取相机的世界坐标
-
+                // console.log(camera.position);
+                
                 cameraWorlPosition.y = 0; // 相机的世界坐标在  XZ 平面上的 投影向量
 
                 cameraAglenToX = cameraWorlPosition.angleTo(X); // 计算相机投影向量 与X 轴的夹角
-                // console.log(cameraWorlPosition);
                 
-                if (cameraWorlPosition.z > 0) { // 正半轴的时候 角度 等于 360度 减去夹角
-                    cameraAglenToX = 2 * Math.PI - cameraAglenToX;
-                }
+                cameraAglenToX = 2 * Math.PI - cameraAglenToX;
+                // console.log(cameraAglenToX);
 
                 // 纹理的旋转角度 = 场景的旋转角度 - 自身的旋转偏移量 - 相机的投影向量的旋转角度
                 this.material.map.rotation = scene.rotation.y - this.userDate.rotation - cameraAglenToX - (Math.PI / 2);
 
                 this.material.map.rotation %= Math.PI * 2;// 360度 720度 等按都0度 处理
-
+                // console.log(this.material.map.rotation * 180 / Math.PI);
+                
                 // 判断角度翻转纹理
                 if (
                     ((Math.PI * -0.5) > this.material.map.rotation) &&
@@ -349,9 +349,10 @@ class Disk3D {
                         sprite.context.strokeText(this.userDate.message, 500, 22);
                         sprite.context.fillText(this.userDate.message, 500, 22);
                         sprite.material.map.needsUpdate = true;
+                        // console.log(this.material.map.rotation);
                     }
                     this.material.map.rotation -= Math.PI;
-
+                    
                 } else {
                     if (this.userDate.reverse === false) {
                         this.userDate.reverse = true;
@@ -361,6 +362,7 @@ class Disk3D {
                         sprite.context.strokeText(this.userDate.message, 524, 22);
                         sprite.context.fillText(this.userDate.message, 524, 22);
                         sprite.material.map.needsUpdate = true;
+                        // console.log(this.material.map.rotation);
                     }
                 }
 
@@ -368,6 +370,21 @@ class Disk3D {
 
         })();
         return sprite;
+    }
+    
+    animate(that) {
+        let animateDeg = 0.002;
+        // this.n = this.n + animateDeg;
+        // if (this.n > Math.PI * 2) {
+        //     this.n = this.n - Math.PI * 2;
+        // }
+        this.camera.lookAt(this.scene.position);
+        this.scene.rotation.y -= animateDeg;
+
+        this.renderer.render(this.scene, this.camera);
+
+        // 帧频率限制在20帧  在足够流畅的前提下  尽可能的减少运算
+        requestAnimationFrame(this.animate.bind(this));
     }
     /**
      * 根据角度以及半径 ，求出当前点xy的坐标
@@ -540,24 +557,17 @@ class Disk3D {
 
         // 固定视角控制器
         this.orbitControl = new THREE.OrbitControls(this.camera, this.renderer.domElement);
-        this.orbitControl.enabled = false;
+
+        this.orbitControl.minDistrance = 0;
+        this.orbitControl.maxDistrance = 360;
+        this.orbitControl.enableZoom = true;
+        this.orbitControl.enabled = true;
+        this.orbitControl.minPolarAngle = 0;
+        this.orbitControl.maxPolarAngle = Math.PI;
+        // this.controls.minAzimuthAngle = -Math.PI * (100 / 180);
+        // this.controls.maxAzimuthAngle = Math.PI * (100 / 180);
     }
 
-    animate(that) {
-        let animateDeg = 0.004;
-        // this.n = this.n + animateDeg;
-        // if (this.n > Math.PI * 2) {
-        //     this.n = this.n - Math.PI * 2;
-        // }
-        this.camera.lookAt(this.scene.position);
-        // this.revisesTextLoacation(this.n);
-        this.scene.rotation.y -= animateDeg;
-
-        this.renderer.render(this.scene, this.camera);
-
-        // 帧频率限制在20帧  在足够流畅的前提下  尽可能的减少运算
-        requestAnimationFrame(this.animate.bind(this));
-    }
 
     revisesTextLoacation(rt) {
         let jg = parseInt(rt / this.eachRadian, 10);
