@@ -16,7 +16,7 @@
     "cross-env": "^5.2.0",
     "echarts": "^4.1.0",
     "echarts-for-react": "^2.0.13",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "file-loader": "^1.1.11",
     "lodash": "^4.17.10",
     "next": "6.1.1",
